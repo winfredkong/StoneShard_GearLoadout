@@ -1,3 +1,8 @@
+[To Use]
+
+You only need the StoneShard_GearLoadout.exe file to run the simulator.
+
+
 [Controls]
 
 Clicking an equipment slot at the top right will open an equipment table on the left.
