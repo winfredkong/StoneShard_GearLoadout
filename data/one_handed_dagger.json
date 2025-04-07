@@ -1,0 +1,523 @@
+[
+  {
+    "id": "commoner_dagger",
+    "name": "Commoner Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 35,
+    "price": 50,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.04,
+      "accuracy": 0.04,
+      "crit_chance": 0.02
+    },
+    "icon": "Commoner_Dagger.png",
+    "damage": {
+      "piercing_damage": 13
+    }
+  },
+  {
+    "id": "shiv",
+    "name": "Shiv",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 25,
+    "price": 25,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.04,
+      "accuracy": 0.02
+    },
+    "icon": "Shiv.png",
+    "damage": {
+      "piercing_damage": 13
+    }
+  },
+  {
+    "id": "bollock_dagger",
+    "name": "Bollock Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 50,
+    "price": 275,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.08,
+      "accuracy": 0.05,
+      "crit_chance": 0.03
+    },
+    "icon": "Bollock_Dagger.png",
+    "damage": {
+      "piercing_damage": 15
+    }
+  },
+  {
+    "id": "dirk",
+    "name": "Dirk",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 50,
+    "price": 275,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.11,
+      "accuracy": 0.05,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.01
+    },
+    "icon": "Dirk.png",
+    "damage": {
+      "piercing_damage": 15
+    }
+  },
+  {
+    "id": "rondel",
+    "name": "Rondel",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 60,
+    "price": 750,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.12,
+      "accuracy": 0.06,
+      "crit_chance": 0.04
+    },
+    "icon": "Rondel.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "baselard",
+    "name": "Baselard",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 60,
+    "price": 750,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.12,
+      "accuracy": 0.06,
+      "crit_chance": 0.01,
+      "counter_chance": 0.03
+    },
+    "icon": "Baselard.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "misericorde",
+    "name": "Misericorde",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 70,
+    "price": 1700,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.16,
+      "accuracy": 0.07,
+      "crit_chance": 0.05
+    },
+    "icon": "Misericorde.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "jambiya",
+    "name": "Jambiya",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 70,
+    "price": 1950,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.1,
+      "bleed_chance": 0.26,
+      "accuracy": 0.02,
+      "crit_chance": 0.05
+    },
+    "icon": "Jambiya.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "ornate_dagger",
+    "name": "Ornate Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 4",
+    "durability": 65,
+    "price": 1700,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.16,
+      "accuracy": 0.09,
+      "crit_chance": 0.05
+    },
+    "icon": "Ornate_Dagger.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "stiletto",
+    "name": "Stiletto",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 85,
+    "price": 3575,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.2,
+      "accuracy": 0.08,
+      "crit_chance": 0.06
+    },
+    "icon": "Stiletto.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "assassin_dagger",
+    "name": "Assassin Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 85,
+    "price": 3575,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.18,
+      "accuracy": 0.08,
+      "crit_chance": 0.07,
+      "crit_efficiency": 0.05
+    },
+    "icon": "Assassin_Dagger.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "ceremonial_dagger",
+    "name": "Ceremonial Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 70,
+    "price": 3575,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.05,
+      "bleed_chance": 0.32,
+      "accuracy": 0.08,
+      "crit_chance": 0.06,
+      "miracle_chance": 0.01
+    },
+    "icon": "Ceremonial_Dagger.png",
+    "damage": {
+      "piercing_damage": 18,
+      "sacred_damage": 3
+    }
+  },
+  {
+    "id": "recruit_dagger",
+    "name": "Recruit Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 60,
+    "price": 250,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.12,
+      "block_chance": 0.04,
+      "block_power": 3.0,
+      "counter_chance": 0.05
+    },
+    "icon": "Recruit_Dagger.png",
+    "damage": {
+      "piercing_damage": 14
+    }
+  },
+  {
+    "id": "soldier_dagger",
+    "name": "Soldier Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 75,
+    "price": 650,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.16,
+      "block_chance": 0.06,
+      "block_power": 4.0,
+      "counter_chance": 0.07
+    },
+    "icon": "Soldier_Dagger.png",
+    "damage": {
+      "piercing_damage": 16
+    }
+  },
+  {
+    "id": "merchant_dagger",
+    "name": "Merchant Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 75,
+    "price": 650,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.16,
+      "block_chance": 0.06,
+      "block_power": 1.0,
+      "counter_chance": 0.07
+    },
+    "icon": "Merchant_Dagger.png",
+    "damage": {
+      "piercing_damage": 16
+    }
+  },
+  {
+    "id": "duelist_dagger",
+    "name": "Duelist Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 90,
+    "price": 1450,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.09,
+      "block_chance": 0.11,
+      "block_power": 7.0,
+      "counter_chance": 0.1
+    },
+    "icon": "Duelist_Dagger.png",
+    "damage": {
+      "piercing_damage": 18
+    }
+  },
+  {
+    "id": "veteran_dagger",
+    "name": "Veteran Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 90,
+    "price": 1450,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.2,
+      "block_chance": 0.08,
+      "block_power": 6.0,
+      "counter_chance": 0.09
+    },
+    "icon": "Veteran_Dagger.png",
+    "damage": {
+      "piercing_damage": 18
+    }
+  },
+  {
+    "id": "gilded_dagger",
+    "name": "Gilded Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 4",
+    "durability": 80,
+    "price": 1450,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.2,
+      "block_chance": 0.08,
+      "block_power": 6.0,
+      "accuracy": 0.05,
+      "counter_chance": 0.09,
+      "energy_drain": 0.05
+    },
+    "icon": "Gilded_Dagger.png",
+    "damage": {
+      "piercing_damage": 18
+    }
+  },
+  {
+    "id": "parrying_dagger",
+    "name": "Parrying Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 110,
+    "price": 3050,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.12,
+      "block_chance": 0.13,
+      "block_power": 11.0,
+      "counter_chance": 0.13
+    },
+    "icon": "Parrying_Dagger.png",
+    "damage": {
+      "piercing_damage": 21
+    }
+  },
+  {
+    "id": "quillon_dagger",
+    "name": "Quillon Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 105,
+    "price": 3050,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.24,
+      "block_chance": 0.1,
+      "block_power": 8.0,
+      "counter_chance": 0.11
+    },
+    "icon": "Quillon_Dagger.png",
+    "damage": {
+      "piercing_damage": 21
+    }
+  },
+  {
+    "id": "ducal_dagger",
+    "name": "Ducal Dagger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 120,
+    "price": 3050,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.24,
+      "block_chance": 0.11,
+      "block_power": 9.0,
+      "crit_chance": 0.02,
+      "counter_chance": 0.11
+    },
+    "icon": "Ducal_Dagger.png",
+    "damage": {
+      "piercing_damage": 21
+    }
+  },
+  {
+    "id": "kitchen_knife",
+    "name": "Kitchen Knife",
+    "type": "weapon",
+    "weapon_group": "One-Handed Dagger",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 25,
+    "price": 10,
+    "stats": {
+      "fumble_chance": 0.15
+    },
+    "icon": "Kitchen_Knife.png",
+    "damage": {
+      "piercing_damage": 9
+    }
+  }
+]

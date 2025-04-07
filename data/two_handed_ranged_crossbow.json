@@ -1,0 +1,453 @@
+[
+  {
+    "id": "training_crossbow",
+    "name": "Training Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 100,
+    "stats": {
+      "armor_penetration": 0.1,
+      "stagger_chance": 0.1,
+      "immobilization_chance": 0.08,
+      "range": 7.0,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Training_Crossbow.png",
+    "damage": {
+      "piercing_damage": 18
+    }
+  },
+  {
+    "id": "hunting_crossbow",
+    "name": "Hunting Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 65,
+    "price": 525,
+    "stats": {
+      "armor_penetration": 0.1,
+      "stagger_chance": 0.13,
+      "immobilization_chance": 0.11,
+      "range": 7.0,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Hunting_Crossbow.png",
+    "damage": {
+      "piercing_damage": 21
+    }
+  },
+  {
+    "id": "soldier_crossbow",
+    "name": "Soldier Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 80,
+    "price": 1400,
+    "stats": {
+      "armor_penetration": 0.15,
+      "stagger_chance": 0.17,
+      "immobilization_chance": 0.14,
+      "range": 7.0,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Soldier_Crossbow.png",
+    "damage": {
+      "piercing_damage": 24
+    }
+  },
+  {
+    "id": "maen_crossbow",
+    "name": "Maen Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 70,
+    "price": 1400,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.05,
+      "stagger_chance": 0.17,
+      "immobilization_chance": 0.14,
+      "crit_chance": 0.03,
+      "range": 7.0,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Maen_Crossbow.png",
+    "damage": {
+      "piercing_damage": 23
+    }
+  },
+  {
+    "id": "aldwynn_crossbow",
+    "name": "Aldwynn Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 105,
+    "price": 3150,
+    "stats": {
+      "armor_penetration": 0.25,
+      "armor_damage": 0.1,
+      "stagger_chance": 0.24,
+      "immobilization_chance": 0.15,
+      "range": 8.0,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Aldwynn_Crossbow.png",
+    "damage": {
+      "piercing_damage": 28
+    }
+  },
+  {
+    "id": "orient_crossbow",
+    "name": "Orient Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 95,
+    "price": 3775,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.08,
+      "stagger_chance": 0.21,
+      "immobilization_chance": 0.17,
+      "range": 9.0,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Orient_Crossbow.png",
+    "damage": {
+      "piercing_damage": 26
+    }
+  },
+  {
+    "id": "brynn_crossbow",
+    "name": "Brynn Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 110,
+    "price": 6625,
+    "stats": {
+      "armor_penetration": 0.3,
+      "stagger_chance": 0.2,
+      "immobilization_chance": 0.25,
+      "range": 8.0,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Brynn_Crossbow.png",
+    "damage": {
+      "piercing_damage": 32
+    }
+  },
+  {
+    "id": "carved_crossbow",
+    "name": "Carved Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 100,
+    "price": 6625,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.1,
+      "stagger_chance": 0.25,
+      "immobilization_chance": 0.2,
+      "range": 9.0,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Carved_Crossbow.png",
+    "damage": {
+      "piercing_damage": 31
+    }
+  },
+  {
+    "id": "belt_hook_crossbow",
+    "name": "Belt Hook Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 55,
+    "price": 600,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.17,
+      "knockback_chance": 0.15,
+      "stagger_chance": 0.2,
+      "range": 8.0,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Belt_Hook_Crossbow.png",
+    "damage": {
+      "piercing_damage": 23
+    }
+  },
+  {
+    "id": "cranequin_crossbow",
+    "name": "Cranequin Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 70,
+    "price": 1575,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.2,
+      "knockback_chance": 0.2,
+      "stagger_chance": 0.25,
+      "range": 9.0,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Cranequin_Crossbow.png",
+    "damage": {
+      "piercing_damage": 26
+    }
+  },
+  {
+    "id": "mercenary_crossbow",
+    "name": "Mercenary Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 85,
+    "price": 3500,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.23,
+      "knockback_chance": 0.25,
+      "stagger_chance": 0.3,
+      "range": 9.0,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Mercenary_Crossbow.png",
+    "damage": {
+      "piercing_damage": 30
+    }
+  },
+  {
+    "id": "garrison_crossbow",
+    "name": "Garrison Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 100,
+    "price": 7400,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bleed_chance": 0.25,
+      "knockback_chance": 0.3,
+      "stagger_chance": 0.35,
+      "range": 9.0,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Garrison_Crossbow.png",
+    "damage": {
+      "piercing_damage": 35
+    }
+  },
+  {
+    "id": "royal_huntmaster_crossbow",
+    "name": "Royal Huntmaster Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 100,
+    "price": 7400,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.33,
+      "knockback_chance": 0.3,
+      "stagger_chance": 0.35,
+      "crit_efficiency": 0.15,
+      "range": 9.0,
+      "skills_energy_cost": 0.25,
+      "fatigue_resistance": 0.1
+    },
+    "icon": "Royal_Huntmaster_Crossbow.png",
+    "damage": {
+      "piercing_damage": 35
+    }
+  },
+  {
+    "id": "guard_crossbow",
+    "name": "Guard Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 50,
+    "price": 650,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.1,
+      "knockback_chance": 0.2,
+      "immobilization_chance": 0.2,
+      "range": 10.0,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Guard_Crossbow.png",
+    "damage": {
+      "piercing_damage": 25
+    }
+  },
+  {
+    "id": "pull-lever_crossbow",
+    "name": "Pull-Lever Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 60,
+    "price": 1725,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.15,
+      "knockback_chance": 0.25,
+      "immobilization_chance": 0.25,
+      "range": 11.0,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Pull-Lever_Crossbow.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  },
+  {
+    "id": "windlass_crossbow",
+    "name": "Windlass Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 70,
+    "price": 3875,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bodypart_damage": 0.2,
+      "knockback_chance": 0.3,
+      "immobilization_chance": 0.3,
+      "range": 11.0,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Windlass_Crossbow.png",
+    "damage": {
+      "piercing_damage": 33
+    }
+  },
+  {
+    "id": "siege_crossbow",
+    "name": "Siege Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 85,
+    "price": 8150,
+    "stats": {
+      "armor_penetration": 0.35,
+      "bodypart_damage": 0.25,
+      "knockback_chance": 0.35,
+      "immobilization_chance": 0.35,
+      "range": 11.0,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Siege_Crossbow.png",
+    "damage": {
+      "piercing_damage": 38
+    }
+  },
+  {
+    "id": "guardsman_crossbow",
+    "name": "Guardsman Crossbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Crossbow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 95,
+    "price": 8150,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.15,
+      "bodypart_damage": 0.25,
+      "knockback_chance": 0.5,
+      "immobilization_chance": 0.4,
+      "range": 10.0,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Guardsman_Crossbow.png",
+    "damage": {
+      "piercing_damage": 38
+    }
+  }
+]

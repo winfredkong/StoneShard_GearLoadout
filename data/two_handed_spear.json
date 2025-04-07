@@ -1,0 +1,800 @@
+[
+  {
+    "id": "peasant_spear",
+    "name": "Peasant Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 80,
+    "price": 100,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.1,
+      "immobilization_chance": 0.04,
+      "accuracy": 0.04,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Peasant_Spear.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "hilda's_spear",
+    "name": "Hilda's Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 2",
+    "durability": 95,
+    "price": 525,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.05,
+      "bleed_chance": 0.12,
+      "immobilization_chance": 0.12,
+      "accuracy": 0.06,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Hilda's_Spear.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "hunting_spear",
+    "name": "Hunting Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 525,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.15,
+      "immobilization_chance": 0.08,
+      "accuracy": 0.06,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Hunting_Spear.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "goedendag",
+    "name": "Goedendag",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 115,
+    "price": 525,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.2,
+      "daze_chance": 0.1,
+      "accuracy": 0.02,
+      "fumble_chance": 0.02,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Goedendag.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "ox_tongue_spear",
+    "name": "Ox Tongue Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 130,
+    "price": 1400,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.2,
+      "immobilization_chance": 0.12,
+      "accuracy": 0.08,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Ox_Tongue_Spear.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "awl_pike",
+    "name": "Awl Pike",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 155,
+    "price": 3400,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.25,
+      "immobilization_chance": 0.16,
+      "accuracy": 0.1,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Awl_Pike.png",
+    "damage": {
+      "piercing_damage": 26
+    }
+  },
+  {
+    "id": "spontoon",
+    "name": "Spontoon",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 180,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bleed_chance": 0.3,
+      "immobilization_chance": 0.2,
+      "accuracy": 0.12,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Spontoon.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  },
+  {
+    "id": "spear_of_the_faceless",
+    "name": "Spear of the Faceless",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 200,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.3,
+      "knockback_chance": 0.3,
+      "immobilization_chance": 0.1,
+      "accuracy": 0.12,
+      "crit_chance": 0.03,
+      "crit_efficiency": 0.05,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Spear_of_the_Faceless.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  },
+  {
+    "id": "radiant_spear",
+    "name": "Radiant Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 165,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bleed_chance": 0.3,
+      "immobilization_chance": 0.2,
+      "accuracy": 0.12,
+      "energy_restoration": 0.03,
+      "skills_energy_cost": 0.2,
+      "energy_drain": 0.03,
+      "fatigue_resistance": 0.09
+    },
+    "icon": "Radiant_Spear.png",
+    "damage": {
+      "piercing_damage": 26,
+      "arcane_damage": 3
+    }
+  },
+  {
+    "id": "militia_spear",
+    "name": "Militia Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 130,
+    "price": 500,
+    "stats": {
+      "armor_penetration": 0.15,
+      "knockback_chance": 0.2,
+      "block_chance": 0.06,
+      "block_power": 4.0,
+      "accuracy": 0.04,
+      "counter_chance": 0.06,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Militia_Spear.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "footman_spear",
+    "name": "Footman Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 160,
+    "price": 1300,
+    "stats": {
+      "armor_penetration": 0.2,
+      "knockback_chance": 0.25,
+      "block_chance": 0.09,
+      "block_power": 6.0,
+      "accuracy": 0.06,
+      "counter_chance": 0.08,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Footman_Spear.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "norse_spear",
+    "name": "Norse Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 160,
+    "price": 1300,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.05,
+      "knockback_chance": 0.25,
+      "block_chance": 0.07,
+      "block_power": 5.0,
+      "accuracy": 0.06,
+      "crit_efficiency": 0.2,
+      "counter_chance": 0.08,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Norse_Spear.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "veteran_spear",
+    "name": "Veteran Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 190,
+    "price": 3025,
+    "stats": {
+      "armor_penetration": 0.25,
+      "knockback_chance": 0.3,
+      "block_chance": 0.12,
+      "block_power": 8.0,
+      "accuracy": 0.08,
+      "counter_chance": 0.1,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Veteran_Spear.png",
+    "damage": {
+      "piercing_damage": 26
+    }
+  },
+  {
+    "id": "partizan",
+    "name": "Partizan",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 225,
+    "price": 6375,
+    "stats": {
+      "armor_penetration": 0.3,
+      "knockback_chance": 0.35,
+      "block_chance": 0.15,
+      "block_power": 10.0,
+      "accuracy": 0.1,
+      "counter_chance": 0.12,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Partizan.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  },
+  {
+    "id": "castellier_spear",
+    "name": "Castellier Spear",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 260,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.3,
+      "knockback_chance": 0.35,
+      "block_chance": 0.2,
+      "block_power": 15.0,
+      "block_power_recovery": 0.15,
+      "accuracy": 0.1,
+      "counter_chance": 0.12,
+      "crit_avoidance": 0.1,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Castellier_Spear.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  },
+  {
+    "id": "peasant_pitchfork",
+    "name": "Peasant Pitchfork",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 80,
+    "price": 100,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.1,
+      "accuracy": 0.02,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Peasant_Pitchfork.png",
+    "damage": {
+      "piercing_damage": 16
+    }
+  },
+  {
+    "id": "war_pitchfork",
+    "name": "War Pitchfork",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 525,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.2,
+      "block_chance": 0.04,
+      "accuracy": 0.04,
+      "crit_chance": 0.02,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "War_Pitchfork.png",
+    "damage": {
+      "piercing_damage": 18
+    }
+  },
+  {
+    "id": "mancatcher",
+    "name": "Mancatcher",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 525,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.2,
+      "immobilization_chance": 0.2,
+      "block_chance": 0.04,
+      "accuracy": 0.02,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Mancatcher.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "brandistock",
+    "name": "Brandistock",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 130,
+    "price": 1350,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.25,
+      "block_chance": 0.06,
+      "accuracy": 0.06,
+      "crit_chance": 0.03,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Brandistock.png",
+    "damage": {
+      "piercing_damage": 21
+    }
+  },
+  {
+    "id": "fauchard_fork",
+    "name": "Fauchard Fork",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 155,
+    "price": 3150,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.3,
+      "block_chance": 0.08,
+      "accuracy": 0.08,
+      "crit_chance": 0.04,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Fauchard_Fork.png",
+    "damage": {
+      "piercing_damage": 24
+    }
+  },
+  {
+    "id": "spetum",
+    "name": "Spetum",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 180,
+    "price": 6625,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.45,
+      "block_chance": 0.1,
+      "accuracy": 0.1,
+      "crit_chance": 0.05,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Spetum.png",
+    "damage": {
+      "piercing_damage": 28
+    }
+  },
+  {
+    "id": "ornate_fork",
+    "name": "Ornate Fork",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 165,
+    "price": 6625,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bleed_chance": 0.45,
+      "immobilization_chance": 0.2,
+      "block_chance": 0.1,
+      "accuracy": 0.1,
+      "crit_chance": 0.05,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Ornate_Fork.png",
+    "damage": {
+      "piercing_damage": 28
+    }
+  },
+  {
+    "id": "guard_halberd",
+    "name": "Guard Halberd",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 625,
+    "stats": {
+      "armor_penetration": 0.2,
+      "armor_damage": 0.14,
+      "bodypart_damage": 0.14,
+      "stagger_chance": 0.13,
+      "crit_chance": 0.04,
+      "fumble_chance": 0.04,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Guard_Halberd.png",
+    "damage": {
+      "slashing_damage": 20
+    }
+  },
+  {
+    "id": "footman_halberd",
+    "name": "Footman Halberd",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 130,
+    "price": 1625,
+    "stats": {
+      "armor_penetration": 0.25,
+      "armor_damage": 0.18,
+      "bodypart_damage": 0.18,
+      "stagger_chance": 0.16,
+      "crit_chance": 0.05,
+      "fumble_chance": 0.06,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Footman_Halberd.png",
+    "damage": {
+      "slashing_damage": 23
+    }
+  },
+  {
+    "id": "mercenary_halberd",
+    "name": "Mercenary Halberd",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 155,
+    "price": 3625,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.22,
+      "bodypart_damage": 0.22,
+      "stagger_chance": 0.19,
+      "crit_chance": 0.06,
+      "fumble_chance": 0.08,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Mercenary_Halberd.png",
+    "damage": {
+      "slashing_damage": 27
+    }
+  },
+  {
+    "id": "sabre_halberd",
+    "name": "Sabre Halberd",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 180,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.26,
+      "bodypart_damage": 0.26,
+      "stagger_chance": 0.22,
+      "crit_chance": 0.07,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Sabre_Halberd.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  },
+  {
+    "id": "ceremonial_halberd",
+    "name": "Ceremonial Halberd",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 165,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.26,
+      "bodypart_damage": 0.35,
+      "bleed_chance": 0.12,
+      "stagger_chance": 0.22,
+      "crit_chance": 0.1,
+      "crit_efficiency": 0.15,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Ceremonial_Halberd.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  },
+  {
+    "id": "recruit_billhook",
+    "name": "Recruit Billhook",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 110,
+    "price": 625,
+    "stats": {
+      "armor_penetration": 0.2,
+      "armor_damage": 0.07,
+      "bodypart_damage": 0.08,
+      "immobilization_chance": 0.07,
+      "crit_efficiency": 0.1,
+      "fumble_chance": 0.02,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Recruit_Billhook.png",
+    "damage": {
+      "piercing_damage": 20
+    }
+  },
+  {
+    "id": "guisarme",
+    "name": "Guisarme",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 140,
+    "price": 1625,
+    "stats": {
+      "armor_penetration": 0.25,
+      "armor_damage": 0.1,
+      "bodypart_damage": 0.1,
+      "immobilization_chance": 0.1,
+      "crit_efficiency": 0.15,
+      "fumble_chance": 0.03,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Guisarme.png",
+    "damage": {
+      "piercing_damage": 23
+    }
+  },
+  {
+    "id": "sergeant_billhook",
+    "name": "Sergeant Billhook",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 170,
+    "price": 3625,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.12,
+      "bodypart_damage": 0.13,
+      "immobilization_chance": 0.13,
+      "crit_efficiency": 0.2,
+      "fumble_chance": 0.04,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Sergeant_Billhook.png",
+    "damage": {
+      "piercing_damage": 27
+    }
+  },
+  {
+    "id": "scorpion_halberd",
+    "name": "Scorpion Halberd",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Spear",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 195,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.15,
+      "bodypart_damage": 0.15,
+      "immobilization_chance": 0.16,
+      "crit_efficiency": 0.25,
+      "fumble_chance": 0.05,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Scorpion_Halberd.png",
+    "damage": {
+      "piercing_damage": 31
+    }
+  }
+]

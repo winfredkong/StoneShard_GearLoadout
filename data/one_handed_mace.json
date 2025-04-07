@@ -1,0 +1,1246 @@
+[
+  {
+    "id": "spiked_club",
+    "name": "Spiked Club",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 60,
+    "price": 75,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.07,
+      "bleed_chance": 0.06,
+      "daze_chance": 0.05,
+      "stagger_chance": 0.1,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Spiked_Club.png",
+    "damage": {
+      "piercing_damage": 2,
+      "crushing_damage": 15
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "militia_morgenstern",
+    "name": "Militia Morgenstern",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 80,
+    "price": 375,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.1,
+      "bleed_chance": 0.09,
+      "daze_chance": 0.07,
+      "stagger_chance": 0.15,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Militia_Morgenstern.png",
+    "damage": {
+      "piercing_damage": 3,
+      "crushing_damage": 16
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "morgenstern",
+    "name": "Morgenstern",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 100,
+    "price": 975,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.2,
+      "bleed_chance": 0.12,
+      "daze_chance": 0.1,
+      "stagger_chance": 0.2,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Morgenstern.png",
+    "damage": {
+      "piercing_damage": 2,
+      "crushing_damage": 20
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "skadian_bludgeon",
+    "name": "Skadian Bludgeon",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 120,
+    "price": 1125,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.13,
+      "daze_chance": 0.13,
+      "stagger_chance": 0.2,
+      "crit_efficiency": 0.18,
+      "fumble_chance": -0.05,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Skadian_Bludgeon.png",
+    "damage": {
+      "crushing_damage": 22
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "veteran_morgenstern",
+    "name": "Veteran Morgenstern",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 120,
+    "price": 2175,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.16,
+      "bleed_chance": 0.15,
+      "daze_chance": 0.12,
+      "stagger_chance": 0.25,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Veteran_Morgenstern.png",
+    "damage": {
+      "piercing_damage": 3,
+      "crushing_damage": 23
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "druzhyna_bludgeon",
+    "name": "Druzhyna Bludgeon",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 145,
+    "price": 2625,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.16,
+      "daze_chance": 0.16,
+      "stagger_chance": 0.25,
+      "crit_efficiency": 0.22,
+      "fumble_chance": -0.06,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Druzhyna_Bludgeon.png",
+    "damage": {
+      "crushing_damage": 26
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "knightly_morgenstern",
+    "name": "Knightly Morgenstern",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 140,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.2,
+      "bleed_chance": 0.18,
+      "daze_chance": 0.15,
+      "stagger_chance": 0.3,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Knightly_Morgenstern.png",
+    "damage": {
+      "piercing_damage": 3,
+      "crushing_damage": 26
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "chervenian_mace",
+    "name": "Chervenian Mace",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 160,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.2,
+      "daze_chance": 0.2,
+      "stagger_chance": 0.3,
+      "crit_efficiency": 0.26,
+      "fumble_chance": -0.07,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Chervenian_Mace.png",
+    "damage": {
+      "crushing_damage": 29
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "baron_morgenstern",
+    "name": "Baron Morgenstern",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 135,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.25,
+      "bleed_chance": 0.2,
+      "daze_chance": 0.15,
+      "stagger_chance": 0.3,
+      "crit_chance": 0.03,
+      "crit_efficiency": 0.1,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Baron_Morgenstern.png",
+    "damage": {
+      "piercing_damage": 4,
+      "crushing_damage": 26
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "voivod_mace",
+    "name": "Voivod Mace",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 175,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.33,
+      "bleed_chance": 0.2,
+      "daze_chance": 0.2,
+      "stun_chance": 0.05,
+      "stagger_chance": 0.3,
+      "crit_efficiency": 0.26,
+      "fumble_chance": -0.07,
+      "energy_restoration": 0.05,
+      "skills_energy_cost": 0.2,
+      "cooldowns_duration": -0.05
+    },
+    "icon": "Voivod_Mace.png",
+    "damage": {
+      "crushing_damage": 29
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "cudgel",
+    "name": "Cudgel",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 45,
+    "price": 25,
+    "stats": {
+      "armor_penetration": 0.1,
+      "daze_chance": 0.08,
+      "stun_chance": 0.07,
+      "knockback_chance": 0.05,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Cudgel.png",
+    "damage": {
+      "crushing_damage": 16
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "reinforced_club",
+    "name": "Reinforced Club",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 70,
+    "price": 75,
+    "stats": {
+      "armor_penetration": 0.2,
+      "daze_chance": 0.1,
+      "stun_chance": 0.08,
+      "knockback_chance": 0.05,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Reinforced_Club.png",
+    "damage": {
+      "crushing_damage": 17
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "militia_club",
+    "name": "Militia Club",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 95,
+    "price": 375,
+    "stats": {
+      "armor_penetration": 0.2,
+      "daze_chance": 0.12,
+      "stun_chance": 0.1,
+      "knockback_chance": 0.1,
+      "counter_chance": 0.05,
+      "fumble_chance": -0.02,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Militia_Club.png",
+    "damage": {
+      "crushing_damage": 18
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "recruit_club",
+    "name": "Recruit Club",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 100,
+    "price": 375,
+    "stats": {
+      "armor_penetration": 0.2,
+      "daze_chance": 0.14,
+      "stun_chance": 0.12,
+      "knockback_chance": 0.07,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Recruit_Club.png",
+    "damage": {
+      "crushing_damage": 18
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "flanged_mace",
+    "name": "Flanged Mace",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 120,
+    "price": 975,
+    "stats": {
+      "armor_penetration": 0.25,
+      "daze_chance": 0.16,
+      "stun_chance": 0.13,
+      "knockback_chance": 0.1,
+      "counter_chance": 0.05,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Flanged_Mace.png",
+    "damage": {
+      "crushing_damage": 21
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "shishpar",
+    "name": "Shishpar",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 140,
+    "price": 1125,
+    "stats": {
+      "armor_penetration": 0.25,
+      "armor_damage": 0.1,
+      "daze_chance": 0.18,
+      "stun_chance": 0.13,
+      "knockback_chance": 0.12,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Shishpar.png",
+    "damage": {
+      "crushing_damage": 21
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "reinforced_flanged_mace",
+    "name": "Reinforced Flanged Mace",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 150,
+    "price": 2175,
+    "stats": {
+      "armor_penetration": 0.25,
+      "daze_chance": 0.2,
+      "stun_chance": 0.16,
+      "knockback_chance": 0.12,
+      "counter_chance": 0.06,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Reinforced_Flanged_Mace.png",
+    "damage": {
+      "crushing_damage": 24
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "bozdogan",
+    "name": "Bozdogan",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 145,
+    "price": 2500,
+    "stats": {
+      "armor_penetration": 0.25,
+      "armor_damage": 0.15,
+      "daze_chance": 0.24,
+      "stun_chance": 0.16,
+      "knockback_chance": 0.12,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Bozdogan.png",
+    "damage": {
+      "crushing_damage": 24
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "knightly_flanged_mace",
+    "name": "Knightly Flanged Mace",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 170,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.3,
+      "daze_chance": 0.25,
+      "stun_chance": 0.2,
+      "knockback_chance": 0.15,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Knightly_Flanged_Mace.png",
+    "damage": {
+      "crushing_damage": 28
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "noble_flanged_mace",
+    "name": "Noble Flanged Mace",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 195,
+    "price": 4825,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bodypart_damage": 0.1,
+      "daze_chance": 0.25,
+      "stun_chance": 0.2,
+      "knockback_chance": 0.15,
+      "counter_chance": 0.04,
+      "fumble_chance": -0.01,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Noble_Flanged_Mace.png",
+    "damage": {
+      "crushing_damage": 28
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "ghazi_flanged_mace",
+    "name": "Ghazi Flanged Mace",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 175,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.05,
+      "daze_chance": 0.33,
+      "stun_chance": 0.25,
+      "knockback_chance": 0.15,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.15,
+      "fatigue_resistance": 0.05
+    },
+    "icon": "Ghazi_Flanged_Mace.png",
+    "damage": {
+      "crushing_damage": 27,
+      "sacred_damage": 1
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "ornate_flanged_mace",
+    "name": "Ornate Flanged Mace",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 160,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.25,
+      "daze_chance": 0.25,
+      "stun_chance": 0.2,
+      "knockback_chance": 0.25,
+      "stagger_chance": 0.25,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Ornate_Flanged_Mace.png",
+    "damage": {
+      "crushing_damage": 28
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "footman_warhammer",
+    "name": "Footman Warhammer",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 110,
+    "price": 1075,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.35,
+      "daze_chance": 0.1,
+      "stagger_chance": 0.16,
+      "accuracy": 0.03,
+      "fumble_chance": -0.02,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Footman_Warhammer.png",
+    "damage": {
+      "crushing_damage": 20
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "brynn_warhammer",
+    "name": "Brynn Warhammer",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 120,
+    "price": 1075,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.35,
+      "bleed_chance": 0.05,
+      "daze_chance": 0.05,
+      "stagger_chance": 0.16,
+      "accuracy": 0.03,
+      "crit_chance": 0.03,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Brynn_Warhammer.png",
+    "damage": {
+      "crushing_damage": 20
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "chekan",
+    "name": "Chekan",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 125,
+    "price": 1200,
+    "stats": {
+      "armor_penetration": 0.33,
+      "armor_damage": 0.4,
+      "bodypart_damage": 0.1,
+      "daze_chance": 0.08,
+      "stagger_chance": 0.1,
+      "accuracy": 0.01,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Chekan.png",
+    "damage": {
+      "crushing_damage": 20
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "mercenary_warhammer",
+    "name": "Mercenary Warhammer",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 130,
+    "price": 2425,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.4,
+      "daze_chance": 0.12,
+      "stagger_chance": 0.2,
+      "accuracy": 0.04,
+      "fumble_chance": -0.03,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Mercenary_Warhammer.png",
+    "damage": {
+      "crushing_damage": 23
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "fisted_warhammer",
+    "name": "Fisted Warhammer",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 120,
+    "price": 2425,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.4,
+      "daze_chance": 0.16,
+      "stagger_chance": 0.24,
+      "accuracy": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Fisted_Warhammer.png",
+    "damage": {
+      "crushing_damage": 23
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "captain_warhammer",
+    "name": "Captain Warhammer",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 145,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.4,
+      "armor_damage": 0.45,
+      "daze_chance": 0.15,
+      "stagger_chance": 0.3,
+      "accuracy": 0.05,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Captain_Warhammer.png",
+    "damage": {
+      "crushing_damage": 27
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "knightly_warhammer",
+    "name": "Knightly Warhammer",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 155,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.45,
+      "daze_chance": 0.2,
+      "stagger_chance": 0.2,
+      "accuracy": 0.05,
+      "crit_chance": 0.03,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Knightly_Warhammer.png",
+    "damage": {
+      "crushing_damage": 27
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "fish_warhammer",
+    "name": "Fish Warhammer",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 140,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.45,
+      "daze_chance": 0.15,
+      "stun_chance": 0.05,
+      "stagger_chance": 0.25,
+      "accuracy": 0.05,
+      "fumble_chance": -0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Fish_Warhammer.png",
+    "damage": {
+      "crushing_damage": 27
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "ornate_warhammer",
+    "name": "Ornate Warhammer",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 145,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.5,
+      "bodypart_damage": 0.15,
+      "daze_chance": 0.15,
+      "stagger_chance": 0.25,
+      "accuracy": 0.05,
+      "skills_energy_cost": 0.15,
+      "cooldowns_duration": -0.05
+    },
+    "icon": "Ornate_Warhammer.png",
+    "damage": {
+      "crushing_damage": 27
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "peasant_flail",
+    "name": "Peasant Flail",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 75,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.05,
+      "daze_chance": 0.1,
+      "stagger_chance": 0.12,
+      "accuracy": -0.02,
+      "crit_chance": 0.02,
+      "fumble_chance": 0.04,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Peasant_Flail.png",
+    "damage": {
+      "crushing_damage": 18
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "rebel_flail",
+    "name": "Rebel Flail",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 75,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.05,
+      "daze_chance": 0.1,
+      "stagger_chance": 0.12,
+      "accuracy": -0.01,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.06,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Rebel_Flail.png",
+    "damage": {
+      "crushing_damage": 18
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "militia_flail",
+    "name": "Militia Flail",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 70,
+    "price": 375,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.07,
+      "daze_chance": 0.14,
+      "stagger_chance": 0.18,
+      "accuracy": -0.04,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.06,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Militia_Flail.png",
+    "damage": {
+      "crushing_damage": 21
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "recruit_flail",
+    "name": "Recruit Flail",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 75,
+    "price": 375,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.12,
+      "bleed_chance": 0.04,
+      "daze_chance": 0.11,
+      "stagger_chance": 0.18,
+      "accuracy": -0.05,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.08,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Recruit_Flail.png",
+    "damage": {
+      "crushing_damage": 21
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "footman_flail",
+    "name": "Footman Flail",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 95,
+    "price": 975,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.07,
+      "daze_chance": 0.13,
+      "stagger_chance": 0.28,
+      "accuracy": -0.08,
+      "crit_chance": 0.04,
+      "fumble_chance": 0.08,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Footman_Flail.png",
+    "damage": {
+      "piercing_damage": 2,
+      "crushing_damage": 22
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "vehement_flail",
+    "name": "Vehement Flail",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 80,
+    "price": 1075,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.1,
+      "daze_chance": 0.18,
+      "stagger_chance": 0.24,
+      "accuracy": -0.06,
+      "crit_chance": 0.05,
+      "crit_efficiency": 0.05,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.15,
+      "spells_energy_cost": -0.05
+    },
+    "icon": "Vehement_Flail.png",
+    "damage": {
+      "crushing_damage": 23,
+      "sacred_damage": 1
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "nistrian_flail",
+    "name": "Nistrian Flail",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 135,
+    "price": 2500,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.12,
+      "daze_chance": 0.28,
+      "stagger_chance": 0.3,
+      "accuracy": -0.08,
+      "crit_chance": 0.05,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Nistrian_Flail.png",
+    "damage": {
+      "crushing_damage": 28
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "veteran_flail",
+    "name": "Veteran Flail",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 100,
+    "price": 2175,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.18,
+      "bleed_chance": 0.09,
+      "daze_chance": 0.15,
+      "stagger_chance": 0.35,
+      "accuracy": -0.06,
+      "crit_chance": 0.06,
+      "crit_efficiency": 0.08,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Veteran_Flail.png",
+    "damage": {
+      "crushing_damage": 28
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "knightly_flail",
+    "name": "Knightly Flail",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 120,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.15,
+      "daze_chance": 0.26,
+      "stagger_chance": 0.36,
+      "accuracy": -0.1,
+      "crit_chance": 0.06,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Knightly_Flail.png",
+    "damage": {
+      "crushing_damage": 32
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "three-headed_flail",
+    "name": "Three-Headed Flail",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 105,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.26,
+      "bleed_chance": 0.1,
+      "daze_chance": 0.18,
+      "stagger_chance": 0.41,
+      "accuracy": -0.08,
+      "crit_chance": 0.07,
+      "crit_efficiency": 0.12,
+      "fumble_chance": 0.14,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Three-Headed_Flail.png",
+    "damage": {
+      "piercing_damage": 3,
+      "crushing_damage": 29
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "elven_flail",
+    "name": "Elven Flail",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 135,
+    "price": 5050,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.15,
+      "daze_chance": 0.3,
+      "stun_chance": 0.1,
+      "stagger_chance": 0.32,
+      "accuracy": -0.1,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Elven_Flail.png",
+    "damage": {
+      "crushing_damage": 31
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "emir_flail",
+    "name": "Emir Flail",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 120,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.3,
+      "bleed_chance": 0.12,
+      "daze_chance": 0.2,
+      "stagger_chance": 0.45,
+      "accuracy": -0.08,
+      "crit_chance": 0.06,
+      "crit_efficiency": 0.2,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Emir_Flail.png",
+    "damage": {
+      "crushing_damage": 32
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "grandmaster_flail",
+    "name": "Grandmaster Flail",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 130,
+    "price": 4600,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.15,
+      "daze_chance": 0.3,
+      "stagger_chance": 0.3,
+      "accuracy": -0.1,
+      "crit_chance": 0.06,
+      "fumble_chance": 0.14,
+      "skills_energy_cost": 0.25,
+      "spells_energy_cost": -0.1,
+      "energy_drain": 0.05
+    },
+    "icon": "Grandmaster_Flail.png",
+    "damage": {
+      "crushing_damage": 27,
+      "sacred_damage": 5
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "iron_bar",
+    "name": "Iron Bar",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 5,
+    "stats": {
+      "armor_penetration": 0.03,
+      "block_chance": 0.03,
+      "fumble_chance": 0.04
+    },
+    "icon": "Iron_Bar.png",
+    "damage": {
+      "crushing_damage": 12
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "carpenter_hammer",
+    "name": "Carpenter Hammer",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 100,
+    "stats": {
+      "armor_penetration": 0.04,
+      "accuracy": 0.01,
+      "fumble_chance": 0.02
+    },
+    "icon": "Carpenter_Hammer.png",
+    "damage": {
+      "crushing_damage": 15
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  },
+  {
+    "id": "blacksmith_hammer",
+    "name": "Blacksmith Hammer",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 75,
+    "price": 50,
+    "stats": {
+      "armor_penetration": 0.05,
+      "crit_chance": 0.01,
+      "fumble_chance": 0.02
+    },
+    "icon": "Blacksmith_Hammer.png",
+    "damage": {
+      "crushing_damage": 17
+    },
+    "type": "weapon",
+    "weapon_group": "One-Handed Mace",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false
+  }
+]

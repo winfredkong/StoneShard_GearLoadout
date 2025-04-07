@@ -1,0 +1,827 @@
+[
+  {
+    "id": "recruit_polemace",
+    "name": "Recruit Polemace",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 110,
+    "price": 625,
+    "stats": {
+      "armor_penetration": 0.25,
+      "armor_damage": 0.3,
+      "daze_chance": 0.15,
+      "stagger_chance": 0.17,
+      "crit_chance": 0.04,
+      "fumble_chance": 0.06,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Recruit_Polemace.png",
+    "damage": {
+      "crushing_damage": 22
+    }
+  },
+  {
+    "id": "soldier_polemace",
+    "name": "Soldier Polemace",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 140,
+    "price": 1625,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.35,
+      "daze_chance": 0.2,
+      "stagger_chance": 0.2,
+      "crit_chance": 0.05,
+      "fumble_chance": 0.08,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Soldier_Polemace.png",
+    "damage": {
+      "crushing_damage": 25
+    }
+  },
+  {
+    "id": "veteran_polemace",
+    "name": "Veteran Polemace",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 170,
+    "price": 3625,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.4,
+      "daze_chance": 0.25,
+      "stagger_chance": 0.23,
+      "crit_chance": 0.06,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Veteran_Polemace.png",
+    "damage": {
+      "crushing_damage": 29
+    }
+  },
+  {
+    "id": "nistrian_polemace",
+    "name": "Nistrian Polemace",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 185,
+    "price": 4000,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.3,
+      "bodypart_damage": 0.05,
+      "bleed_chance": 0.1,
+      "daze_chance": 0.25,
+      "stagger_chance": 0.2,
+      "crit_chance": 0.06,
+      "crit_efficiency": 0.05,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Nistrian_Polemace.png",
+    "damage": {
+      "crushing_damage": 29
+    }
+  },
+  {
+    "id": "knightly_polemace",
+    "name": "Knightly Polemace",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 195,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.45,
+      "daze_chance": 0.3,
+      "stagger_chance": 0.25,
+      "crit_chance": 0.07,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Knightly_Polemace.png",
+    "damage": {
+      "crushing_damage": 34
+    }
+  },
+  {
+    "id": "exquisite_polemace",
+    "name": "Exquisite Polemace",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 155,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.4,
+      "armor_damage": 0.45,
+      "daze_chance": 0.3,
+      "knockback_chance": 0.15,
+      "stagger_chance": 0.25,
+      "accuracy": 0.04,
+      "crit_chance": 0.07,
+      "fumble_chance": 0.09,
+      "skills_energy_cost": 0.35,
+      "magic_power": 0.05
+    },
+    "icon": "Exquisite_Polemace.png",
+    "damage": {
+      "crushing_damage": 34
+    }
+  },
+  {
+    "id": "militia_polehammer",
+    "name": "Militia Polehammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 130,
+    "price": 550,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.45,
+      "daze_chance": 0.15,
+      "block_chance": 0.04,
+      "block_power": 4.0,
+      "accuracy": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Militia_Polehammer.png",
+    "damage": {
+      "crushing_damage": 21
+    }
+  },
+  {
+    "id": "kriegshammer",
+    "name": "Kriegshammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 160,
+    "price": 1450,
+    "stats": {
+      "armor_penetration": 0.4,
+      "armor_damage": 0.4,
+      "bodypart_damage": 0.08,
+      "daze_chance": 0.2,
+      "block_chance": 0.06,
+      "block_power": 6.0,
+      "accuracy": 0.05,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Kriegshammer.png",
+    "damage": {
+      "crushing_damage": 24
+    }
+  },
+  {
+    "id": "mercenary_polehammer",
+    "name": "Mercenary Polehammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 190,
+    "price": 3600,
+    "stats": {
+      "armor_penetration": 0.45,
+      "armor_damage": 0.55,
+      "daze_chance": 0.25,
+      "block_chance": 0.09,
+      "block_power": 10.0,
+      "accuracy": 0.06,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Mercenary_Polehammer.png",
+    "damage": {
+      "crushing_damage": 28
+    }
+  },
+  {
+    "id": "veteran_polehammer",
+    "name": "Veteran Polehammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 210,
+    "price": 3275,
+    "stats": {
+      "armor_penetration": 0.45,
+      "armor_damage": 0.55,
+      "daze_chance": 0.3,
+      "block_chance": 0.08,
+      "block_power": 8.0,
+      "accuracy": 0.07,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Veteran_Polehammer.png",
+    "damage": {
+      "crushing_damage": 28
+    }
+  },
+  {
+    "id": "hawks_beak",
+    "name": "Hawk's Beak",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 175,
+    "price": 3275,
+    "stats": {
+      "armor_penetration": 0.4,
+      "armor_damage": 0.4,
+      "bleed_chance": 0.1,
+      "daze_chance": 0.25,
+      "block_chance": 0.08,
+      "block_power": 8.0,
+      "accuracy": 0.05,
+      "crit_efficiency": 0.1,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Hawks_Beak.png",
+    "damage": {
+      "crushing_damage": 29
+    }
+  },
+  {
+    "id": "knightly_polehammer",
+    "name": "Knightly Polehammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 245,
+    "price": 6875,
+    "stats": {
+      "armor_penetration": 0.5,
+      "armor_damage": 0.6,
+      "daze_chance": 0.33,
+      "block_chance": 0.1,
+      "block_power": 10.0,
+      "accuracy": 0.07,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Knightly_Polehammer.png",
+    "damage": {
+      "crushing_damage": 32
+    }
+  },
+  {
+    "id": "brynn_polehammer",
+    "name": "Brynn Polehammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 225,
+    "price": 6875,
+    "stats": {
+      "armor_penetration": 0.5,
+      "armor_damage": 0.5,
+      "daze_chance": 0.27,
+      "block_chance": 0.1,
+      "block_power": 10.0,
+      "accuracy": 0.09,
+      "crit_chance": 0.01,
+      "counter_chance": 0.01,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Brynn_Polehammer.png",
+    "damage": {
+      "crushing_damage": 32
+    }
+  },
+  {
+    "id": "honorary_polehammer",
+    "name": "Honorary Polehammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 215,
+    "price": 6875,
+    "stats": {
+      "armor_penetration": 0.55,
+      "armor_damage": 0.6,
+      "bleed_chance": 0.1,
+      "daze_chance": 0.3,
+      "stagger_chance": 0.1,
+      "block_chance": 0.1,
+      "block_power": 10.0,
+      "accuracy": 0.07,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Honorary_Polehammer.png",
+    "damage": {
+      "crushing_damage": 32
+    }
+  },
+  {
+    "id": "ornate_polehammer",
+    "name": "Ornate Polehammer",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 190,
+    "price": 6875,
+    "stats": {
+      "armor_penetration": 0.5,
+      "armor_damage": 0.75,
+      "daze_chance": 0.3,
+      "stun_chance": 0.1,
+      "block_chance": 0.1,
+      "block_power": 10.0,
+      "accuracy": 0.07,
+      "energy": 5.0,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Ornate_Polehammer.png",
+    "damage": {
+      "crushing_damage": 32
+    }
+  },
+  {
+    "id": "large_club",
+    "name": "Large Club",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 40,
+    "price": 50,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.05,
+      "stun_chance": 0.05,
+      "knockback_chance": 0.15,
+      "stagger_chance": 0.15,
+      "fumble_chance": 0.02,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Large_Club.png",
+    "damage": {
+      "crushing_damage": 18
+    }
+  },
+  {
+    "id": "heavy_warclub",
+    "name": "Heavy Warclub",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 85,
+    "price": 150,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.05,
+      "stun_chance": 0.06,
+      "knockback_chance": 0.15,
+      "stagger_chance": 0.15,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Heavy_Warclub.png",
+    "damage": {
+      "crushing_damage": 20
+    }
+  },
+  {
+    "id": "reinforced_warclub",
+    "name": "Reinforced Warclub",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 110,
+    "price": 525,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bodypart_damage": 0.08,
+      "stun_chance": 0.1,
+      "knockback_chance": 0.2,
+      "stagger_chance": 0.2,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Reinforced_Warclub.png",
+    "damage": {
+      "crushing_damage": 23
+    }
+  },
+  {
+    "id": "spiked_warclub",
+    "name": "Spiked Warclub",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 140,
+    "price": 1400,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.1,
+      "bleed_chance": 0.15,
+      "stun_chance": 0.1,
+      "knockback_chance": 0.25,
+      "stagger_chance": 0.25,
+      "crit_efficiency": 0.05,
+      "fumble_chance": 0.03,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Spiked_Warclub.png",
+    "damage": {
+      "crushing_damage": 26
+    }
+  },
+  {
+    "id": "veteran_war_maul",
+    "name": "Veteran War Maul",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 170,
+    "price": 3400,
+    "stats": {
+      "armor_penetration": 0.35,
+      "bodypart_damage": 0.12,
+      "stun_chance": 0.2,
+      "knockback_chance": 0.3,
+      "stagger_chance": 0.3,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Veteran_War_Maul.png",
+    "damage": {
+      "crushing_damage": 30
+    }
+  },
+  {
+    "id": "knightly_war_maul",
+    "name": "Knightly War Maul",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 195,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.4,
+      "bodypart_damage": 0.15,
+      "stun_chance": 0.25,
+      "knockback_chance": 0.35,
+      "stagger_chance": 0.35,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Knightly_War_Maul.png",
+    "damage": {
+      "crushing_damage": 35
+    }
+  },
+  {
+    "id": "elven_war_maul",
+    "name": "Elven War Maul",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 215,
+    "price": 7850,
+    "stats": {
+      "armor_penetration": 0.45,
+      "armor_damage": 0.2,
+      "bodypart_damage": 0.15,
+      "stun_chance": 0.25,
+      "knockback_chance": 0.35,
+      "stagger_chance": 0.35,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Elven_War_Maul.png",
+    "damage": {
+      "crushing_damage": 35
+    }
+  },
+  {
+    "id": "peasant_longflail",
+    "name": "Peasant Longflail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 80,
+    "price": 100,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.15,
+      "daze_chance": 0.2,
+      "stun_chance": 0.15,
+      "stagger_chance": 0.3,
+      "fumble_chance": 0.06,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Peasant_Longflail.png",
+    "damage": {
+      "crushing_damage": 21
+    }
+  },
+  {
+    "id": "long_flail",
+    "name": "Long Flail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 450,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.2,
+      "daze_chance": 0.25,
+      "stun_chance": 0.2,
+      "stagger_chance": 0.4,
+      "fumble_chance": 0.09,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Long_Flail.png",
+    "damage": {
+      "crushing_damage": 24
+    }
+  },
+  {
+    "id": "woodwight_longflail",
+    "name": "Woodwight Longflail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 115,
+    "price": 600,
+    "stats": {
+      "armor_penetration": 0.14,
+      "bodypart_damage": 0.2,
+      "daze_chance": 0.28,
+      "stun_chance": 0.22,
+      "stagger_chance": 0.32,
+      "fumble_chance": 0.11,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Woodwight_Longflail.png",
+    "damage": {
+      "crushing_damage": 24
+    }
+  },
+  {
+    "id": "maen_heavy_flail",
+    "name": "Maen Heavy Flail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 130,
+    "price": 1550,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.25,
+      "daze_chance": 0.33,
+      "stun_chance": 0.25,
+      "stagger_chance": 0.4,
+      "crit_chance": 0.02,
+      "crit_efficiency": 0.05,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Maen_Heavy_Flail.png",
+    "damage": {
+      "crushing_damage": 28
+    }
+  },
+  {
+    "id": "soldier_longflail",
+    "name": "Soldier Longflail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 150,
+    "price": 1325,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.2,
+      "daze_chance": 0.3,
+      "stun_chance": 0.28,
+      "stagger_chance": 0.46,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Soldier_Longflail.png",
+    "damage": {
+      "crushing_damage": 28
+    }
+  },
+  {
+    "id": "veteran_longflail",
+    "name": "Veteran Longflail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 155,
+    "price": 3400,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.3,
+      "daze_chance": 0.35,
+      "stun_chance": 0.3,
+      "stagger_chance": 0.45,
+      "fumble_chance": 0.15,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Veteran_Longflail.png",
+    "damage": {
+      "crushing_damage": 32
+    }
+  },
+  {
+    "id": "knightly_longflail",
+    "name": "Knightly Longflail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 180,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.35,
+      "daze_chance": 0.45,
+      "stun_chance": 0.35,
+      "stagger_chance": 0.5,
+      "fumble_chance": 0.18,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Knightly_Longflail.png",
+    "damage": {
+      "crushing_damage": 36
+    }
+  },
+  {
+    "id": "noble_longflail",
+    "name": "Noble Longflail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 190,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.4,
+      "bleed_chance": 0.1,
+      "daze_chance": 0.36,
+      "stun_chance": 0.32,
+      "stagger_chance": 0.5,
+      "crit_efficiency": 0.15,
+      "fumble_chance": 0.18,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Noble_Longflail.png",
+    "damage": {
+      "crushing_damage": 35,
+      "piercing_damage": 2
+    }
+  },
+  {
+    "id": "ordermarshal_longflail",
+    "name": "Ordermarshal Longflail",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Mace",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 165,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.35,
+      "daze_chance": 0.4,
+      "stun_chance": 0.4,
+      "stagger_chance": 0.5,
+      "fumble_chance": 0.18,
+      "skills_energy_cost": 0.33
+    },
+    "icon": "Ordermarshal_Longflail.png",
+    "damage": {
+      "crushing_damage": 33,
+      "sacred_damage" : 4
+    }
+  }
+]

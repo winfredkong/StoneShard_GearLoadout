@@ -1,0 +1,675 @@
+[
+  {
+    "id": "peasant_hatchet",
+    "name": "Peasant Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 60,
+    "price": 75,
+    "stats": {
+      "armor_damage": 0.08,
+      "bodypart_damage": 0.08,
+      "bleed_chance": 0.04,
+      "accuracy": 0.03,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Peasant_Hatchet.png",
+    "damage": {
+      "slashing_damage": 17
+    }
+  },
+  {
+    "id": "bearded_hatchet",
+    "name": "Bearded Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 80,
+    "price": 400,
+    "stats": {
+      "armor_damage": 0.11,
+      "bodypart_damage": 0.11,
+      "bleed_chance": 0.07,
+      "accuracy": 0.04,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Bearded_Hatchet.png",
+    "damage": {
+      "slashing_damage": 19
+    }
+  },
+  {
+    "id": "skadian_hatchet",
+    "name": "Skadian Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 100,
+    "price": 1075,
+    "stats": {
+      "armor_damage": 0.16,
+      "bodypart_damage": 0.14,
+      "bleed_chance": 0.1,
+      "accuracy": 0.03,
+      "crit_efficiency": 0.05,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Skadian_Hatchet.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "sergeant_hatchet",
+    "name": "Sergeant Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 120,
+    "price": 2425,
+    "stats": {
+      "armor_damage": 0.17,
+      "bodypart_damage": 0.17,
+      "bleed_chance": 0.13,
+      "accuracy": 0.06,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Sergeant_Hatchet.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "knightly_hatchet",
+    "name": "Knightly Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 140,
+    "price": 5100,
+    "stats": {
+      "armor_damage": 0.2,
+      "bodypart_damage": 0.2,
+      "bleed_chance": 0.16,
+      "accuracy": 0.07,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Knightly_Hatchet.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "honorary_hatchet",
+    "name": "Honorary Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 120,
+    "price": 5100,
+    "stats": {
+      "armor_damage": 0.2,
+      "bodypart_damage": 0.25,
+      "bleed_chance": 0.21,
+      "accuracy": 0.04,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Honorary_Hatchet.png",
+    "damage": {
+      "slashing_damage": 28
+    }
+  },
+  {
+    "id": "hunter_hatchet",
+    "name": "Hunter Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 90,
+    "price": 400,
+    "stats": {
+      "bodypart_damage": 0.07,
+      "bleed_chance": 0.05,
+      "block_chance": 0.04,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Hunter_Hatchet.png",
+    "damage": {
+      "slashing_damage": 19
+    }
+  },
+  {
+    "id": "naval_hatchet",
+    "name": "Naval Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 110,
+    "price": 1025,
+    "stats": {
+      "bodypart_damage": 0.1,
+      "bleed_chance": 0.07,
+      "block_chance": 0.05,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Naval_Hatchet.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "nomad_sagaris",
+    "name": "Nomad Sagaris",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 120,
+    "price": 1125,
+    "stats": {
+      "bodypart_damage": 0.12,
+      "bleed_chance": 0.07,
+      "block_chance": 0.05,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Nomad_Sagaris.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "boarding_hatchet",
+    "name": "Boarding Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 130,
+    "price": 2300,
+    "stats": {
+      "bodypart_damage": 0.13,
+      "bleed_chance": 0.09,
+      "block_chance": 0.06,
+      "counter_chance": 0.05,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Boarding_Hatchet.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "siege_engineer_hatchet",
+    "name": "Siege Engineer Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 160,
+    "price": 2300,
+    "stats": {
+      "bodypart_damage": 0.13,
+      "bleed_chance": 0.05,
+      "block_chance": 0.09,
+      "block_power": 3.0,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Siege_Engineer_Hatchet.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "brynn_hatchet",
+    "name": "Brynn Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 140,
+    "price": 4850,
+    "stats": {
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.16,
+      "block_chance": 0.07,
+      "counter_chance": 0.1,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Brynn_Hatchet.png",
+    "damage": {
+      "slashing_damage": 27
+    }
+  },
+  {
+    "id": "noble_hatchet",
+    "name": "Noble Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 170,
+    "price": 4850,
+    "stats": {
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.12,
+      "block_chance": 0.07,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Noble_Hatchet.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "makeshift_axe",
+    "name": "Makeshift Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 45,
+    "price": 50,
+    "stats": {
+      "bodypart_damage": 0.14,
+      "stagger_chance": 0.07,
+      "crit_efficiency": 0.1,
+      "fumble_chance": 0.02,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Makeshift_Axe.png",
+    "damage": {
+      "slashing_damage": 16
+    }
+  },
+  {
+    "id": "felling_axe",
+    "name": "Felling Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 65,
+    "price": 75,
+    "stats": {
+      "bodypart_damage": 0.14,
+      "stagger_chance": 0.07,
+      "crit_efficiency": 0.1,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Felling_Axe.png",
+    "damage": {
+      "slashing_damage": 18
+    }
+  },
+  {
+    "id": "norse_axe",
+    "name": "Norse Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 90,
+    "price": 400,
+    "stats": {
+      "bodypart_damage": 0.18,
+      "stagger_chance": 0.1,
+      "crit_efficiency": 0.12,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Norse_Axe.png",
+    "damage": {
+      "slashing_damage": 20
+    }
+  },
+  {
+    "id": "broadaxe",
+    "name": "Broadaxe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 110,
+    "price": 1075,
+    "stats": {
+      "bodypart_damage": 0.22,
+      "stagger_chance": 0.13,
+      "crit_efficiency": 0.15,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Broadaxe.png",
+    "damage": {
+      "slashing_damage": 23
+    }
+  },
+  {
+    "id": "dwarven_axe",
+    "name": "Dwarven Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 95,
+    "price": 975,
+    "stats": {
+      "bodypart_damage": 0.2,
+      "stagger_chance": 0.13,
+      "crit_efficiency": 0.24,
+      "fumble_chance": 0.04,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Dwarven_Axe.png",
+    "damage": {
+      "slashing_damage": 24
+    }
+  },
+  {
+    "id": "heavy_broadaxe",
+    "name": "Heavy Broadaxe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 130,
+    "price": 2425,
+    "stats": {
+      "bodypart_damage": 0.26,
+      "stagger_chance": 0.16,
+      "crit_efficiency": 0.18,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Heavy_Broadaxe.png",
+    "damage": {
+      "slashing_damage": 27
+    }
+  },
+  {
+    "id": "noble_axe",
+    "name": "Noble Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 155,
+    "price": 5100,
+    "stats": {
+      "bodypart_damage": 0.3,
+      "stagger_chance": 0.2,
+      "crit_efficiency": 0.2,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Noble_Axe.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  },
+  {
+    "id": "exquisite_tabar",
+    "name": "Exquisite Tabar",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 140,
+    "price": 5100,
+    "stats": {
+      "armor_damage": 0.15,
+      "bodypart_damage": 0.3,
+      "bleed_chance": 0.15,
+      "stagger_chance": 0.2,
+      "crit_efficiency": 0.2,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Exquisite_Tabar.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  },
+  {
+    "id": "gilded_axe",
+    "name": "Gilded Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 145,
+    "price": 5100,
+    "stats": {
+      "bodypart_damage": 0.3,
+      "stagger_chance": 0.25,
+      "crit_chance": 0.02,
+      "crit_efficiency": 0.2,
+      "energy": 5.0,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Gilded_Axe.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  },
+  {
+    "id": "footman_axe",
+    "name": "Footman Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 115,
+    "price": 1075,
+    "stats": {
+      "armor_damage": 0.18,
+      "bodypart_damage": 0.16,
+      "accuracy": 0.03,
+      "crit_efficiency": 0.1,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Footman_Axe.png",
+    "damage": {
+      "slashing_damage": 23
+    }
+  },
+  {
+    "id": "raider_axe",
+    "name": "Raider Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 100,
+    "price": 1075,
+    "stats": {
+      "armor_damage": 0.18,
+      "bodypart_damage": 0.21,
+      "crit_chance": 0.01,
+      "crit_efficiency": 0.05,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Raider_Axe.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "mercenary_axe",
+    "name": "Mercenary Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 140,
+    "price": 2425,
+    "stats": {
+      "armor_damage": 0.22,
+      "bodypart_damage": 0.2,
+      "accuracy": 0.04,
+      "crit_efficiency": 0.12,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Mercenary_Axe.png",
+    "damage": {
+      "slashing_damage": 27
+    }
+  },
+  {
+    "id": "knightly_axe",
+    "name": "Knightly Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 160,
+    "price": 5100,
+    "stats": {
+      "armor_damage": 0.26,
+      "bodypart_damage": 0.24,
+      "accuracy": 0.05,
+      "crit_efficiency": 0.15,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Knightly_Axe.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  },
+  {
+    "id": "aldwynn_axe",
+    "name": "Aldwynn Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 160,
+    "price": 5100,
+    "stats": {
+      "armor_damage": 0.26,
+      "bodypart_damage": 0.24,
+      "accuracy": 0.05,
+      "crit_chance": 0.03,
+      "crit_efficiency": 0.15,
+      "fumble_chance": 0.02,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Aldwynn_Axe.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  },
+  {
+    "id": "baron_axe",
+    "name": "Baron Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 175,
+    "price": 5100,
+    "stats": {
+      "armor_damage": 0.26,
+      "bodypart_damage": 0.24,
+      "accuracy": 0.05,
+      "crit_efficiency": 0.15,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Baron_Axe.png",
+    "damage": {
+      "slashing_damage": 31
+    }
+  }
+]

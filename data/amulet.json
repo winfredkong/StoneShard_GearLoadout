@@ -1,0 +1,514 @@
+[
+  {
+    "id": "amber_amulet",
+    "name": "Amber Amulet",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "control_resistance": 0.08,
+      "health_restoration": 0.03
+    },
+    "icon": "Amber_Amulet.png",
+    "durability": 50,
+    "price": 120,
+    "type": "normal"
+  },
+  {
+    "id": "bow_pendant",
+    "name": "Bow Pendant",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "accuracy": 0.02,
+      "fumble_chance": -0.01
+    },
+    "icon": "Bow_Pendant.png",
+    "durability": 65,
+    "price": 160,
+    "type": "normal"
+  },
+  {
+    "id": "carved_topaz_pendant",
+    "name": "Carved Topaz Pendant",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "accuracy": 0.03,
+      "energy_restoration": 0.03,
+      "skills_energy_cost": -0.04,
+      "cooldowns_duration": -0.04
+    },
+    "icon": "Carved_Topaz_Pendant.png",
+    "durability": 95,
+    "price": 920,
+    "type": "normal"
+  },
+  {
+    "id": "coin_talisman",
+    "name": "Coin Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "backfire_chance": -0.01,
+      "miracle_chance": 0.01,
+      "energy": 2.0
+    },
+    "icon": "Coin_Talisman.png",
+    "durability": 25,
+    "price": 200,
+    "type": "normal"
+  },
+  {
+    "id": "copper_chain",
+    "name": "Copper Chain",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "health_restoration": 0.01,
+      "healing_efficiency": 0.05
+    },
+    "icon": "Copper_Chain.png",
+    "durability": 35,
+    "price": 20,
+    "type": "normal"
+  },
+  {
+    "id": "crescent_amulet",
+    "name": "Crescent Amulet",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "crit_avoidance": 0.05,
+      "fortitude": 0.1,
+      "vision": 1.0,
+      "max_health": 8.0
+    },
+    "icon": "Crescent_Amulet.png",
+    "durability": 85,
+    "price": 1460,
+    "type": "normal"
+  },
+  {
+    "id": "crude_amulet",
+    "name": "Crude Amulet",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "magic_resistance": 0.03,
+      "dodge_chance": 0.01,
+      "crit_avoidance": 0.01
+    },
+    "icon": "Crude_Amulet.png",
+    "durability": 35,
+    "price": 20,
+    "type": "normal"
+  },
+  {
+    "id": "everflaming_pendant",
+    "name": "Everflaming Pendant",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "nature_resistance": 0.07,
+      "fire_resistance": 0.33,
+      "crit_chance": 0.02,
+      "cooldowns_duration": -0.06,
+      "fortitude": 0.05
+    },
+    "icon": "Everflaming_Pendant.png",
+    "durability": 110,
+    "price": 1960,
+    "type": "normal"
+  },
+  {
+    "id": "fang_pendant",
+    "name": "Fang Pendant",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "crit_chance": 0.01
+    },
+    "icon": "Fang_Pendant.png",
+    "durability": 50,
+    "price": 40,
+    "type": "normal"
+  },
+  {
+    "id": "gold_diamond_talisman",
+    "name": "Gold Diamond Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "miracle_chance": 0.04,
+      "energy": 4.0,
+      "energy_restoration": 0.02,
+      "magic_power": 0.07
+    },
+    "icon": "Gold_Diamond_Talisman.png",
+    "durability": 40,
+    "price": 2440,
+    "type": "normal"
+  },
+  {
+    "id": "gold_sapphire_talisman",
+    "name": "Gold Sapphire Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "miracle_chance": 0.02,
+      "energy": 6.0,
+      "magic_power": 0.09
+    },
+    "icon": "Gold_Sapphire_Talisman.png",
+    "durability": 40,
+    "price": 2440,
+    "type": "normal"
+  },
+  {
+    "id": "gold_talisman",
+    "name": "Gold Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "miracle_chance": 0.02,
+      "energy": 5.0
+    },
+    "icon": "Gold_Talisman.png",
+    "durability": 30,
+    "price": 520,
+    "type": "normal"
+  },
+  {
+    "id": "hexer_talisman",
+    "name": "Hexer Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "unholy_resistance": 0.09,
+      "backfire_chance": 0.06,
+      "magic_power": 0.06
+    },
+    "icon": "Hexer_Talisman.png",
+    "durability": 25,
+    "price": 200,
+    "type": "normal"
+  },
+  {
+    "id": "hilda's_amulet",
+    "name": "Hilda's Amulet",
+    "slot": "amulet",
+    "rarity": "Unique",
+    "tier": "Tier 2",
+    "stats": {
+      "physical_resistance": 0.04,
+      "accuracy": 0.01,
+      "energy": 4.0
+    },
+    "icon": "Hilda's_Amulet.png",
+    "durability": 50,
+    "price": 120,
+    "type": "normal"
+  },
+  {
+    "id": "jade_talisman",
+    "name": "Jade Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "miracle_chance": 0.02,
+      "energy": 3.0,
+      "magic_power": 0.03,
+      "max_health": 2.0
+    },
+    "icon": "Jade_Talisman.png",
+    "durability": 30,
+    "price": 520,
+    "type": "normal"
+  },
+  {
+    "id": "jibean_talisman",
+    "name": "Jibean Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "energy": 8.0,
+      "energy_restoration": 0.02,
+      "magic_power": 0.04
+    },
+    "icon": "Jibean_Talisman.png",
+    "durability": 35,
+    "price": 1160,
+    "type": "normal"
+  },
+  {
+    "id": "jorgrim's_pendant",
+    "name": "Jorgrim's Pendant",
+    "slot": "amulet",
+    "rarity": "Unique",
+    "tier": "Tier 2",
+    "stats": {
+      "accuracy": 0.01,
+      "experience_gain": 0.06,
+      "health_restoration": 0.03
+    },
+    "icon": "Jorgrim's_Pendant.png",
+    "durability": 65,
+    "price": 160,
+    "type": "normal"
+  },
+  {
+    "id": "lazurite_pendant",
+    "name": "Lazurite Pendant",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "nature_resistance": 0.06,
+      "energy": 4.0,
+      "skills_energy_cost": -0.05
+    },
+    "icon": "Lazurite_Pendant.png",
+    "durability": 80,
+    "price": 420,
+    "type": "normal"
+  },
+  {
+    "id": "oracle_star",
+    "name": "Oracle Star",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "energy": 10.0,
+      "skills_energy_cost": -0.04,
+      "spells_energy_cost": -0.04,
+      "magic_power": 0.05
+    },
+    "icon": "Oracle_Star.png",
+    "durability": 40,
+    "price": 2440,
+    "type": "normal"
+  },
+  {
+    "id": "pagan_pendant",
+    "name": "Pagan Pendant",
+    "slot": "amulet",
+    "rarity": "Unique",
+    "tier": "Tier 4",
+    "stats": {
+      "physical_resistance": -0.06,
+      "nature_resistance": -0.06,
+      "magic_resistance": -0.06,
+      "crit_avoidance": 0.09,
+      "life_drain": 0.06,
+      "energy_drain": 0.06
+    },
+    "icon": "Pagan_Pendant.png",
+    "durability": 66,
+    "price": 1313,
+    "type": "normal"
+  },
+  {
+    "id": "pearl_necklace",
+    "name": "Pearl Necklace",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "nature_resistance": 0.1,
+      "accuracy": 0.01,
+      "cooldowns_duration": -0.05
+    },
+    "icon": "Pearl_Necklace.png",
+    "durability": 80,
+    "price": 420,
+    "type": "normal"
+  },
+  {
+    "id": "phylactery_talisman",
+    "name": "Phylactery Talisman",
+    "slot": "amulet",
+    "rarity": "Unique",
+    "tier": "Tier 3",
+    "stats": {
+      "unholy_resistance": 0.33,
+      "damage_taken": 0.13,
+      "energy_restoration": 0.03,
+      "magic_power": 0.09,
+      "health_restoration": 0.03,
+      "life_drain": 0.09,
+      "vision": -1.0
+    },
+    "icon": "Phylactery_Talisman.png",
+    "durability": 33,
+    "price": 666,
+    "type": "normal"
+  },
+  {
+    "id": "ruby_pendant",
+    "name": "Ruby Pendant",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "bleed_resistance": 0.05,
+      "accuracy": 0.04,
+      "energy_restoration": 0.04,
+      "skills_energy_cost": -0.05,
+      "cooldowns_duration": -0.05
+    },
+    "icon": "Ruby_Pendant.png",
+    "durability": 110,
+    "price": 1960,
+    "type": "normal"
+  },
+  {
+    "id": "runic_amulet",
+    "name": "Runic Amulet",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "crit_chance": 0.01,
+      "fumble_chance": -0.01,
+      "dodge_chance": 0.01,
+      "crit_avoidance": 0.01,
+      "backfire_chance": -0.01
+    },
+    "icon": "Runic_Amulet.png",
+    "durability": 60,
+    "price": 220,
+    "type": "normal"
+  },
+  {
+    "id": "sapphire_talisman",
+    "name": "Sapphire Talisman",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "miracle_chance": 0.03,
+      "energy": 3.0,
+      "magic_power": 0.06
+    },
+    "icon": "Sapphire_Talisman.png",
+    "durability": 35,
+    "price": 1160,
+    "type": "normal"
+  },
+  {
+    "id": "silver_amethyst_amulet",
+    "name": "Silver Amethyst Amulet",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "crit_avoidance": 0.03,
+      "experience_gain": 0.05,
+      "fortitude": 0.06,
+      "max_health": 5.0
+    },
+    "icon": "Silver_Amethyst_Amulet.png",
+    "durability": 70,
+    "price": 700,
+    "type": "normal"
+  },
+  {
+    "id": "silver_aquamarine_amulet",
+    "name": "Silver Aquamarine Amulet",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "fortitude": 0.04,
+      "max_health": 3.0
+    },
+    "icon": "Silver_Aquamarine_Amulet.png",
+    "durability": 60,
+    "price": 320,
+    "type": "normal"
+  },
+  {
+    "id": "silver_emerald_amulet",
+    "name": "Silver Emerald Amulet",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "crit_avoidance": 0.05,
+      "healing_efficiency": 0.1,
+      "fortitude": 0.08,
+      "max_health": 10.0
+    },
+    "icon": "Silver_Emerald_Amulet.png",
+    "durability": 85,
+    "price": 1460,
+    "type": "normal"
+  },
+  {
+    "id": "trophy_necklace",
+    "name": "Trophy Necklace",
+    "slot": "amulet",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "accuracy": 0.01,
+      "crit_chance": 0.01,
+      "crit_efficiency": 0.1
+    },
+    "icon": "Trophy_Necklace.png",
+    "durability": 65,
+    "price": 160,
+    "type": "normal"
+  },
+  {
+    "id": "venemist's_talisman",
+    "name": "Venemist's Talisman",
+    "slot": "amulet",
+    "rarity": "Unique",
+    "tier": "Tier 4",
+    "stats": {
+      "unholy_resistance": 0.13,
+      "magic_power": 0.09,
+      "experience_gain": 0.09,
+      "vision": 1.0
+    },
+    "icon": "Venemist's_Talisman.png",
+    "durability": 35,
+    "price": 1160,
+    "type": "normal"
+  },
+  {
+    "id": "warding_hand_amulet",
+    "name": "Warding Hand Amulet",
+    "slot": "amulet",
+    "rarity": "Unique",
+    "tier": "Tier 4",
+    "stats": {
+      "unholy_resistance": 0.09,
+      "block_chance": 0.03,
+      "dodge_chance": 0.03,
+      "crit_avoidance": 0.03,
+      "damage_taken": -0.03
+    },
+    "icon": "Warding_Hand_Amulet.png",
+    "durability": 99,
+    "price": 700,
+    "type": "normal"
+  }
+]

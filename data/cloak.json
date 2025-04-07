@@ -1,0 +1,163 @@
+[
+  {
+    "id": "azure_cape",
+    "name": "Azure Cape",
+    "slot": "cloak",
+    "rarity": "Unique",
+    "tier": "Tier 2",
+    "stats": {
+      "nature_resistance": 0.06,
+      "energy_restoration": 0.01,
+      "health_restoration": 0.01,
+      "healing_efficiency": 0.05,
+      "fatigue_resistance": 0.08
+    },
+    "icon": "Azure_Cape.png",
+    "durability": 25,
+    "price": 100,
+    "type": "normal"
+  },
+  {
+    "id": "court_mage_cloak",
+    "name": "Court Mage Cloak",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "nature_resistance": 0.12,
+      "magic_resistance": 0.12,
+      "miracle_potency": 0.06,
+      "energy_restoration": 0.04,
+      "spells_energy_cost": -0.04
+    },
+    "icon": "Court_Mage_Cloak.png",
+    "durability": 40,
+    "price": 1700,
+    "type": "normal"
+  },
+  {
+    "id": "jibean_cape",
+    "name": "Jibean Cape",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "physical_resistance": 0.07,
+      "nature_resistance": 0.07,
+      "bleed_resistance": 0.07,
+      "crit_chance": 0.02,
+      "counter_chance": 0.03,
+      "skills_energy_cost": -0.05
+    },
+    "icon": "Jibean_Cape.png",
+    "durability": 35,
+    "price": 725,
+    "type": "normal"
+  },
+  {
+    "id": "jousting_cloak",
+    "name": "Jousting Cloak",
+    "slot": "cloak",
+    "rarity": "Unique",
+    "tier": "Tier 3",
+    "stats": {
+      "physical_resistance": 0.05,
+      "nature_resistance": 0.05,
+      "magic_resistance": 0.05,
+      "bleed_resistance": 0.05,
+      "damage_taken": -0.05
+    },
+    "icon": "Jousting_Cloak.png",
+    "durability": 40,
+    "price": 350,
+    "type": "normal"
+  },
+  {
+    "id": "nistrian_noble_cloak",
+    "name": "Nistrian Noble Cloak",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "physical_resistance": 0.09,
+      "nature_resistance": 0.09,
+      "bleed_resistance": 0.09,
+      "crit_avoidance": 0.09,
+      "damage_taken": -0.03
+    },
+    "icon": "Nistrian_Noble_Cloak.png",
+    "durability": 40,
+    "price": 1500,
+    "type": "normal"
+  },
+  {
+    "id": "occult_cloak",
+    "name": "Occult Cloak",
+    "slot": "cloak",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "stats": {
+      "nature_resistance": 0.09,
+      "magic_resistance": 0.09,
+      "unholy_resistance": 0.06,
+      "magic_power": 0.06,
+      "life_drain": 0.03,
+      "energy_drain": 0.06
+    },
+    "icon": "Occult_Cloak.png",
+    "durability": 40,
+    "price": 2025,
+    "type": "normal"
+  },
+  {
+    "id": "traveling_cape",
+    "name": "Traveling Cape",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "nature_resistance": 0.06,
+      "energy_restoration": 0.02,
+      "health_restoration": 0.03,
+      "fatigue_resistance": 0.1
+    },
+    "icon": "Traveling_Cape.png",
+    "durability": 25,
+    "price": 75,
+    "type": "normal"
+  },
+  {
+    "id": "velvet_cloak",
+    "name": "Velvet Cloak",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "nature_resistance": 0.1,
+      "magic_resistance": 0.1,
+      "backfire_chance": -0.05,
+      "energy": 5.0,
+      "energy_restoration": 0.03
+    },
+    "icon": "Velvet_Cloak.png",
+    "durability": 35,
+    "price": 800,
+    "type": "normal"
+  },
+  {
+    "id": "worn_cloak",
+    "name": "Worn Cloak",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "nature_resistance": 0.04,
+      "health_restoration": 0.01,
+      "fatigue_resistance": 0.05
+    },
+    "icon": "Worn_Cloak.png",
+    "durability": 20,
+    "price": 25,
+    "type": "normal"
+  }
+]

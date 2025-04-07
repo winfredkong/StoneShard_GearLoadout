@@ -1,0 +1,778 @@
+[
+  {
+    "id": "arna's_sword",
+    "name": "Arna's Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 2",
+    "durability": 70,
+    "price": 475,
+    "stats": {
+      "armor_penetration": 0.05,
+      "block_chance": 0.06,
+      "block_power": 5.0
+    },
+    "icon": "Arna's_Sword.png",
+    "damage": {
+      "slashing_damage": 17
+    }
+  },
+  {
+    "id": "drifter_sword",
+    "name": "Drifter Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 70,
+    "price": 475,
+    "stats": {
+      "armor_penetration": 0.05,
+      "block_chance": 0.05,
+      "block_power": 4.0,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Drifter_Sword.png",
+    "damage": {
+      "slashing_damage": 18
+    }
+  },
+  {
+    "id": "footman_sword",
+    "name": "Footman Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 90,
+    "price": 1250,
+    "stats": {
+      "armor_penetration": 0.1,
+      "block_chance": 0.07,
+      "block_power": 6.0,
+      "counter_chance": 0.05,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Footman_Sword.png",
+    "damage": {
+      "slashing_damage": 21
+    }
+  },
+  {
+    "id": "veteran_sword",
+    "name": "Veteran Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 110,
+    "price": 2775,
+    "stats": {
+      "armor_penetration": 0.1,
+      "block_chance": 0.09,
+      "block_power": 8.0,
+      "counter_chance": 0.06,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Veteran_Sword.png",
+    "damage": {
+      "slashing_damage": 24
+    }
+  },
+  {
+    "id": "skonfert_sword",
+    "name": "Skonfert Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 120,
+    "price": 2925,
+    "stats": {
+      "armor_penetration": 0.1,
+      "block_chance": 0.09,
+      "block_power": 10.0,
+      "accuracy": 0.03,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Skonfert_Sword.png",
+    "damage": {
+      "slashing_damage": 24
+    }
+  },
+  {
+    "id": "heirloom_sword",
+    "name": "Heirloom Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 4",
+    "durability": 95,
+    "price": 2775,
+    "stats": {
+      "armor_penetration": 0.1,
+      "block_chance": 0.07,
+      "block_power": 6.0,
+      "counter_chance": 0.05,
+      "skills_energy_cost": 0.05,
+      "magic_power": 0.05
+    },
+    "icon": "Heirloom_Sword.png",
+    "damage": {
+      "slashing_damage": 24
+    }
+  },
+  {
+    "id": "knightly_blade",
+    "name": "Knightly Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 125,
+    "price": 5875,
+    "stats": {
+      "armor_penetration": 0.15,
+      "block_chance": 0.12,
+      "block_power": 10.0,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Knightly_Blade.png",
+    "damage": {
+      "slashing_damage": 28
+    }
+  },
+  {
+    "id": "radiant_sword",
+    "name": "Radiant Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 125,
+    "price": 5875,
+    "stats": {
+      "armor_penetration": 0.15,
+      "block_chance": 0.12,
+      "block_power": 12.0,
+      "block_power_recovery": 0.05,
+      "counter_chance": 0.07,
+      "energy_restoration": 0.05,
+      "skills_energy_cost": 0.05,
+      "fatigue_resistance": 0.05
+    },
+    "icon": "Radiant_Sword.png",
+    "damage": {
+      "slashing_damage": 25,
+      "sacred_damage": 2
+    }
+  },
+  {
+    "id": "homemade_sword",
+    "name": "Homemade Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 100,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.05,
+      "block_chance": 0.02,
+      "accuracy": 0.03,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Homemade_Sword.png",
+    "damage": {
+      "slashing_damage": 16
+    }
+  },
+  {
+    "id": "recruit_blade",
+    "name": "Recruit Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 65,
+    "price": 500,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.06,
+      "block_chance": 0.04,
+      "accuracy": 0.04,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Recruit_Blade.png",
+    "damage": {
+      "slashing_damage": 18
+    }
+  },
+  {
+    "id": "guard_blade",
+    "name": "Guard Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 65,
+    "price": 500,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.04,
+      "block_chance": 0.04,
+      "accuracy": 0.04,
+      "counter_chance": 0.02,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Guard_Blade.png",
+    "damage": {
+      "slashing_damage": 18
+    }
+  },
+  {
+    "id": "brigand_blade",
+    "name": "Brigand Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 65,
+    "price": 500,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.04,
+      "bleed_chance": 0.06,
+      "block_chance": 0.04,
+      "accuracy": 0.03,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Brigand_Blade.png",
+    "damage": {
+      "slashing_damage": 18
+    }
+  },
+  {
+    "id": "guild_blade",
+    "name": "Guild Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 80,
+    "price": 1300,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.07,
+      "block_chance": 0.06,
+      "accuracy": 0.05,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Guild_Blade.png",
+    "damage": {
+      "slashing_damage": 21
+    }
+  },
+  {
+    "id": "norse_blade",
+    "name": "Norse Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 80,
+    "price": 1300,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.09,
+      "block_chance": 0.03,
+      "accuracy": 0.03,
+      "crit_chance": 0.01,
+      "crit_efficiency": 0.05,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Norse_Blade.png",
+    "damage": {
+      "slashing_damage": 21
+    }
+  },
+  {
+    "id": "katzbalger",
+    "name": "Katzbalger",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 95,
+    "price": 2900,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.08,
+      "block_chance": 0.08,
+      "accuracy": 0.06,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Katzbalger.png",
+    "damage": {
+      "slashing_damage": 24
+    }
+  },
+  {
+    "id": "jarl_blade",
+    "name": "Jarl Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 4",
+    "durability": 90,
+    "price": 2900,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.07,
+      "bleed_chance": 0.08,
+      "block_chance": 0.08,
+      "accuracy": 0.04,
+      "crit_chance": 0.03,
+      "crit_efficiency": 0.1,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Jarl_Blade.png",
+    "damage": {
+      "slashing_damage": 24
+    }
+  },
+  {
+    "id": "templar_sword",
+    "name": "Templar Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 110,
+    "price": 6125,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.1,
+      "block_chance": 0.1,
+      "accuracy": 0.07,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Templar_Sword.png",
+    "damage": {
+      "slashing_damage": 28
+    }
+  },
+  {
+    "id": "royal_blade",
+    "name": "Royal Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 130,
+    "price": 6125,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.1,
+      "block_chance": 0.1,
+      "accuracy": 0.07
+    },
+    "icon": "Royal_Blade.png",
+    "damage": {
+      "slashing_damage": 28
+    }
+  },
+  {
+    "id": "theurgist_blade",
+    "name": "Theurgist Blade",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 100,
+    "price": 6125,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.1,
+      "block_chance": 0.1,
+      "accuracy": 0.07,
+      "miracle_chance": 0.03,
+      "miracle_potency": 0.1,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Theurgist_Blade.png",
+    "damage": {
+      "slashing_damage": 24,
+      "sacred_damage": 4
+    }
+  },
+  {
+    "id": "battle_cleaver",
+    "name": "Battle Cleaver",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 75,
+    "stats": {
+      "armor_penetration": 0.03,
+      "bleed_chance": 0.08,
+      "crit_chance": 0.02,
+      "fumble_chance": 0.03,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Battle_Cleaver.png",
+    "damage": {
+      "slashing_damage": 17
+    }
+  },
+  {
+    "id": "militia_falchion",
+    "name": "Militia Falchion",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 70,
+    "price": 450,
+    "stats": {
+      "armor_penetration": 0.03,
+      "bleed_chance": 0.11,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.04,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Militia_Falchion.png",
+    "damage": {
+      "slashing_damage": 19
+    }
+  },
+  {
+    "id": "jagged_falchion",
+    "name": "Jagged Falchion",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 85,
+    "price": 1200,
+    "stats": {
+      "armor_penetration": 0.07,
+      "bleed_chance": 0.14,
+      "crit_chance": 0.04,
+      "fumble_chance": 0.05,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Jagged_Falchion.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "mercenary_falchion",
+    "name": "Mercenary Falchion",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 100,
+    "price": 2650,
+    "stats": {
+      "armor_penetration": 0.07,
+      "bleed_chance": 0.17,
+      "crit_chance": 0.05,
+      "fumble_chance": 0.06,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Mercenary_Falchion.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "captain_messer",
+    "name": "Captain Messer",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 120,
+    "price": 5600,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.2,
+      "crit_chance": 0.06,
+      "fumble_chance": 0.07,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Captain_Messer.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "guardsman_broadsword",
+    "name": "Guardsman Broadsword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 115,
+    "price": 5600,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.2,
+      "block_chance": 0.05,
+      "block_power": 3.0,
+      "crit_chance": 0.06,
+      "crit_efficiency": 0.15,
+      "fumble_chance": 0.07,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Guardsman_Broadsword.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "nomad_saber",
+    "name": "Nomad Saber",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 75,
+    "price": 1400,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.16,
+      "bleed_chance": 0.17,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Nomad_Saber.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "elven_saber",
+    "name": "Elven Saber",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 90,
+    "price": 3150,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.2,
+      "bleed_chance": 0.21,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Elven_Saber.png",
+    "damage": {
+      "slashing_damage": 25
+    }
+  },
+  {
+    "id": "jibean_scimitar",
+    "name": "Jibean Scimitar",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 105,
+    "price": 6625,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.24,
+      "bleed_chance": 0.25,
+      "skills_energy_cost": 0.1
+    },
+    "icon": "Jibean_Scimitar.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "ancient_scimitar",
+    "name": "Ancient Scimitar",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 85,
+    "price": 6625,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bodypart_damage": 0.3,
+      "bleed_chance": 0.33,
+      "crit_chance": 0.05,
+      "crit_efficiency": 0.1,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Ancient_Scimitar.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "ornate_saber",
+    "name": "Ornate Saber",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 105,
+    "price": 6625,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.24,
+      "bleed_chance": 0.25,
+      "accuracy": 0.03,
+      "skills_energy_cost": 0.05
+    },
+    "icon": "Ornate_Saber.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "wooden_sword",
+    "name": "Wooden Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 25,
+    "price": 5,
+    "stats": {
+      "daze_chance": 0.05
+    },
+    "icon": "Wooden_Sword.png",
+    "damage": {
+      "crushing_damage": 10
+    }
+  },
+  {
+    "id": "rusty_sword",
+    "name": "Rusty Sword",
+    "type": "weapon",
+    "weapon_group": "One-Handed Sword",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 15,
+    "price": 5,
+    "stats": {
+      "fumble_chance": 0.33
+    },
+    "icon": "Rusty_Sword.png",
+    "damage": {
+      "crushing_damage": 10,
+      "poison_damage": 1
+    }
+  }
+]

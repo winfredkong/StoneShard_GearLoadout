@@ -1,0 +1,367 @@
+[
+  {
+    "id": "aristocrat_belt",
+    "name": "Aristocrat Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "block_power_recovery": 0.05,
+      "counter_chance": 0.04,
+      "dodge_chance": 0.06,
+      "cooldowns_duration": -0.03
+    },
+    "icon": "Aristocrat_Belt.png",
+    "durability": 40,
+    "price": 1225,
+    "type": "normal"
+  },
+  {
+    "id": "braided_girdle",
+    "name": "Braided Girdle",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "backfire_chance": -0.02
+    },
+    "icon": "Braided_Girdle.png",
+    "durability": 10,
+    "price": 25,
+    "type": "normal"
+  },
+  {
+    "id": "captain_waistband",
+    "name": "Captain Waistband",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "accuracy": 0.02,
+      "crit_efficiency": 0.15,
+      "counter_chance": 0.03,
+      "fumble_chance": -0.06
+    },
+    "icon": "Captain_Waistband.png",
+    "durability": 65,
+    "price": 1225,
+    "type": "normal"
+  },
+  {
+    "id": "chain_belt",
+    "name": "Chain Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "slashing_resistance": 0.05,
+      "block_chance": 0.04
+    },
+    "icon": "Chain_Belt.png",
+    "durability": 50,
+    "price": 100,
+    "type": "normal"
+  },
+  {
+    "id": "court_mage_belt",
+    "name": "Court Mage Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "magic_resistance": 0.05,
+      "backfire_chance": -0.06,
+      "miracle_chance": 0.01,
+      "miracle_potency": 0.05
+    },
+    "icon": "Court_Mage_Belt.png",
+    "durability": 30,
+    "price": 1900,
+    "type": "normal"
+  },
+  {
+    "id": "duelist_belt",
+    "name": "Duelist Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "counter_chance": 0.03,
+      "dodge_chance": 0.05,
+      "crit_avoidance": 0.04,
+      "skills_energy_cost": -0.03
+    },
+    "icon": "Duelist_Belt.png",
+    "durability": 35,
+    "price": 575,
+    "type": "normal"
+  },
+  {
+    "id": "embroidered_belt",
+    "name": "Embroidered Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "accuracy": 0.01,
+      "dodge_chance": 0.03
+    },
+    "icon": "Embroidered_Belt.png",
+    "durability": 25,
+    "price": 100,
+    "type": "normal"
+  },
+  {
+    "id": "footman_belt",
+    "name": "Footman Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "rending_resistance": 0.05,
+      "pain_resistance": 0.1,
+      "block_chance": 0.05
+    },
+    "icon": "Footman_Belt.png",
+    "durability": 60,
+    "price": 250,
+    "type": "normal"
+  },
+  {
+    "id": "fur_belt",
+    "name": "Fur Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "rending_resistance": 0.05,
+      "frost_resistance": 0.1,
+      "crit_efficiency": 0.09,
+      "fumble_chance": -0.04
+    },
+    "icon": "Fur_Belt.png",
+    "durability": 45,
+    "price": 250,
+    "type": "normal"
+  },
+  {
+    "id": "gilded_belt",
+    "name": "Gilded Belt",
+    "slot": "belt",
+    "rarity": "Unique",
+    "tier": "Tier 3",
+    "stats": {
+      "pain_resistance": 0.05,
+      "crit_chance": 0.01,
+      "counter_chance": 0.01,
+      "dodge_chance": 0.03
+    },
+    "icon": "Gilded_Belt.png",
+    "durability": 25,
+    "price": 300,
+    "type": "normal"
+  },
+  {
+    "id": "jorgrim's_belt",
+    "name": "Jorgrim's Belt",
+    "slot": "belt",
+    "rarity": "Unique",
+    "tier": "Tier 2",
+    "stats": {
+      "bleed_resistance": 0.05,
+      "crit_efficiency": 0.05,
+      "fumble_chance": -0.02
+    },
+    "icon": "Jorgrim's_Belt.png",
+    "durability": 40,
+    "price": 100,
+    "type": "normal"
+  },
+  {
+    "id": "knightly_belt",
+    "name": "Knightly Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "physical_resistance": 0.04,
+      "pain_resistance": 0.15,
+      "block_chance": 0.07,
+      "block_power": 3.0,
+      "crit_avoidance": 0.1,
+      "fortitude": 0.03
+    },
+    "icon": "Knightly_Belt.png",
+    "durability": 85,
+    "price": 1225,
+    "type": "normal"
+  },
+  {
+    "id": "leather_belt",
+    "name": "Leather Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "rending_resistance": 0.03,
+      "block_chance": 0.03
+    },
+    "icon": "Leather_Belt.png",
+    "durability": 35,
+    "price": 50,
+    "type": "normal"
+  },
+  {
+    "id": "luxurious_belt",
+    "name": "Luxurious Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "backfire_chance": -0.04,
+      "cooldowns_duration": -0.03
+    },
+    "icon": "Luxurious_Belt.png",
+    "durability": 20,
+    "price": 400,
+    "type": "normal"
+  },
+  {
+    "id": "mercenary_belt",
+    "name": "Mercenary Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "physical_resistance": 0.03,
+      "pain_resistance": 0.12,
+      "block_chance": 0.06,
+      "crit_avoidance": 0.07
+    },
+    "icon": "Mercenary_Belt.png",
+    "durability": 70,
+    "price": 575,
+    "type": "normal"
+  },
+  {
+    "id": "mystic_belt",
+    "name": "Mystic Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "unholy_resistance": 0.05,
+      "backfire_chance": -0.05,
+      "energy": 5.0,
+      "spells_energy_cost": -0.03
+    },
+    "icon": "Mystic_Belt.png",
+    "durability": 25,
+    "price": 750,
+    "type": "normal"
+  },
+  {
+    "id": "nomad_girdle",
+    "name": "Nomad Girdle",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "counter_chance": 0.02,
+      "dodge_chance": 0.04,
+      "fatigue_resistance": 0.07
+    },
+    "icon": "Nomad_Girdle.png",
+    "durability": 35,
+    "price": 275,
+    "type": "normal"
+  },
+  {
+    "id": "norse_belt",
+    "name": "Norse Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "crit_chance": 0.01,
+      "fumble_chance": -0.03
+    },
+    "icon": "Norse_Belt.png",
+    "durability": 35,
+    "price": 100,
+    "type": "normal"
+  },
+  {
+    "id": "ornate_girdle",
+    "name": "Ornate Girdle",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "backfire_chance": -0.03
+    },
+    "icon": "Ornate_Girdle.png",
+    "durability": 15,
+    "price": 125,
+    "type": "normal"
+  },
+  {
+    "id": "peasant_sash",
+    "name": "Peasant Sash",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "fumble_chance": -0.02
+    },
+    "icon": "Peasant_Sash.png",
+    "durability": 35,
+    "price": 25,
+    "type": "normal"
+  },
+  {
+    "id": "rope_belt",
+    "name": "Rope Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "dodge_chance": 0.02
+    },
+    "icon": "Rope_Belt.png",
+    "durability": 20,
+    "price": 25,
+    "type": "normal"
+  },
+  {
+    "id": "ruby_sash",
+    "name": "Ruby Sash",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "backfire_chance": -0.05,
+      "cooldowns_duration": -0.05
+    },
+    "icon": "Ruby_Sash.png",
+    "durability": 25,
+    "price": 900,
+    "type": "normal"
+  },
+  {
+    "id": "wolfbrother_belt",
+    "name": "Wolfbrother Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "pain_resistance": 0.05,
+      "crit_efficiency": 0.12,
+      "fumble_chance": -0.05
+    },
+    "icon": "Wolfbrother_Belt.png",
+    "durability": 55,
+    "price": 575,
+    "type": "normal"
+  }
+]

@@ -1,0 +1,756 @@
+[
+  {
+    "id": "militia_poleaxe",
+    "name": "Militia Poleaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 110,
+    "price": 575,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.2,
+      "knockback_chance": 0.15,
+      "block_chance": 0.04,
+      "block_power": 4.0,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Militia_Poleaxe.png",
+    "damage": {
+      "slashing_damage": 23
+    }
+  },
+  {
+    "id": "soldier_poleaxe",
+    "name": "Soldier Poleaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 135,
+    "price": 1500,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.25,
+      "knockback_chance": 0.2,
+      "block_chance": 0.06,
+      "block_power": 5.0,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Soldier_Poleaxe.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "veteran_poleaxe",
+    "name": "Veteran Poleaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 180,
+    "price": 3400,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.3,
+      "knockback_chance": 0.25,
+      "block_chance": 0.08,
+      "block_power": 6.0,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Veteran_Poleaxe.png",
+    "damage": {
+      "slashing_damage": 30
+    }
+  },
+  {
+    "id": "sergeant_poleaxe",
+    "name": "Sergeant Poleaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 160,
+    "price": 3400,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.3,
+      "knockback_chance": 0.33,
+      "block_chance": 0.04,
+      "block_power": 6.0,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Sergeant_Poleaxe.png",
+    "damage": {
+      "slashing_damage": 30
+    }
+  },
+  {
+    "id": "knightly_poleaxe",
+    "name": "Knightly Poleaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 210,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bleed_chance": 0.35,
+      "knockback_chance": 0.3,
+      "block_chance": 0.1,
+      "block_power": 7.0,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Knightly_Poleaxe.png",
+    "damage": {
+      "slashing_damage": 35
+    }
+  },
+  {
+    "id": "captain_poleaxe",
+    "name": "Captain Poleaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 190,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bleed_chance": 0.35,
+      "knockback_chance": 0.35,
+      "block_chance": 0.08,
+      "block_power": 7.0,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Captain_Poleaxe.png",
+    "damage": {
+      "slashing_damage": 35
+    }
+  },
+  {
+    "id": "labyrinth_warden_poleaxe",
+    "name": "Labyrinth Warden Poleaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 200,
+    "price": 7150,
+    "stats": {
+      "armor_penetration": 0.33,
+      "bleed_chance": 0.33,
+      "knockback_chance": 0.24,
+      "immobilization_chance": 0.15,
+      "block_chance": 0.09,
+      "block_power": 9.0,
+      "energy_restoration": 0.03,
+      "skills_energy_cost": 0.33,
+      "magic_power": 0.09
+    },
+    "icon": "Labyrinth_Warden_Poleaxe.png",
+    "damage": {
+      "slashing_damage": 28,
+      "arcane_damage": 3,
+      "sacred_damage": 3
+    }
+  },
+  {
+    "id": "recruit_heavy_broadaxe",
+    "name": "Recruit Heavy Broadaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 625,
+    "stats": {
+      "armor_penetration": 0.15,
+      "armor_damage": 0.2,
+      "crit_chance": 0.04,
+      "crit_efficiency": 0.07,
+      "fumble_chance": 0.05,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Recruit_Heavy_Broadaxe.png",
+    "damage": {
+      "slashing_damage": 23
+    }
+  },
+  {
+    "id": "soldier_heavy_broadaxe",
+    "name": "Soldier Heavy Broadaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 130,
+    "price": 1625,
+    "stats": {
+      "armor_penetration": 0.2,
+      "armor_damage": 0.25,
+      "crit_chance": 0.05,
+      "crit_efficiency": 0.1,
+      "fumble_chance": 0.07,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Soldier_Heavy_Broadaxe.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "nistrian_bardiche",
+    "name": "Nistrian Bardiche",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 135,
+    "price": 1775,
+    "stats": {
+      "armor_penetration": 0.2,
+      "armor_damage": 0.2,
+      "bleed_chance": 0.07,
+      "crit_chance": 0.05,
+      "crit_efficiency": 0.1,
+      "fumble_chance": 0.07,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Nistrian_Bardiche.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "eederax",
+    "name": "Eederax",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 155,
+    "price": 3625,
+    "stats": {
+      "armor_penetration": 0.25,
+      "armor_damage": 0.3,
+      "knockback_chance": 0.1,
+      "crit_chance": 0.06,
+      "crit_efficiency": 0.12,
+      "fumble_chance": 0.09,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Eederax.png",
+    "damage": {
+      "slashing_damage": 30
+    }
+  },
+  {
+    "id": "garrison_eederax",
+    "name": "Garrison Eederax",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 180,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.35,
+      "knockback_chance": 0.12,
+      "crit_chance": 0.07,
+      "crit_efficiency": 0.15,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Garrison_Eederax.png",
+    "damage": {
+      "slashing_damage": 35
+    }
+  },
+  {
+    "id": "skadian_bardiche",
+    "name": "Skadian Bardiche",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 210,
+    "price": 8425,
+    "stats": {
+      "armor_penetration": 0.3,
+      "armor_damage": 0.3,
+      "bleed_chance": 0.1,
+      "crit_chance": 0.07,
+      "crit_efficiency": 0.15,
+      "fumble_chance": 0.12,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Skadian_Bardiche.png",
+    "damage": {
+      "slashing_damage": 35
+    }
+  },
+  {
+    "id": "doloire",
+    "name": "Doloire",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 80,
+    "price": 125,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.25,
+      "bleed_chance": 0.15,
+      "accuracy": 0.03,
+      "counter_chance": 0.02,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Doloire.png",
+    "damage": {
+      "slashing_damage": 19
+    }
+  },
+  {
+    "id": "voulge",
+    "name": "Voulge",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 625,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.3,
+      "bleed_chance": 0.2,
+      "accuracy": 0.05,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Voulge.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "militia_bill",
+    "name": "Militia Bill",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 105,
+    "price": 625,
+    "stats": {
+      "armor_penetration": 0.1,
+      "armor_damage": 0.05,
+      "bodypart_damage": 0.3,
+      "bleed_chance": 0.15,
+      "knockback_chance": 0.05,
+      "accuracy": 0.05,
+      "counter_chance": 0.03,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Militia_Bill.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "jagged_voulge",
+    "name": "Jagged Voulge",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 130,
+    "price": 1625,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.35,
+      "bleed_chance": 0.3,
+      "accuracy": 0.07,
+      "crit_efficiency": 0.05,
+      "counter_chance": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Jagged_Voulge.png",
+    "damage": {
+      "slashing_damage": 25
+    }
+  },
+  {
+    "id": "skadian_sovnya",
+    "name": "Skadian Sovnya",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 145,
+    "price": 1775,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.35,
+      "bleed_chance": 0.25,
+      "accuracy": 0.07,
+      "crit_chance": 0.02,
+      "counter_chance": 0.05,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Skadian_Sovnya.png",
+    "damage": {
+      "slashing_damage": 25
+    }
+  },
+  {
+    "id": "glaive",
+    "name": "Glaive",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 155,
+    "price": 3625,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.4,
+      "bleed_chance": 0.3,
+      "accuracy": 0.09,
+      "counter_chance": 0.05,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Glaive.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "forholt_staff",
+    "name": "Forholt Staff",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 180,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.45,
+      "bleed_chance": 0.35,
+      "accuracy": 0.12,
+      "counter_chance": 0.06,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Forholt_Staff.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "ornate_voulge",
+    "name": "Ornate Voulge",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 165,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.5,
+      "bleed_chance": 0.35,
+      "knockback_chance": 0.15,
+      "accuracy": 0.12,
+      "crit_chance": 0.03,
+      "counter_chance": 0.06,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Ornate_Voulge.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "lumberjack_axe",
+    "name": "Lumberjack Axe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 75,
+    "price": 125,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.1,
+      "stagger_chance": 0.15,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Lumberjack_Axe.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "militia_longaxe",
+    "name": "Militia Longaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 100,
+    "price": 625,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.15,
+      "stagger_chance": 0.2,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Militia_Longaxe.png",
+    "damage": {
+      "slashing_damage": 25
+    }
+  },
+  {
+    "id": "footman_longaxe",
+    "name": "Footman Longaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 125,
+    "price": 1625,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.2,
+      "stagger_chance": 0.25,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Footman_Longaxe.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "veteran_longaxe",
+    "name": "Veteran Longaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 150,
+    "price": 3625,
+    "stats": {
+      "armor_penetration": 0.3,
+      "bodypart_damage": 0.25,
+      "stagger_chance": 0.3,
+      "skills_energy_cost": 0.45
+    },
+    "icon": "Veteran_Longaxe.png",
+    "damage": {
+      "slashing_damage": 33
+    }
+  },
+  {
+    "id": "orient_longaxe",
+    "name": "Orient Longaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 165,
+    "price": 4000,
+    "stats": {
+      "armor_penetration": 0.33,
+      "armor_damage": 0.1,
+      "bodypart_damage": 0.25,
+      "stagger_chance": 0.3,
+      "skills_energy_cost": 0.45
+    },
+    "icon": "Orient_Longaxe.png",
+    "damage": {
+      "slashing_damage": 33
+    }
+  },
+  {
+    "id": "double-headed_longaxe",
+    "name": "Double-Headed Longaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 160,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.35,
+      "bodypart_damage": 0.3,
+      "stagger_chance": 0.35,
+      "crit_chance": 0.04,
+      "crit_efficiency": 0.08,
+      "fumble_chance": 0.08,
+      "skills_energy_cost": 0.5
+    },
+    "icon": "Double-Headed_Longaxe.png",
+    "damage": {
+      "slashing_damage": 38
+    }
+  },
+  {
+    "id": "elven_longaxe",
+    "name": "Elven Longaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 175,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.35,
+      "armor_damage": 0.15,
+      "bodypart_damage": 0.25,
+      "stagger_chance": 0.35,
+      "skills_energy_cost": 0.5
+    },
+    "icon": "Elven_Longaxe.png",
+    "damage": {
+      "slashing_damage": 38
+    }
+  },
+  {
+    "id": "exquisite_longaxe",
+    "name": "Exquisite Longaxe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 160,
+    "price": 7650,
+    "stats": {
+      "armor_penetration": 0.35,
+      "bodypart_damage": 0.3,
+      "bleed_chance": 0.05,
+      "stagger_chance": 0.4,
+      "block_chance": 0.04,
+      "skills_energy_cost": 0.5
+    },
+    "icon": "Exquisite_Longaxe.png",
+    "damage": {
+      "slashing_damage": 38
+    }
+  },
+  {
+    "id": "peasant_scythe",
+    "name": "Peasant Scythe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Axe",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 50,
+    "price": 25,
+    "stats": {
+      "bleed_chance": 0.1,
+      "fumble_chance": 0.1
+    },
+    "icon": "Peasant_Scythe.png",
+    "damage": {
+      "slashing_damage": 11
+    }
+  }
+]

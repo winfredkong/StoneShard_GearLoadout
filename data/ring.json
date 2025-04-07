@@ -1,0 +1,479 @@
+[
+  {
+    "id": "ancient_copper_ring",
+    "name": "Ancient Copper Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "health_restoration": 0.02,
+      "healing_efficiency": 0.05
+    },
+    "icon": "Ancient_Copper_Ring.png",
+    "durability": 40,
+    "price": 20,
+    "type": "normal"
+  },
+  {
+    "id": "berserk_ring",
+    "name": "Berserk Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "crit_chance": 0.02,
+      "crit_efficiency": 0.06,
+      "damage_taken": 0.04
+    },
+    "icon": "Berserk_Ring.png",
+    "durability": 40,
+    "price": 120,
+    "type": "normal"
+  },
+  {
+    "id": "brass_agate_ring",
+    "name": "Brass Agate Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "physical_resistance": 0.03,
+      "fumble_chance": -0.03
+    },
+    "icon": "Brass_Agate_Ring.png",
+    "durability": 55,
+    "price": 60,
+    "type": "normal"
+  },
+  {
+    "id": "brass_ring",
+    "name": "Brass Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "rending_resistance": 0.03,
+      "fumble_chance": -0.01
+    },
+    "icon": "Brass_Ring.png",
+    "durability": 50,
+    "price": 20,
+    "type": "normal"
+  },
+  {
+    "id": "brass_signet",
+    "name": "Brass Signet",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "rending_resistance": 0.05,
+      "fumble_chance": -0.02
+    },
+    "icon": "Brass_Signet.png",
+    "durability": 50,
+    "price": 60,
+    "type": "normal"
+  },
+  {
+    "id": "bronze_amethyst_ring",
+    "name": "Bronze Amethyst Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "experience_gain": 0.03,
+      "fatigue_resistance": 0.05
+    },
+    "icon": "Bronze_Amethyst_Ring.png",
+    "durability": 50,
+    "price": 60,
+    "type": "normal"
+  },
+  {
+    "id": "carved_gold_ring",
+    "name": "Carved Gold Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "energy": 4.0,
+      "magic_power": 0.03
+    },
+    "icon": "Carved_Gold_Ring.png",
+    "durability": 20,
+    "price": 260,
+    "type": "normal"
+  },
+  {
+    "id": "copper_ring",
+    "name": "Copper Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "stats": {
+      "health_restoration": 0.01,
+      "healing_efficiency": 0.03
+    },
+    "icon": "Copper_Ring.png",
+    "durability": 40,
+    "price": 15,
+    "type": "normal"
+  },
+  {
+    "id": "exquisite_ruby_ring",
+    "name": "Exquisite Ruby Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "energy": 5.0,
+      "cooldowns_duration": -0.05,
+      "magic_power": 0.06
+    },
+    "icon": "Exquisite_Ruby_Ring.png",
+    "durability": 30,
+    "price": 1220,
+    "type": "normal"
+  },
+  {
+    "id": "gold_aquamarine_ring",
+    "name": "Gold Aquamarine Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "miracle_potency": 0.06,
+      "energy": 4.0,
+      "magic_power": 0.04
+    },
+    "icon": "Gold_Aquamarine_Ring.png",
+    "durability": 25,
+    "price": 580,
+    "type": "normal"
+  },
+  {
+    "id": "gold_diamond_ring",
+    "name": "Gold Diamond Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "energy": 5.0,
+      "energy_restoration": 0.05,
+      "spells_energy_cost": -0.03,
+      "magic_power": 0.06
+    },
+    "icon": "Gold_Diamond_Ring.png",
+    "durability": 30,
+    "price": 1220,
+    "type": "normal"
+  },
+  {
+    "id": "gold_ring",
+    "name": "Gold Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "energy": 2.0,
+      "magic_power": 0.02
+    },
+    "icon": "Gold_Ring.png",
+    "durability": 15,
+    "price": 100,
+    "type": "normal"
+  },
+  {
+    "id": "gold_ruby_ring",
+    "name": "Gold Ruby Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "energy": 4.0,
+      "cooldowns_duration": -0.03,
+      "magic_power": 0.04
+    },
+    "icon": "Gold_Ruby_Ring.png",
+    "durability": 25,
+    "price": 580,
+    "type": "normal"
+  },
+  {
+    "id": "gold_sapphire_ring",
+    "name": "Gold Sapphire Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "miracle_potency": 0.04,
+      "energy": 5.0,
+      "magic_power": 0.07
+    },
+    "icon": "Gold_Sapphire_Ring.png",
+    "durability": 30,
+    "price": 1220,
+    "type": "normal"
+  },
+  {
+    "id": "hermit_ring",
+    "name": "Hermit Ring",
+    "slot": "ring",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "stats": {
+      "physical_resistance": 0.05,
+      "nature_resistance": 0.1,
+      "energy": 5.0,
+      "energy_restoration": 0.05,
+      "cooldowns_duration": -0.05,
+      "health_restoration": 0.05,
+      "max_health": 5.0
+    },
+    "icon": "Hermit_Ring.png",
+    "durability": 40,
+    "price": 920,
+    "type": "normal"
+  },
+  {
+    "id": "mastercrafted_gold_ring",
+    "name": "Mastercrafted Gold Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "energy": 8.0,
+      "magic_power": 0.04
+    },
+    "icon": "Mastercrafted_Gold_Ring.png",
+    "durability": 25,
+    "price": 580,
+    "type": "normal"
+  },
+  {
+    "id": "mastercrafted_silver_ring",
+    "name": "Mastercrafted Silver Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "bleed_resistance": 0.06,
+      "max_health": 3.0
+    },
+    "icon": "Mastercrafted_Silver_Ring.png",
+    "durability": 40,
+    "price": 120,
+    "type": "normal"
+  },
+  {
+    "id": "morion_ring",
+    "name": "Morion Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "weapon_damage": 0.03,
+      "magic_power": 0.03,
+      "max_health": 4.0
+    },
+    "icon": "Morion_Ring.png",
+    "durability": 35,
+    "price": 440,
+    "type": "normal"
+  },
+  {
+    "id": "silver_amethyst_ring",
+    "name": "Silver Amethyst Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "bleed_resistance": 0.06,
+      "fumble_chance": -0.02,
+      "experience_gain": 0.05,
+      "healing_efficiency": 0.08
+    },
+    "icon": "Silver_Amethyst_Ring.png",
+    "durability": 50,
+    "price": 280,
+    "type": "normal"
+  },
+  {
+    "id": "silver_aquamarine_ring",
+    "name": "Silver Aquamarine Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "magic_resistance": 0.05,
+      "bleed_resistance": 0.06,
+      "energy": 5.0,
+      "max_health": 3.0
+    },
+    "icon": "Silver_Aquamarine_Ring.png",
+    "durability": 50,
+    "price": 280,
+    "type": "normal"
+  },
+  {
+    "id": "silver_emerald_ring",
+    "name": "Silver Emerald Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "bleed_resistance": 0.07,
+      "fumble_chance": -0.03,
+      "health_restoration": 0.01,
+      "healing_efficiency": 0.05,
+      "max_health": 6.0
+    },
+    "icon": "Silver_Emerald_Ring.png",
+    "durability": 55,
+    "price": 600,
+    "type": "normal"
+  },
+  {
+    "id": "silver_insert_gold_ring",
+    "name": "Silver Insert Gold Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "bleed_resistance": 0.02,
+      "magic_power": 0.02,
+      "max_health": 2.0
+    },
+    "icon": "Silver_Insert_Gold_Ring.png",
+    "durability": 25,
+    "price": 80,
+    "type": "normal"
+  },
+  {
+    "id": "silver_jade_ring",
+    "name": "Silver Jade Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "bleed_resistance": 0.04,
+      "max_health": 5.0
+    },
+    "icon": "Silver_Jade_Ring.png",
+    "durability": 40,
+    "price": 120,
+    "type": "normal"
+  },
+  {
+    "id": "silver_ring",
+    "name": "Silver Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "bleed_resistance": 0.04,
+      "max_health": 2.0
+    },
+    "icon": "Silver_Ring.png",
+    "durability": 30,
+    "price": 40,
+    "type": "normal"
+  },
+  {
+    "id": "silver_ruby_ring",
+    "name": "Silver Ruby Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "nature_resistance": 0.06,
+      "bleed_resistance": 0.07,
+      "accuracy": 0.03,
+      "cooldowns_duration": -0.04
+    },
+    "icon": "Silver_Ruby_Ring.png",
+    "durability": 55,
+    "price": 600,
+    "type": "normal"
+  },
+  {
+    "id": "silver_sapphire_ring",
+    "name": "Silver Sapphire Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "magic_resistance": 0.06,
+      "bleed_resistance": 0.07,
+      "energy": 7.0,
+      "energy_restoration": 0.02
+    },
+    "icon": "Silver_Sapphire_Ring.png",
+    "durability": 55,
+    "price": 600,
+    "type": "normal"
+  },
+  {
+    "id": "silver_topaz_ring",
+    "name": "Silver Topaz Ring",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "nature_resistance": 0.05,
+      "bleed_resistance": 0.06,
+      "accuracy": 0.02
+    },
+    "icon": "Silver_Topaz_Ring.png",
+    "durability": 50,
+    "price": 280,
+    "type": "normal"
+  },
+  {
+    "id": "steel_signet",
+    "name": "Steel Signet",
+    "slot": "ring",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "block_chance": 0.03,
+      "block_power": 2.0
+    },
+    "icon": "Steel_Signet.png",
+    "durability": 55,
+    "price": 60,
+    "type": "normal"
+  },
+  {
+    "id": "velmir's_ring",
+    "name": "Velmir's Ring",
+    "slot": "ring",
+    "rarity": "Unique",
+    "tier": "Tier 1",
+    "stats": {
+      "accuracy": 0.01,
+      "crit_chance": 0.01,
+      "counter_chance": 0.01
+    },
+    "icon": "Velmir's_Ring.png",
+    "durability": 40,
+    "price": 30,
+    "type": "normal"
+  },
+  {
+    "id": "verren's_ring",
+    "name": "Verren's Ring",
+    "slot": "ring",
+    "rarity": "Unique",
+    "tier": "Tier 1",
+    "stats": {
+      "fumble_chance": -0.01,
+      "fortitude": 0.05
+    },
+    "icon": "Verren's_Ring.png",
+    "durability": 30,
+    "price": 30,
+    "type": "normal"
+  }
+]

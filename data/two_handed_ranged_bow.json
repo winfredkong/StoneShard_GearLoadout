@@ -1,0 +1,547 @@
+[
+  {
+    "id": "peasant_bow",
+    "name": "Peasant Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 35,
+    "price": 75,
+    "stats": {
+      "armor_penetration": 0.05,
+      "knockback_chance": 0.05,
+      "stagger_chance": 0.1,
+      "range": 8.0,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Peasant_Bow.png",
+    "damage": {
+      "piercing_damage": 14
+    }
+  },
+  {
+    "id": "guard_bow",
+    "name": "Guard Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 50,
+    "price": 400,
+    "stats": {
+      "armor_penetration": 0.05,
+      "knockback_chance": 0.08,
+      "stagger_chance": 0.15,
+      "range": 8.0,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Guard_Bow.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "soldier_bow",
+    "name": "Soldier Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 60,
+    "price": 1075,
+    "stats": {
+      "armor_penetration": 0.1,
+      "knockback_chance": 0.12,
+      "stagger_chance": 0.2,
+      "range": 8.0,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Soldier_Bow.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "norse_bow",
+    "name": "Norse Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 60,
+    "price": 1075,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.1,
+      "knockback_chance": 0.12,
+      "stagger_chance": 0.2,
+      "crit_efficiency": 0.1,
+      "range": 8.0,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Norse_Bow.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "veteran_bow",
+    "name": "Veteran Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 70,
+    "price": 2425,
+    "stats": {
+      "armor_penetration": 0.1,
+      "knockback_chance": 0.16,
+      "stagger_chance": 0.25,
+      "range": 9.0,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Veteran_Bow.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "firn_bow",
+    "name": "Firn Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 70,
+    "price": 2425,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bodypart_damage": 0.05,
+      "knockback_chance": 0.2,
+      "stagger_chance": 0.2,
+      "range": 9.0,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Firn_Bow.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "aldorian_bow",
+    "name": "Aldorian Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 85,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.15,
+      "knockback_chance": 0.2,
+      "stagger_chance": 0.3,
+      "range": 9.0,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Aldorian_Bow.png",
+    "damage": {
+      "piercing_damage": 25
+    }
+  },
+  {
+    "id": "relict_bow",
+    "name": "Relict Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 110,
+    "price": 6125,
+    "stats": {
+      "armor_penetration": 0.15,
+      "knockback_chance": 0.2,
+      "stagger_chance": 0.3,
+      "range": 8.0,
+      "skills_energy_cost": 0.35,
+      "magic_power": 0.09,
+      "energy_drain": 0.07
+    },
+    "icon": "Relict_Longbow.png",
+    "damage": {
+      "piercing_damage": 24,
+      "arcane_damage": 4
+    }
+  },
+  {
+    "id": "training_shortbow",
+    "name": "Training Shortbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 30,
+    "price": 75,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.1,
+      "immobilization_chance": 0.08,
+      "range": 7.0,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Training_Shortbow.png",
+    "damage": {
+      "piercing_damage": 14
+    }
+  },
+  {
+    "id": "dirwin's_shortbow",
+    "name": "Dirwin's Shortbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 2",
+    "durability": 50,
+    "price": 400,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.13,
+      "immobilization_chance": 0.11,
+      "range": 8.0,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Dirwin's_Shortbow.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "hunting_shortbow",
+    "name": "Hunting Shortbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 40,
+    "price": 400,
+    "stats": {
+      "armor_penetration": 0.05,
+      "bleed_chance": 0.13,
+      "immobilization_chance": 0.11,
+      "range": 7.0,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Hunting_Shortbow.png",
+    "damage": {
+      "piercing_damage": 17
+    }
+  },
+  {
+    "id": "yew_shortbow",
+    "name": "Yew Shortbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 50,
+    "price": 1075,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.15,
+      "immobilization_chance": 0.14,
+      "range": 7.0,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Yew_Shortbow.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "nomad_shortbow",
+    "name": "Nomad Shortbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 60,
+    "price": 1200,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.17,
+      "stagger_chance": 0.07,
+      "immobilization_chance": 0.1,
+      "range": 7.0,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Nomad_Shortbow.png",
+    "damage": {
+      "piercing_damage": 19
+    }
+  },
+  {
+    "id": "skirmisher_shortbow",
+    "name": "Skirmisher Shortbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 60,
+    "price": 2425,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.18,
+      "immobilization_chance": 0.17,
+      "range": 8.0,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Skirmisher_Shortbow.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "nistrian_bow",
+    "name": "Nistrian Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 60,
+    "price": 2650,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.23,
+      "immobilization_chance": 0.15,
+      "crit_efficiency": 0.05,
+      "range": 8.0,
+      "skills_energy_cost": 0.24
+    },
+    "icon": "Nistrian_Bow.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "curved_shortbow",
+    "name": "Curved Shortbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 70,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.2,
+      "immobilization_chance": 0.2,
+      "range": 8.0,
+      "skills_energy_cost": 0.33
+    },
+    "icon": "Curved_Shortbow.png",
+    "damage": {
+      "piercing_damage": 25
+    }
+  },
+  {
+    "id": "ornate_bow",
+    "name": "Ornate Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 70,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bodypart_damage": 0.12,
+      "bleed_chance": 0.25,
+      "immobilization_chance": 0.2,
+      "range": 9.0,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Ornate_Bow.png",
+    "damage": {
+      "piercing_damage": 25
+    }
+  },
+  {
+    "id": "soldier_longbow",
+    "name": "Soldier Longbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 70,
+    "price": 1300,
+    "stats": {
+      "armor_penetration": 0.15,
+      "knockback_chance": 0.2,
+      "immobilization_chance": 0.17,
+      "fumble_chance": 0.06,
+      "range": 10.0,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Soldier_Longbow.png",
+    "damage": {
+      "piercing_damage": 22
+    }
+  },
+  {
+    "id": "eeders_longbow",
+    "name": "Eeders Longbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 85,
+    "price": 2900,
+    "stats": {
+      "armor_penetration": 0.15,
+      "knockback_chance": 0.25,
+      "immobilization_chance": 0.21,
+      "fumble_chance": 0.08,
+      "range": 10.0,
+      "skills_energy_cost": 0.45
+    },
+    "icon": "Eeders_Longbow.png",
+    "damage": {
+      "piercing_damage": 26
+    }
+  },
+  {
+    "id": "sharpshooter_bow",
+    "name": "Sharpshooter Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 100,
+    "price": 6125,
+    "stats": {
+      "armor_penetration": 0.2,
+      "knockback_chance": 0.3,
+      "immobilization_chance": 0.25,
+      "fumble_chance": 0.1,
+      "range": 11.0,
+      "skills_energy_cost": 0.5
+    },
+    "icon": "Sharpshooter_Bow.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  },
+  {
+    "id": "sand_guard_bow",
+    "name": "Sand Guard Bow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 100,
+    "price": 6125,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bodypart_damage": 0.15,
+      "knockback_chance": 0.3,
+      "immobilization_chance": 0.25,
+      "fumble_chance": 0.05,
+      "range": 12.0,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Sand_Guard_Bow.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  },
+  {
+    "id": "carved_longbow",
+    "name": "Carved Longbow",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Bow",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 90,
+    "price": 6125,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.15,
+      "knockback_chance": 0.33,
+      "immobilization_chance": 0.33,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.1,
+      "range": 10.0,
+      "skills_energy_cost": 0.5
+    },
+    "icon": "Carved_Longbow.png",
+    "damage": {
+      "piercing_damage": 29
+    }
+  }
+]

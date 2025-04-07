@@ -1,0 +1,542 @@
+[
+  {
+    "id": "war_scythe",
+    "name": "War Scythe",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 70,
+    "price": 125,
+    "stats": {
+      "armor_penetration": 0.1,
+      "stagger_chance": 0.1,
+      "block_chance": 0.04,
+      "accuracy": 0.02,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "War_Scythe.png",
+    "damage": {
+      "slashing_damage": 19
+    }
+  },
+  {
+    "id": "crude_longsword",
+    "name": "Crude Longsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 95,
+    "price": 675,
+    "stats": {
+      "armor_penetration": 0.1,
+      "stagger_chance": 0.15,
+      "block_chance": 0.06,
+      "accuracy": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Crude_Longsword.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "footman_longsword",
+    "name": "Footman Longsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 120,
+    "price": 1775,
+    "stats": {
+      "armor_penetration": 0.15,
+      "stagger_chance": 0.2,
+      "block_chance": 0.08,
+      "accuracy": 0.06,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Footman_Longsword.png",
+    "damage": {
+      "slashing_damage": 25
+    }
+  },
+  {
+    "id": "mercenary_longsword",
+    "name": "Mercenary Longsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 145,
+    "price": 4000,
+    "stats": {
+      "armor_penetration": 0.2,
+      "stagger_chance": 0.25,
+      "block_chance": 0.08,
+      "accuracy": 0.1,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Mercenary_Longsword.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "sergeant_longsword",
+    "name": "Sergeant Longsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 150,
+    "price": 4000,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.15,
+      "stagger_chance": 0.15,
+      "block_chance": 0.1,
+      "accuracy": 0.08,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Sergeant_Longsword.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "noble_longsword",
+    "name": "Noble Longsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 170,
+    "price": 8425,
+    "stats": {
+      "armor_penetration": 0.25,
+      "stagger_chance": 0.3,
+      "block_chance": 0.12,
+      "accuracy": 0.1,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Noble_Longsword.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "ornate_longsword",
+    "name": "Ornate Longsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 145,
+    "price": 8425,
+    "stats": {
+      "armor_penetration": 0.25,
+      "stagger_chance": 0.3,
+      "block_chance": 0.1,
+      "accuracy": 0.1,
+      "counter_chance": 0.05,
+      "energy_restoration": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Ornate_Longsword.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "warbrand",
+    "name": "Warbrand",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 1",
+    "durability": 65,
+    "price": 125,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.08,
+      "crit_chance": 0.03,
+      "fumble_chance": 0.02,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Warbrand.png",
+    "damage": {
+      "slashing_damage": 19
+    }
+  },
+  {
+    "id": "recruit_bastard_sword",
+    "name": "Recruit Bastard Sword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "durability": 90,
+    "price": 700,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.12,
+      "crit_chance": 0.04,
+      "fumble_chance": 0.04,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Recruit_Bastard_Sword.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "footman_bastard_sword",
+    "name": "Footman Bastard Sword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 110,
+    "price": 1825,
+    "stats": {
+      "armor_penetration": 0.15,
+      "bleed_chance": 0.16,
+      "crit_chance": 0.05,
+      "fumble_chance": 0.06,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Footman_Bastard_Sword.png",
+    "damage": {
+      "slashing_damage": 25
+    }
+  },
+  {
+    "id": "nistrian_rhomphaia",
+    "name": "Nistrian Rhomphaia",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 110,
+    "price": 2025,
+    "stats": {
+      "armor_penetration": 0.1,
+      "bleed_chance": 0.2,
+      "stagger_chance": 0.08,
+      "crit_chance": 0.05,
+      "fumble_chance": 0.07,
+      "skills_energy_cost": 0.2
+    },
+    "icon": "Nistrian_Rhomphaia.png",
+    "damage": {
+      "slashing_damage": 26
+    }
+  },
+  {
+    "id": "claymore",
+    "name": "Claymore",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 130,
+    "price": 4125,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.2,
+      "crit_chance": 0.06,
+      "fumble_chance": 0.08,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Claymore.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "flamberge",
+    "name": "Flamberge",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 140,
+    "price": 8675,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.28,
+      "crit_chance": 0.07,
+      "fumble_chance": 0.14,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Flamberge.png",
+    "damage": {
+      "slashing_damage": 35
+    }
+  },
+  {
+    "id": "grossmesser",
+    "name": "Grossmesser",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 155,
+    "price": 8675,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.24,
+      "crit_chance": 0.08,
+      "crit_efficiency": 0.1,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.4
+    },
+    "icon": "Grossmesser.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "captain_greatsword",
+    "name": "Captain Greatsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 160,
+    "price": 8675,
+    "stats": {
+      "armor_penetration": 0.25,
+      "bleed_chance": 0.24,
+      "crit_chance": 0.07,
+      "fumble_chance": 0.1,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Captain_Greatsword.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "blademaster_greatsword",
+    "name": "Blademaster Greatsword",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 170,
+    "price": 8675,
+    "stats": {
+      "armor_penetration": 0.33,
+      "bleed_chance": 0.3,
+      "block_chance": 0.03,
+      "crit_chance": 0.07,
+      "counter_chance": 0.03,
+      "fumble_chance": 0.13,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Blademaster_Greatsword.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "vanguard_two-hander",
+    "name": "Vanguard Two-Hander",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 130,
+    "price": 1725,
+    "stats": {
+      "armor_penetration": 0.15,
+      "block_chance": 0.09,
+      "block_power": 8.0,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.25
+    },
+    "icon": "Vanguard_Two-Hander.png",
+    "damage": {
+      "slashing_damage": 25
+    }
+  },
+  {
+    "id": "dueling_two-hander",
+    "name": "Dueling Two-Hander",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 140,
+    "price": 3875,
+    "stats": {
+      "armor_penetration": 0.2,
+      "block_chance": 0.12,
+      "block_power": 10.0,
+      "counter_chance": 0.09,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Dueling_Two-Hander.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "sergeant_two-hander",
+    "name": "Sergeant Two-Hander",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "durability": 155,
+    "price": 3875,
+    "stats": {
+      "armor_penetration": 0.2,
+      "bleed_chance": 0.07,
+      "block_chance": 0.1,
+      "block_power": 10.0,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Sergeant_Two-Hander.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "knightly_two-hander",
+    "name": "Knightly Two-Hander",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "durability": 180,
+    "price": 8150,
+    "stats": {
+      "armor_penetration": 0.25,
+      "block_chance": 0.15,
+      "block_power": 12.0,
+      "counter_chance": 0.14,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Knightly_Two-Hander.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  },
+  {
+    "id": "exquisite_two-hander",
+    "name": "Exquisite Two-Hander",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 200,
+    "price": 8150,
+    "stats": {
+      "armor_penetration": 0.25,
+      "stagger_chance": 0.15,
+      "block_chance": 0.17,
+      "block_power": 15.0,
+      "counter_chance": 0.12,
+      "skills_energy_cost": 0.3
+    },
+    "icon": "Exquisite_Two-Hander.png",
+    "damage": {
+      "slashing_damage": 35
+    }
+  },
+  {
+    "id": "espadon",
+    "name": "Espadon",
+    "type": "weapon",
+    "weapon_group": "Two-Handed Sword",
+    "handed": "Two-Handed",
+    "slot": "main_hand",
+    "block_off_hand": true,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 175,
+    "price": 8150,
+    "stats": {
+      "armor_penetration": 0.3,
+      "block_chance": 0.15,
+      "block_power": 12.0,
+      "accuracy": 0.03,
+      "crit_chance": 0.03,
+      "counter_chance": 0.12,
+      "skills_energy_cost": 0.35
+    },
+    "icon": "Espadon.png",
+    "damage": {
+      "slashing_damage": 34
+    }
+  }
+]

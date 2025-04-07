@@ -1,0 +1,1065 @@
+[
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "healer_staff",
+        "name": "Healer Staff",
+        "rarity": "Common",
+        "tier": "Tier 2",
+        "durability": 60,
+        "price": 400,
+        "icon": "Healer_Staff.png",
+        "damage": {
+            "crushing": 13
+        },
+        "stats": {
+            "backfire_chance": -0.05,
+            "energy_restoration": 0.02,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.07,
+            "cooldowns_duration": -0.03,
+            "health_restoration": 0.01,
+            "healing_efficiency": 0.07,
+            "fatigue_resistance": 0.08
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "monk_staff",
+        "name": "Monk Staff",
+        "rarity": "Common",
+        "tier": "Tier 3",
+        "durability": 75,
+        "price": 1075,
+        "icon": "Monk_Staff.png",
+        "damage": {
+            "crushing": 14,
+            "sacred": 1
+        },
+        "stats": {
+            "crit_avoidance": 0.07,
+            "backfire_chance": -0.07,
+            "energy_restoration": 0.03,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.08,
+            "cooldowns_duration": -0.05,
+            "fatigue_resistance": 0.12
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "dwarven_staff",
+        "name": "Dwarven Staff",
+        "rarity": "Common",
+        "tier": "Tier 3",
+        "durability": 75,
+        "price": 1075,
+        "icon": "Dwarven_Staff.png",
+        "damage": {
+            "crushing": 13,
+            "fire": 3
+        },
+        "stats": {
+            "crit_chance": 0.04,
+            "miracle_chance": 0.02,
+            "energy_restoration": 0.03,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.08,
+            "cooldowns_duration": -0.05,
+            "fatigue_resistance": 0.12
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "hierophant_staff",
+        "name": "Hierophant Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 90,
+        "price": 2425,
+        "icon": "Hierophant_Staff.png",
+        "damage": {
+            "crushing": 12,
+            "sacred": 5
+        },
+        "stats": {
+            "fumble_chance": -0.03,
+            "damage_taken": -0.03,
+            "backfire_chance": -0.09,
+            "energy_restoration": 0.06,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.09,
+            "cooldowns_duration": -0.07,
+            "fatigue_resistance": 0.16
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "vanguard_staff",
+        "name": "Vanguard Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 100,
+        "price": 2425,
+        "icon": "Vanguard_Staff.png",
+        "damage": {
+            "crushing": 19
+        },
+        "stats": {
+            "crit_avoidance": 0.08,
+            "backfire_chance": -0.09,
+            "energy": 3.0,
+            "energy_restoration": 0.04,
+            "skills_energy_cost": 0.08,
+            "spells_energy_cost": -0.09,
+            "cooldowns_duration": -0.07,
+            "fatigue_resistance": 0.16
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "skadian_staff",
+        "name": "Skadian Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 90,
+        "price": 2425,
+        "icon": "Skadian_Staff.png",
+        "damage": {
+            "crushing": 14,
+            "frost": 3
+        },
+        "stats": {
+            "backfire_chance": -0.09,
+            "energy_restoration": 0.04,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.09,
+            "cooldowns_duration": -0.07,
+            "health_restoration": 0.02,
+            "fatigue_resistance": 0.16,
+            "max_health": 4.0
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "spellweaver_staff",
+        "name": "Spellweaver Staff",
+        "rarity": "Common",
+        "tier": "Tier 5",
+        "durability": 105,
+        "price": 5100,
+        "icon": "Spellweaver_Staff.png",
+        "damage": {
+            "crushing": 20
+        },
+        "stats": {
+            "backfire_chance": -0.12,
+            "energy_restoration": 0.05,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.1,
+            "cooldowns_duration": -0.11,
+            "magic_power": 0.05,
+            "fatigue_resistance": 0.2
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "farseer_staff",
+        "name": "Farseer Staff",
+        "rarity": "Unique",
+        "tier": "Tier 5",
+        "durability": 105,
+        "price": 5100,
+        "icon": "Farseer_Staff.png",
+        "damage": {
+            "crushing": 14,
+            "arcane": 3,
+            "sacred": 3
+        },
+        "stats": {
+            "fumble_chance": -0.05,
+            "crit_avoidance": 0.1,
+            "bonus_range": 1.0,
+            "backfire_chance": -0.16,
+            "energy_restoration": 0.05,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.1,
+            "cooldowns_duration": -0.09,
+            "fatigue_resistance": 0.2
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "traveling_staff",
+        "name": "Traveling Staff",
+        "rarity": "Common",
+        "tier": "Tier 1",
+        "durability": 65,
+        "price": 75,
+        "icon": "Traveling_Staff.png",
+        "damage": {
+            "crushing": 14
+        },
+        "stats": {
+            "armor_penetration": 0.05,
+            "knockback_chance": 0.1,
+            "stagger_chance": 0.1,
+            "block_chance": 0.05,
+            "crit_avoidance": 0.07,
+            "skills_energy_cost": 0.05,
+            "spells_energy_cost": -0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "pilgrim_staff",
+        "name": "Pilgrim Staff",
+        "rarity": "Common",
+        "tier": "Tier 2",
+        "durability": 90,
+        "price": 400,
+        "icon": "Pilgrim_Staff.png",
+        "damage": {
+            "crushing": 16
+        },
+        "stats": {
+            "armor_penetration": 0.05,
+            "knockback_chance": 0.08,
+            "stagger_chance": 0.13,
+            "block_chance": 0.07,
+            "crit_avoidance": 0.1,
+            "energy": 4.0,
+            "skills_energy_cost": 0.05,
+            "spells_energy_cost": -0.05,
+            "fatigue_resistance": 0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "quarterstaff",
+        "name": "Quarterstaff",
+        "rarity": "Common",
+        "tier": "Tier 2",
+        "durability": 100,
+        "price": 400,
+        "icon": "Quarterstaff.png",
+        "damage": {
+            "crushing": 16
+        },
+        "stats": {
+            "armor_penetration": 0.05,
+            "knockback_chance": 0.12,
+            "stagger_chance": 0.1,
+            "block_chance": 0.08,
+            "block_power": 3.0,
+            "crit_avoidance": 0.1,
+            "skills_energy_cost": 0.05,
+            "spells_energy_cost": -0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "reinforced_staff",
+        "name": "Reinforced Staff",
+        "rarity": "Common",
+        "tier": "Tier 3",
+        "durability": 125,
+        "price": 1075,
+        "icon": "Reinforced_Staff.png",
+        "damage": {
+            "crushing": 18
+        },
+        "stats": {
+            "armor_penetration": 0.05,
+            "daze_chance": 0.1,
+            "knockback_chance": 0.14,
+            "stagger_chance": 0.17,
+            "block_chance": 0.1,
+            "crit_avoidance": 0.13,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "vehement_warstaff",
+        "name": "Vehement Warstaff",
+        "rarity": "Common",
+        "tier": "Tier 3",
+        "durability": 110,
+        "price": 1075,
+        "icon": "Vehement_Warstaff.png",
+        "damage": {
+            "crushing": 17,
+            "sacred": 1
+        },
+        "stats": {
+            "armor_penetration": 0.05,
+            "knockback_chance": 0.12,
+            "stagger_chance": 0.17,
+            "block_chance": 0.1,
+            "crit_chance": 0.02,
+            "crit_avoidance": 0.09,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "maen_warstaff",
+        "name": "Maen Warstaff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 130,
+        "price": 2425,
+        "icon": "Maen_Warstaff.png",
+        "damage": {
+            "crushing": 21
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.16,
+            "stagger_chance": 0.21,
+            "block_chance": 0.12,
+            "accuracy": 0.04,
+            "crit_avoidance": 0.16,
+            "miracle_chance": 0.02,
+            "miracle_potency": 0.05,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "fatigue_resistance": 0.1
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "battlemage_warstaff",
+        "name": "Battlemage Warstaff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 145,
+        "price": 2425,
+        "icon": "Battlemage_Warstaff.png",
+        "damage": {
+            "crushing": 20,
+            "arcane": 1
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.16,
+            "stagger_chance": 0.21,
+            "block_chance": 0.12,
+            "block_power_recovery": 0.05,
+            "counter_chance": 0.05,
+            "crit_avoidance": 0.16,
+            "skills_energy_cost": 0.05,
+            "spells_energy_cost": -0.05,
+            "magic_power": 0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "geomancer_staff",
+        "name": "Geomancer Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 160,
+        "price": 2425,
+        "icon": "Geomancer_Staff.png",
+        "damage": {
+            "crushing": 20,
+            "arcane": 3
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.16,
+            "stagger_chance": 0.21,
+            "block_chance": 0.12,
+            "block_power": 8.0,
+            "crit_avoidance": 0.16,
+            "damage_taken": -0.04,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "geomantic_power": 0.07
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "cryomancer_staff",
+        "name": "Cryomancer Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 120,
+        "price": 2425,
+        "icon": "Cryomancer_Staff.png",
+        "damage": {
+            "crushing": 16,
+            "frost": 5
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.16,
+            "stagger_chance": 0.33,
+            "block_chance": 0.12,
+            "crit_avoidance": 0.16,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "cryomantic_power": 0.07
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "arcanist_staff",
+        "name": "Arcanist Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 120,
+        "price": 2425,
+        "icon": "Arcanist_Staff.png",
+        "damage": {
+            "crushing": 16,
+            "arcane": 5
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.16,
+            "stagger_chance": 0.21,
+            "block_chance": 0.12,
+            "crit_avoidance": 0.16,
+            "energy": 6.0,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "magic_power": 0.05,
+            "arcanistic_power": 0.07,
+            "energy_drain": 0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "aristocrat_warstaff",
+        "name": "Aristocrat Warstaff",
+        "rarity": "Common",
+        "tier": "Tier 5",
+        "durability": 185,
+        "price": 5100,
+        "icon": "Aristocrat_Warstaff.png",
+        "damage": {
+            "crushing": 24
+        },
+        "stats": {
+            "armor_penetration": 0.15,
+            "armor_damage": 0.1,
+            "knockback_chance": 0.25,
+            "stagger_chance": 0.25,
+            "block_chance": 0.15,
+            "block_power": 5.0,
+            "block_power_recovery": 0.05,
+            "crit_avoidance": 0.25,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "gilded_warstaff",
+        "name": "Gilded Warstaff",
+        "rarity": "Common",
+        "tier": "Tier 5",
+        "durability": 125,
+        "price": 5600,
+        "icon": "Gilded_Warstaff.png",
+        "damage": {
+            "crushing": 24
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.2,
+            "stagger_chance": 0.2,
+            "block_chance": 0.15,
+            "crit_avoidance": 0.15,
+            "energy": 9.0,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "cooldowns_duration": -0.04,
+            "magic_power": 0.07
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "templar_warstaff",
+        "name": "Templar Warstaff",
+        "rarity": "Common",
+        "tier": "Tier 5",
+        "durability": 155,
+        "price": 5100,
+        "icon": "Templar_Warstaff.png",
+        "damage": {
+            "crushing": 22,
+            "sacred": 2
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.15,
+            "stagger_chance": 0.2,
+            "block_chance": 0.1,
+            "crit_avoidance": 0.2,
+            "miracle_chance": 0.03,
+            "miracle_potency": 0.08,
+            "energy": 5.0,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "energy_drain": 0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "axonian_warstaff",
+        "name": "Axonian Warstaff",
+        "rarity": "Unique",
+        "tier": "Tier 5",
+        "durability": 145,
+        "price": 5100,
+        "icon": "Axonian_Warstaff.png",
+        "damage": {
+            "crushing": 20,
+            "arcane": 3,
+            "sacred": 3
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.2,
+            "stagger_chance": 0.25,
+            "block_chance": 0.15,
+            "crit_chance": 0.04,
+            "crit_avoidance": 0.2,
+            "miracle_chance": 0.04,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "mage_general_warstaff",
+        "name": "Mage General Warstaff",
+        "rarity": "Unique",
+        "tier": "Tier 5",
+        "durability": 155,
+        "price": 5100,
+        "icon": "Mage_General_Warstaff.png",
+        "damage": {
+            "crushing": 20,
+            "arcane": 4
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.2,
+            "stagger_chance": 0.25,
+            "block_chance": 0.15,
+            "crit_avoidance": 0.2,
+            "bonus_range": 1.0,
+            "backfire_chance": -0.04,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "magic_power": 0.1,
+            "life_drain": 0.04,
+            "energy_drain": 0.04
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "stargazer_warstaff",
+        "name": "Stargazer Warstaff",
+        "rarity": "Unique",
+        "tier": "Tier 5",
+        "durability": 140,
+        "price": 5100,
+        "icon": "Stargazer_Warstaff.png",
+        "damage": {
+            "crushing": 24
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.2,
+            "stagger_chance": 0.25,
+            "block_chance": 0.15,
+            "counter_chance": 0.03,
+            "fumble_chance": -0.03,
+            "crit_avoidance": 0.33,
+            "damage_taken": -0.03,
+            "backfire_chance": -0.03,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "hermit_staff",
+        "name": "Hermit Staff",
+        "rarity": "Unique",
+        "tier": "Tier 5",
+        "durability": 175,
+        "price": 5100,
+        "icon": "Hermit_Staff.png",
+        "damage": {
+            "crushing": 20,
+            "poison": 3,
+            "sacred": 3
+        },
+        "stats": {
+            "armor_penetration": 0.1,
+            "knockback_chance": 0.2,
+            "stagger_chance": 0.25,
+            "block_chance": 0.15,
+            "crit_avoidance": 0.2,
+            "energy": 8.0,
+            "energy_restoration": 0.04,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.05,
+            "health_restoration": 0.04,
+            "healing_efficiency": 0.05,
+            "max_health": 8.0
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "vampiric_staff",
+        "name": "Vampiric Staff",
+        "rarity": "Unique",
+        "tier": "Tier 5",
+        "durability": 130,
+        "price": 5100,
+        "icon": "Vampiric_Staff.png",
+        "damage": {
+            "crushing": 18,
+            "unholy": 9
+        },
+        "stats": {
+            "armor_penetration": 0.13,
+            "bleed_chance": 0.13,
+            "knockback_chance": 0.13,
+            "stagger_chance": 0.26,
+            "block_chance": 0.13,
+            "crit_efficiency": 0.09,
+            "crit_avoidance": 0.26,
+            "skills_energy_cost": 0.09,
+            "spells_energy_cost": -0.06,
+            "health_restoration": -0.09,
+            "life_drain": 0.13
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "cammock",
+        "name": "Cammock",
+        "rarity": "Common",
+        "tier": "Tier 1",
+        "durability": 30,
+        "price": 125,
+        "icon": "Cammock.png",
+        "damage": {
+            "crushing": 11
+        },
+        "stats": {
+            "backfire_chance": -0.01,
+            "miracle_potency": 0.03,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.07,
+            "magic_power": 0.03
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "hexer_staff",
+        "name": "Hexer Staff",
+        "rarity": "Common",
+        "tier": "Tier 2",
+        "durability": 40,
+        "price": 650,
+        "icon": "Hexer_Staff.png",
+        "damage": {
+            "crushing": 10,
+            "unholy": 3
+        },
+        "stats": {
+            "miracle_potency": 0.05,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.09,
+            "magic_power": 0.06
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "witch_staff",
+        "name": "Witch Staff",
+        "rarity": "Unique",
+        "tier": "Tier 2",
+        "durability": 30,
+        "price": 650,
+        "icon": "Witch_Staff.png",
+        "damage": {
+            "crushing": 6,
+            "unholy": 3,
+            "psionic": 3
+        },
+        "stats": {
+            "miracle_chance": 0.03,
+            "miracle_potency": 0.05,
+            "skills_energy_cost": 0.1,
+            "spells_energy_cost": -0.09,
+            "magic_power": 0.06
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "sorcerer_staff",
+        "name": "Sorcerer Staff",
+        "rarity": "Common",
+        "tier": "Tier 3",
+        "durability": 50,
+        "price": 1725,
+        "icon": "Sorcerer_Staff.png",
+        "damage": {
+            "crushing": 12,
+            "fire": 1,
+            "frost": 1,
+            "arcane": 1
+        },
+        "stats": {
+            "miracle_potency": 0.07,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.11,
+            "magic_power": 0.09
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "necromancer_staff",
+        "name": "Necromancer Staff",
+        "rarity": "Unique",
+        "tier": "Tier 3",
+        "durability": 33,
+        "price": 1725,
+        "icon": "Necromancer_Staff.png",
+        "damage": {
+            "crushing": 9,
+            "unholy": 6
+        },
+        "stats": {
+            "damage_taken": -0.06,
+            "backfire_chance": -0.06,
+            "miracle_potency": 0.13,
+            "skills_energy_cost": 0.13,
+            "spells_energy_cost": -0.13,
+            "magic_power": 0.13,
+            "energy_drain": 0.09,
+            "fatigue_resistance": -0.09
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "pyromancer_staff",
+        "name": "Pyromancer Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 60,
+        "price": 3875,
+        "icon": "Pyromancer_Staff.png",
+        "damage": {
+            "crushing": 12,
+            "fire": 5
+        },
+        "stats": {
+            "miracle_potency": 0.18,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.13,
+            "magic_power": 0.1,
+            "pyromantic_power": 0.06
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "electromancer_staff",
+        "name": "Electromancer Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 60,
+        "price": 3875,
+        "icon": "Electromancer_Staff.png",
+        "damage": {
+            "crushing": 12,
+            "shock": 5
+        },
+        "stats": {
+            "miracle_potency": 0.09,
+            "energy": 6.0,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.13,
+            "magic_power": 0.06,
+            "electromantic_power": 0.06
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "astromancer_staff",
+        "name": "Astromancer Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 60,
+        "price": 3875,
+        "icon": "Astromancer_Staff.png",
+        "damage": {
+            "crushing": 11,
+            "fire": 2,
+            "frost": 2,
+            "arcane": 2
+        },
+        "stats": {
+            "miracle_potency": 0.09,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.13,
+            "cooldowns_duration": -0.05,
+            "magic_power": 0.06,
+            "astromantic_power": 0.06
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "psimancer_staff",
+        "name": "Psimancer Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 60,
+        "price": 3875,
+        "icon": "Psimancer_Staff.png",
+        "damage": {
+            "crushing": 12,
+            "psionic": 5
+        },
+        "stats": {
+            "backfire_chance": -0.03,
+            "miracle_potency": 0.09,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.13,
+            "magic_power": 0.06,
+            "psionic_power": 0.06
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "venomancer_staff",
+        "name": "Venomancer Staff",
+        "rarity": "Common",
+        "tier": "Tier 4",
+        "durability": 60,
+        "price": 3875,
+        "icon": "Venomancer_Staff.png",
+        "damage": {
+            "crushing": 12,
+            "poison": 3,
+            "caustic": 2
+        },
+        "stats": {
+            "miracle_potency": 0.09,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.13,
+            "magic_power": 0.06,
+            "venomantic_power": 0.06,
+            "energy_drain": 0.05
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "court_mage_staff",
+        "name": "Court Mage Staff",
+        "rarity": "Common",
+        "tier": "Tier 5",
+        "durability": 55,
+        "price": 8150,
+        "icon": "Court_Mage_Staff.png",
+        "damage": {
+            "crushing": 17,
+            "arcane": 3
+        },
+        "stats": {
+            "miracle_chance": 0.01,
+            "miracle_potency": 0.15,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.15,
+            "magic_power": 0.15
+        }
+    },
+    {
+        "type": "weapon",
+        "weapon_group": "two_handed_stave",
+        "handed": "Two-Handed",
+        "block_off_hand": true,
+        "slot": "main_hand",
+        "id": "orient_staff",
+        "name": "Orient Staff",
+        "rarity": "Unique",
+        "tier": "Tier 5",
+        "durability": 75,
+        "price": 8150,
+        "icon": "Orient_Staff.png",
+        "damage": {
+            "crushing": 14,
+            "fire": 3,
+            "sacred": 3
+        },
+        "stats": {
+            "miracle_potency": 0.12,
+            "energy": 5.0,
+            "energy_restoration": 0.05,
+            "skills_energy_cost": 0.15,
+            "spells_energy_cost": -0.18,
+            "cooldowns_duration": -0.05,
+            "magic_power": 0.15
+        }
+    }
+]
