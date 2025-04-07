@@ -1,33 +1,38 @@
-[조작법]
+[Things I’d Like to Add]
 
-1. 우측상단의 장비 슬롯 클릭 시 좌측에 장비 표가 생성됨
+Equipment Enchantments
+Add an enchantment tab that appears in the left panel (where the item table is currently shown) via a button placed between the equipment slots and the stat display.
 
-2. 좌측 장비 표에서 장비 클릭시 장비 장착 가능
+Hero Integration
+Add hero stats and passives to the left panel via a button between the equipment slots and the stat display. Users can choose whether to reflect the hero's stats in the main stat display using checkboxes.
 
-3. 장착한 장비는 장비 슬롯칸을 우클릭할 시 장착 해제가능
+Dual-Wielding Support
+Implement proper dual-wielding mechanics.
 
-4. 장착한 장비의 스탯 총합은 장비 슬롯 하단의 4개의 칸에 정리됨
+Improve Text Readability Without Expanding Window Size
+Find a way to improve text readability without increasing the overall window dimensions.
 
-5. 장착한 장비의 부위별 저항력은 장비 슬롯 우측의 4개의 칸에 정리됨
+Tooltip on Hover
+Display an item’s stats when hovering the mouse over it.
 
-
-[미구현]
-
-1. 쌍수무기 착용에 따른 페널티적용 (Main,Off hand efficiency, cooltime reduction, Acc, Fumble등등)
-
-2. 쌍수무기 착용시 해당 무기의 스탯이 그대로 적용. (Main에 착용한 무기 방관 +20%와 Off에 착용한 무기 방관 20%가 합쳐져 40%로 나옴)
-
-3. 장비 인첸트 및 저주 적용
-
-4. 좌측 장비 표에서 상단의 필드(Tier, Class, Price등등)을 클릭 시 오름차순/내림차순 정렬은 되지만 문제가 있어 장비 선택에 오류발생.
+(Possibly Tedious) Character Appearance with Gear Equipped
+Show a visual representation of the character wearing the currently equipped gear.
 
 
-[기타]
+[Controls]
 
-해당 장비들의 모든 스탯은 Stoneshard official wiki을 참조하여 작성되었습니다.
+Clicking an equipment slot at the top right will open an equipment table on the left.
 
-해당 스톤샤드 장비 시뮬레이터는 Window OS에서 Python과 Pyqt5를 활용해 작성되었습니다. 제작자가 코딩에 많이 미숙하므로 Linux와 Mac OS에서는 잘 실행될 지 모르겠습니다.
+Clicking an item in the equipment table equips it.
 
+Right-clicking an equipped slot will unequip the item.
 
+The total stats of equipped items are displayed in the four fields below the equipment slots.
 
-감사합니다.
+The resistances by body part of equipped gear are displayed in the four fields to the right of the equipment slots.
+
+[Other Notes]
+
+All equipment stats are based on the official Stoneshard Wiki.
+
+This Stoneshard equipment simulator was developed using Python and PyQt5 on Windows OS. Since the developer is still inexperienced with coding, it may not function properly on Linux or macOS.
