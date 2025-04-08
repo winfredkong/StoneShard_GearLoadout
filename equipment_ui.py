@@ -7,27 +7,33 @@ from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QTableWidget, QTable
 from PyQt5.QtGui import QPixmap, QIcon, QColor
 from PyQt5.QtCore import Qt, pyqtSignal, QSize
 
-from stat_processor import calculate_combined_stats, calculate_bodypart_resistances, format_stats
+from stat_processor import calculate_combined_stats, calculate_bodypart_resistances,\
+                    COMBAT_STATS, SURVIVAL_STATS, RESISTANCE_STATS, MAGIC_STATS
 from weapon_group_dialog import WeaponGroupDialog
+from hero_editor import HeroEditorDialog
 
 
 class EquipmentUI(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("StoneShard Gear Loadout")
-        self.setFixedSize(2110, 1000)
+        self.setFixedSize(2150, 1000)
         self.two_handed_equipped = False
                 
         main_layout = QHBoxLayout(self)
-
+        
+        #좌측 표
         self.table = QTableWidget()
         self.table.setMinimumWidth(850)
-        self.table.setStyleSheet("background-color: #2F3045; color : white; gridline-color: #1D1A31;")
+        self.table.setAlternatingRowColors(True)
+        self.table.setStyleSheet("background-color: #2F3045; alternate-background-color: #272340; color : white; gridline-color: #1D1A31;")
+        self.table.verticalHeader().setVisible(False)
         self.table.cellClicked.connect(self.item_clicked)
         main_layout.addWidget(self.table)
         
+        #우측 페널
         right_panel = QWidget()
-        right_panel.setFixedSize(1010, 1200)
+        right_panel.setFixedSize(1050, 1200)
         right_panel.setStyleSheet("background-color: #2F3045; border: 1px solid black;")
         self.slot_area = right_panel
         self.slot_labels = {}
@@ -40,24 +46,29 @@ class EquipmentUI(QWidget):
         body_parts = ["Head", "Torso", "Hand", "Leg"]
         for i, part in enumerate(body_parts):
             label = QLabel(part, self.slot_area)
-            label.setGeometry(800, i*130, 200, 20)
+            label.setGeometry(800, i*130, 240, 20)
             label.setStyleSheet("font-size: 16px; font-weight: bold; color: white; border: 2px gray; background-color: #1c202f;")
             label.setAlignment(Qt.AlignCenter)
             self.resistance_labels[part] = label
         for i in range(4):            
             resistance_box = QLabel(self.slot_area)
-            resistance_box.setGeometry(800, 25 + i*130, 200, 100)
+            resistance_box.setGeometry(800, 25 + i*130, 240, 100)
             resistance_box.setStyleSheet("background-color: #1D1A31; color : white ; border: 2px #2F3045; font-size: 16px; padding: 2px;")
             resistance_box.setAlignment(Qt.AlignTop | Qt.AlignLeft)
             resistance_box.setWordWrap(True)
             resistance_box.setEnabled(False)
             self.resistance_boxes.append(resistance_box)
-        
+            
+        # 영웅 선택및 스탯 출력 버튼 생성성
+        self.hero_button = QPushButton("Edit Hero", right_panel)
+        self.hero_button.setGeometry(30, 440, 200, 40)
+        self.hero_button.setStyleSheet("font-size: 16px; font-weight: bold; letter-spacing : 1px; background-color: #1D1A31; color: white;")
+        self.hero_button.clicked.connect(self.open_hero_editor)
         
         # 총 장비의 가격을 출력하기위한 레이블 생성
         self.total_cost_label = QLabel("Total Cost: 0", right_panel)
-        self.total_cost_label.setGeometry(10, 380, 300, 40)
-        self.total_cost_label.setStyleSheet("font-weight:bold;""font-size: 20px;""color: white; border: 1px #2F3045;")
+        self.total_cost_label.setGeometry(30, 380, 300, 40)
+        self.total_cost_label.setStyleSheet("font-weight:bold; font-size: 20px; letter-spacing : 1px; color: white; border: 1px #2F3045;")
         
         # 스탯 출력을 위한 텍스트 전용 슬롯 4개 생성
         self.stat_boxes = []
@@ -65,12 +76,12 @@ class EquipmentUI(QWidget):
         stat_colors = ["#2f1c1c", "#1e2f1c", "#1c202f", "#2f1c2e"]
         for i, title in enumerate(stat_titles):
             title_label = QLabel(title, self.slot_area)
-            title_label.setGeometry(10 + i * 250, 520, 240, 30)
+            title_label.setGeometry(10 + i * 260, 520, 250, 30)
             title_label.setStyleSheet("font-size: 20px; font-weight: bold; color: white; border: 2px gray; background-color: {};".format(stat_colors[i]))
             title_label.setAlignment(Qt.AlignCenter)
         for i in range(4):
             stat_box = QLabel(self.slot_area)
-            stat_box.setGeometry(10 + i * 250, 554, 240, 400)
+            stat_box.setGeometry(10 + i * 260, 554, 250, 400)
             stat_box.setStyleSheet("background-color: #1D1A31; color : white ; border: 2px #2F3045; font-size: 18px; padding: 5px;")
             stat_box.setAlignment(Qt.AlignTop | Qt.AlignLeft)
             stat_box.setWordWrap(True)
@@ -89,13 +100,13 @@ class EquipmentUI(QWidget):
             "Tier": 60,
             "Icon": 100,
             "Item": 130,
-            "Rarity": 90,
+            "Rarity": 95,
             "Damage": 120,
             "Class": 90,
             "Protection": 110,
             "Durability": 95,
             "Price": 80,
-            "Properties": 240,
+            "Properties": 260,
         }
 
         self.last_clicked_slot = None
@@ -145,16 +156,16 @@ class EquipmentUI(QWidget):
             self.slot_labels[name] = label
     
     def update_stat_boxes(self):
-        self.stat_boxes[0].setText(self.format_stats(self.combined_stats["combat"]))
-        self.stat_boxes[1].setText(self.format_stats(self.combined_stats["survival"]))
-        self.stat_boxes[2].setText(self.format_stats(self.combined_stats["resistance"]))
-        self.stat_boxes[3].setText(self.format_stats(self.combined_stats["magic"]))
+        self.stat_boxes[0].setText(self.format_stats(self.combined_stats["combat"], "combat"))
+        self.stat_boxes[1].setText(self.format_stats(self.combined_stats["survival"], "survival"))
+        self.stat_boxes[2].setText(self.format_stats(self.combined_stats["resistance"], "resistance"))
+        self.stat_boxes[3].setText(self.format_stats(self.combined_stats["magic"], "magic"))
     
     def update_resistance_boxes(self):
-        self.resistance_boxes[0].setText(self.format_stats(calculate_bodypart_resistances(self.slot_labels)["head"]))
-        self.resistance_boxes[1].setText(self.format_stats(calculate_bodypart_resistances(self.slot_labels)["torso"]))
-        self.resistance_boxes[2].setText(self.format_stats(calculate_bodypart_resistances(self.slot_labels)["hand"]))
-        self.resistance_boxes[3].setText(self.format_stats(calculate_bodypart_resistances(self.slot_labels)["leg"]))
+        self.resistance_boxes[0].setText(self.format_stats_simple(calculate_bodypart_resistances(self.slot_labels)["head"]))
+        self.resistance_boxes[1].setText(self.format_stats_simple(calculate_bodypart_resistances(self.slot_labels)["torso"]))
+        self.resistance_boxes[2].setText(self.format_stats_simple(calculate_bodypart_resistances(self.slot_labels)["hand"]))
+        self.resistance_boxes[3].setText(self.format_stats_simple(calculate_bodypart_resistances(self.slot_labels)["leg"]))
         
 
     def slot_clicked(self, slot_name):
@@ -222,7 +233,7 @@ class EquipmentUI(QWidget):
         for row, item in enumerate(items):
             self.table.insertRow(row)
 
-            row_height = max(100, 20 * (3 + len(item.get("stats", {}))))
+            row_height = max(100, 20 * (4 + len(item.get("stats", {}))))
             self.table.setRowHeight(row, row_height)
 
             for col, name in enumerate(columns):
@@ -283,7 +294,7 @@ class EquipmentUI(QWidget):
                         cell_item.setForeground(QColor("#A020F0"))
                     self.table.setItem(row, col, cell_item)
                 elif name == "Properties":
-                    value = self.format_stats(item.get("stats", {}))
+                    value = self.format_stats_simple(item.get("stats", {}))
                     cell_item = QTableWidgetItem(value)
                     if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
                         cell_item.setForeground(QColor("#A020F0"))
@@ -294,7 +305,11 @@ class EquipmentUI(QWidget):
                         label = QLabel()
                         pixmap = QPixmap(icon_path).scaled(96, 96, Qt.KeepAspectRatio, Qt.FastTransformation)
                         label.setPixmap(pixmap)
-                        label.setAlignment(Qt.AlignCenter)  # 진짜 가운데 정렬
+                        label.setAlignment(Qt.AlignCenter)
+                        if row % 2 == 1:
+                            label.setStyleSheet("background-color: #272340;")
+                        else:
+                            label.setStyleSheet("background-color: #2F3045;")
                         self.table.setCellWidget(row, col, label)
         self.table.horizontalHeader().setSectionResizeMode(QHeaderView.Fixed)
 
@@ -358,7 +373,7 @@ class EquipmentUI(QWidget):
                 
                 damage_overlay = QLabel(f"Damage : {total_damage}", label)
                 damage_overlay.setGeometry(16, label.height() - 28, 96, 24)
-                damage_overlay.setStyleSheet("color: lightgray; font-weight: bold; background-color: rgba(0,0,0,180); font-size: 12px; border-radius: 4px;"
+                damage_overlay.setStyleSheet("color: lightgray; font-weight: bold; letter-spacing: 1px; background-color: rgba(0,0,0,180); font-size: 12px; border-radius: 4px;"
                 )
                 damage_overlay.setAlignment(Qt.AlignCenter)
                 damage_overlay.show()
@@ -525,26 +540,77 @@ class EquipmentUI(QWidget):
     def extract_damage(self, item):
         damage = item.get("damage", {})
         return "\n".join(f"{k.replace('_damage', '').capitalize()}: {v}" for k, v in damage.items())
+    
+    def open_hero_editor(self):
+        dialog = HeroEditorDialog(self)
+        dialog.exec_()
+    
+    def open_hero_editor(self):
+        dialog = HeroEditorDialog(self)
+        if dialog.exec_() == QDialog.Accepted:
+            hero_bonuses = dialog.get_stat_bonus_if_applied()
+            if hero_bonuses:
+                # 장비 스탯에 보정 스탯 추가
+                for category in self.combined_stats:
+                    for key, bonus in hero_bonuses.get(category, {}).items():
+                        self.combined_stats[category][key] = self.combined_stats[category].get(key, 0) + bonus
+                self.update_stat_boxes()
 
-    def format_stats(self, stats):
+    def format_stats(self, stats, category=None):
+        ordered_keys = []
+
+        if category == "combat":
+            ordered_keys = COMBAT_STATS
+        elif category == "survival":
+            ordered_keys = SURVIVAL_STATS
+        elif category == "resistance":
+            ordered_keys = RESISTANCE_STATS
+        elif category == "magic":
+            ordered_keys = MAGIC_STATS
+
         lines = []
-        for k, v in stats.items():
-            display_name = k.replace('_', ' ').capitalize()
-            if any(k.endswith(suffix) for suffix in ("_head", "_torso", "_hand", "_leg")):
-                display_name = display_name.rsplit(' ', 1)[0] + " *"
+        
+        for key in ordered_keys:
+            if key in stats:
+                value = stats[key]
+                display_name = key.replace('_', ' ').capitalize()
+                if any(key.endswith(suffix) for suffix in ("_head", "_torso", "_hand", "_leg")):
+                    display_name = display_name.rsplit(' ', 1)[0] + " *"
 
-            if isinstance(v, float):
-                if abs(v) < 1:
-                    formatted = f"{'+' if v >= 0 else ''}{round(v * 100)}%"
+                if isinstance(value, float):
+                    if abs(value) < 1:
+                        formatted = f"{'+' if value >= 0 else ''}{round(value * 100)}%"
+                    else:
+                        formatted = f"{'+' if value >= 0 else ''}{round(value)}"
                 else:
-                    formatted = f"{'+' if v >= 0 else ''}{round(v)}"
-            else:
-                formatted = f"{'+' if v >= 0 else ''}{v}"  
-                                              
-            lines.append(f"{display_name} : {formatted}")
-            
+                    formatted = f"{'+' if value >= 0 else ''}{value}"
+
+                lines.append(f"{display_name} : {formatted}")
+        
         return "\n".join(lines)
     
+    def format_stats_simple(self, stats):
+        lines = []
+        DISPLAY_WIDTH = 28
+
+        for key, value in stats.items():
+            if any(key.endswith(suffix) for suffix in ("_torso", "_head", "_hand", "_leg")):
+                label = key.rsplit('_', 1)[0].replace('_', ' ').capitalize() + " *"
+            else:
+                label = key.replace('_', ' ').capitalize()
+
+            sign = "+" if value > 0 else "-" if value < 0 else ""
+
+            if isinstance(value, float) and not value.is_integer():
+                formatted = f"{sign}{abs(round(value * 100, 1))}%"
+            else:
+                formatted = f"{sign}{int(abs(value))}"
+
+            padding = DISPLAY_WIDTH - len(label) - 2
+            line = f"{label} :".ljust(DISPLAY_WIDTH - len(formatted)) + formatted
+            lines.append(line)
+
+        return "\n".join(lines)
 
 
 class ClickableLabel(QLabel):
@@ -562,12 +628,11 @@ class ClickableLabel(QLabel):
             self.rightClicked.emit(self.slot_name)
     
     
-
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = EquipmentUI()
     window.show()
     sys.exit(app.exec_())
+    
 
 
