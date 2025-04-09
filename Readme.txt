@@ -40,13 +40,13 @@ This Stoneshard equipment simulator was developed using Python and PyQt5 on Wind
 Equipment Enchantments
 Add an enchantment tab that appears in the left panel (where the item table is currently shown) via a button placed between the equipment slots and the stat display.
 
-Hero Integration
+Hero Integration (done)
 Add hero stats and passives to the left panel via a button between the equipment slots and the stat display. Users can choose whether to reflect the hero's stats in the main stat display using checkboxes.
 
 Dual-Wielding Support
 Implement proper dual-wielding mechanics.
 
-Improve Text Readability Without Expanding Window Size
+Improve Text Readability Without Expanding Window Size (done)
 Find a way to improve text readability without increasing the overall window dimensions.
 
 Tooltip on Hover
