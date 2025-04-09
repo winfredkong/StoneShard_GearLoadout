@@ -6,17 +6,18 @@ from PyQt5.QtWidgets import (
     QDialog, QLabel, QCheckBox, QSpinBox, QTextEdit, QComboBox, QApplication, QGroupBox, QStackedWidget, QWidget, QVBoxLayout, QPushButton
 )
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, pyqtSignal
 
 from stat_processor import COMBAT_STATS, SURVIVAL_STATS, RESISTANCE_STATS, MAGIC_STATS, THRESHOLD_STATS, format_stats
 from passive_ui import passive_widget_map
 
 
 class HeroEditorDialog(QDialog):
+    stat_bonus_updated = pyqtSignal(dict)
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Hero Editor")
-        self.setFixedSize(1160, 650)
+        self.setFixedSize(1300, 800)
         self.setStyleSheet("background-color: #2F3045; color: white;")
 
         # 좌측 상단 - 초상화
@@ -56,23 +57,25 @@ class HeroEditorDialog(QDialog):
         # 체크박스
         self.apply_checkbox = QCheckBox("Apply stats to GearLoadout", self)
         self.apply_checkbox.setGeometry(30, 280, 260, 30)
+        self.apply_checkbox.stateChanged.connect(self.update_hero_bonus_stats)
 
         # 패시브 이름
         self.passive_name = QLabel("passive name", self)
-        self.passive_name.setGeometry(500, 30, 600, 30)
+        self.passive_name.setGeometry(450, 30, 800, 30)
         self.passive_name.setStyleSheet("font-weight: bold; font-size: 16px; letter-spacing: 1px; border : 1px #1c202f; background-color: #1c202f;")
         self.passive_name.setAlignment(Qt.AlignCenter)
 
         # 패시브 설명
         self.passive_description = QTextEdit("passive description", self)
-        self.passive_description.setGeometry(500, 65, 290, 250)
+        self.passive_description.setGeometry(450, 65, 390, 300)
         self.passive_description.setStyleSheet("letter-spacing: 1px; border : 2px #2F3045; background-color: #1c202f;")
         self.passive_description.setReadOnly(True)
 
         # 패시브 메뉴 자리 표시
         self.passive_stack = QStackedWidget(self)
-        self.passive_stack.setGeometry(800, 65, 300, 250)
+        self.passive_stack.setGeometry(850, 65, 400, 300)
         self.passive_stack.setStyleSheet("background-color: #1c202f; border: 1px #1c202f;")
+
         
         # 스탯 카테고리 4개 (Combat, Survival, Resistance, Magic)
         self.stat_boxes = []
@@ -80,13 +83,13 @@ class HeroEditorDialog(QDialog):
         stat_colors_2 = ["#2f1c1c", "#1e2f1c", "#1c202f", "#2f1c2e"]
         for i, title in enumerate(stat_categories):
             title_label = QLabel(title, self)
-            title_label.setGeometry(30 + i * 270, 330, 260, 30)
+            title_label.setGeometry(30 + i * 310, 400, 300, 30)
             title_label.setStyleSheet("font-size: 20px; font-weight: bold; letter-spacing: 1px; color: white; border: 2px gray; background-color: {};".format(stat_colors_2[i]))
             title_label.setAlignment(Qt.AlignCenter)
         for i in range(4):
             stat_box = QLabel(self)
-            stat_box.setGeometry(30 + i * 270, 365, 260, 270)
-            stat_box.setStyleSheet("background-color: #1D1A31; color : white ; letter-spacing: 0.5px; border: 2px #2F3045; font-size: 17px; padding: 5px;")
+            stat_box.setGeometry(30 + i * 310, 435, 300, 350)
+            stat_box.setStyleSheet("background-color: #1D1A31; color : white ; letter-spacing: 0.5px; border: 2px #2F3045; font-size: 18px; padding: 5px;")
             stat_box.setAlignment(Qt.AlignTop | Qt.AlignLeft)
             stat_box.setWordWrap(True)
             stat_box.setEnabled(False)
@@ -97,7 +100,10 @@ class HeroEditorDialog(QDialog):
     def create_passive_widget(self, hero_name):
         widget_class = passive_widget_map.get(hero_name)
         if widget_class:
-            return widget_class(self)
+            widget = widget_class(self)
+            widget.stat_bonus_changed.connect(self.update_hero_bonus_stats)
+            widget.stat_bonus_changed.connect(self.update_ability_points)
+            return widget
         else:
             return QLabel(f"{hero_name}의 패시브 메뉴 없음")
             
@@ -154,16 +160,24 @@ class HeroEditorDialog(QDialog):
             
     def update_ability_points(self):
         total = sum(spin.value() for spin in self.stat_spinboxes.values())
-        remaining = 82 - total
+
+        current_widget = self.passive_stack.currentWidget()
+        passive_ap = 0
+        if hasattr(current_widget, "get_bonus_points"):
+            passive_ap = current_widget.get_bonus_points().get("ap", 0)
+
+        max_ap = 82 + passive_ap
+        remaining = max_ap - total
+
         self.ability_point.setText(f"AP: {remaining}")
-        self.update_hero_bonus_stats()
 
         for stat, spin in self.stat_spinboxes.items():
             current = spin.value()
             if remaining <= 0:
-                spin.setMaximum(current)  # 증가 불가, 현재값까지만 허용
+                spin.setMaximum(current)
             else:
-                spin.setMaximum(30)  # 다시 증가 허용
+                spin.setMaximum(30)
+        self.update_hero_bonus_stats()
                     
     def update_hero_bonus_stats(self):
         stat_values = {
@@ -183,9 +197,14 @@ class HeroEditorDialog(QDialog):
                 for stat, value in passive_bonus.get(category, {}).items():
                     bonuses[category][stat] = bonuses[category].get(stat, 0) + value
 
-        # UI에 적용
         for i, category in enumerate(["combat", "survival", "resistance", "magic"]):
             self.stat_boxes[i].setText(self.format_stats(bonuses.get(category, {})))
+
+        # ✅ 체크박스에 따라 영웅 스탯 반영 여부 결정
+        if self.apply_checkbox.isChecked():
+            self.stat_bonus_updated.emit(bonuses)
+        else:
+            self.stat_bonus_updated.emit({"combat": {}, "survival": {}, "resistance": {}, "magic": {}})
 
     def calculate_stat_bonuses(self, stat_values: dict) -> dict:
         STAT_TO_BONUSES = {
@@ -288,6 +307,9 @@ class HeroEditorDialog(QDialog):
                 text = f"{sign}{abs(int(v))}"
             lines.append(f"{label}: {text}")
         return "\n".join(lines)
+    
+    
+    
 
             
 # 독립 실행용

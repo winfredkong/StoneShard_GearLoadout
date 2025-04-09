@@ -9,6 +9,7 @@ class WeaponGroupDialog(QDialog):
         super().__init__(parent)
         self.setWindowTitle("Select Weapon Group")
         self.setFixedSize(1100, 900)
+        self.setStyleSheet("background-color: #2D3045; color: white; font-weight: bold; letter-spacing: 1px; font-size: 18px")
         self.selected = None
 
         layout = QVBoxLayout(self)
@@ -36,6 +37,7 @@ class WeaponGroupDialog(QDialog):
                 btn = QToolButton()
                 btn.setFixedSize(260, 130)
                 btn.setIconSize(QSize(96, 96))
+                btn.setStyleSheet("background-color: #231F3B; color: white; font-weight: bold; letter-spacing: 1px; font-size: 16px")
                 img_path = os.path.join("assets", "weapon_group", f"{group}.png")
                 if os.path.exists(img_path):
                     btn.setIcon(QIcon(QPixmap(img_path)))

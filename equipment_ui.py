@@ -17,8 +17,10 @@ class EquipmentUI(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("StoneShard Gear Loadout")
-        self.setFixedSize(2150, 1000)
+        self.setFixedSize(2200, 1000)
         self.two_handed_equipped = False
+        self.hero_editor_dialog = None
+        self.current_hero_bonus = {"combat": {}, "survival": {}, "resistance": {}, "magic": {}}
                 
         main_layout = QHBoxLayout(self)
         
@@ -33,7 +35,7 @@ class EquipmentUI(QWidget):
         
         #우측 페널
         right_panel = QWidget()
-        right_panel.setFixedSize(1050, 1200)
+        right_panel.setFixedSize(1090, 1200)
         right_panel.setStyleSheet("background-color: #2F3045; border: 1px solid black;")
         self.slot_area = right_panel
         self.slot_labels = {}
@@ -46,13 +48,13 @@ class EquipmentUI(QWidget):
         body_parts = ["Head", "Torso", "Hand", "Leg"]
         for i, part in enumerate(body_parts):
             label = QLabel(part, self.slot_area)
-            label.setGeometry(800, i*130, 240, 20)
+            label.setGeometry(800, i*130, 280, 20)
             label.setStyleSheet("font-size: 16px; font-weight: bold; color: white; border: 2px gray; background-color: #1c202f;")
             label.setAlignment(Qt.AlignCenter)
             self.resistance_labels[part] = label
         for i in range(4):            
             resistance_box = QLabel(self.slot_area)
-            resistance_box.setGeometry(800, 25 + i*130, 240, 100)
+            resistance_box.setGeometry(800, 25 + i*130, 280, 100)
             resistance_box.setStyleSheet("background-color: #1D1A31; color : white ; border: 2px #2F3045; font-size: 16px; padding: 2px;")
             resistance_box.setAlignment(Qt.AlignTop | Qt.AlignLeft)
             resistance_box.setWordWrap(True)
@@ -76,12 +78,12 @@ class EquipmentUI(QWidget):
         stat_colors = ["#2f1c1c", "#1e2f1c", "#1c202f", "#2f1c2e"]
         for i, title in enumerate(stat_titles):
             title_label = QLabel(title, self.slot_area)
-            title_label.setGeometry(10 + i * 260, 520, 250, 30)
+            title_label.setGeometry(10 + i * 270, 520, 260, 30)
             title_label.setStyleSheet("font-size: 20px; font-weight: bold; color: white; border: 2px gray; background-color: {};".format(stat_colors[i]))
             title_label.setAlignment(Qt.AlignCenter)
         for i in range(4):
             stat_box = QLabel(self.slot_area)
-            stat_box.setGeometry(10 + i * 260, 554, 250, 400)
+            stat_box.setGeometry(10 + i * 270, 554, 260, 400)
             stat_box.setStyleSheet("background-color: #1D1A31; color : white ; border: 2px #2F3045; font-size: 18px; padding: 5px;")
             stat_box.setAlignment(Qt.AlignTop | Qt.AlignLeft)
             stat_box.setWordWrap(True)
@@ -362,13 +364,11 @@ class EquipmentUI(QWidget):
             
             label.equipped_item = item
             self.combined_stats = calculate_combined_stats(self.slot_labels)
-            self.update_stat_boxes()
+            self.recalculate_stats_with_hero_bonus()
             self.update_resistance_boxes()
             
             if item.get("type") == "weapon":
                 damage_dict = item.get("damage", {})
-                print(damage_dict)
-                print([type(v) for v in damage_dict.values()])
                 total_damage = sum(damage_dict.values())                   
                 
                 damage_overlay = QLabel(f"Damage : {total_damage}", label)
@@ -399,7 +399,7 @@ class EquipmentUI(QWidget):
 
                 label.equipped_item = item
                 self.combined_stats = calculate_combined_stats(self.slot_labels)
-                self.update_stat_boxes()
+                self.recalculate_stats_with_hero_bonus()
                 self.update_resistance_boxes()
                 label.setScaledContents(False)
                 label.setAlignment(Qt.AlignCenter)
@@ -502,7 +502,7 @@ class EquipmentUI(QWidget):
 
             label.equipped_item = item
             self.combined_stats = calculate_combined_stats(self.slot_labels)
-            self.update_stat_boxes()
+            self.recalculate_stats_with_hero_bonus()
             self.update_resistance_boxes()
             label.setScaledContents(False)
             label.setAlignment(Qt.AlignCenter)
@@ -530,7 +530,7 @@ class EquipmentUI(QWidget):
             label.setText(slot_name)
             label.equipped_item = None
             self.combined_stats = calculate_combined_stats(self.slot_labels)
-            self.update_stat_boxes()
+            self.recalculate_stats_with_hero_bonus()
             self.update_resistance_boxes()
             label.setStyleSheet("border: 3px #454766; background-color:#1D1A31; color: lightgray; font-size: 16px; font-weight: bold;")
             label.setAlignment(Qt.AlignCenter)
@@ -541,20 +541,13 @@ class EquipmentUI(QWidget):
         damage = item.get("damage", {})
         return "\n".join(f"{k.replace('_damage', '').capitalize()}: {v}" for k, v in damage.items())
     
+
     def open_hero_editor(self):
-        dialog = HeroEditorDialog(self)
-        dialog.exec_()
-    
-    def open_hero_editor(self):
-        dialog = HeroEditorDialog(self)
-        if dialog.exec_() == QDialog.Accepted:
-            hero_bonuses = dialog.get_stat_bonus_if_applied()
-            if hero_bonuses:
-                # 장비 스탯에 보정 스탯 추가
-                for category in self.combined_stats:
-                    for key, bonus in hero_bonuses.get(category, {}).items():
-                        self.combined_stats[category][key] = self.combined_stats[category].get(key, 0) + bonus
-                self.update_stat_boxes()
+        if self.hero_editor_dialog is None:
+            self.hero_editor_dialog = HeroEditorDialog(self)
+            self.hero_editor_dialog.stat_bonus_updated.connect(self.apply_hero_bonus_to_ui)
+
+        self.hero_editor_dialog.exec_()
 
     def format_stats(self, stats, category=None):
         ordered_keys = []
@@ -611,6 +604,20 @@ class EquipmentUI(QWidget):
             lines.append(line)
 
         return "\n".join(lines)
+    
+    def recalculate_stats_with_hero_bonus(self):
+        combined = calculate_combined_stats(self.slot_labels)
+
+        for category in combined:
+            for stat, value in self.current_hero_bonus.get(category, {}).items():
+                combined[category][stat] = combined[category].get(stat, 0) + value
+
+        self.combined_stats = combined
+        self.update_stat_boxes()
+    
+    def apply_hero_bonus_to_ui(self, bonus):
+        self.current_hero_bonus = bonus or {"combat": {}, "survival": {}, "resistance": {}, "magic": {}}
+        self.recalculate_stats_with_hero_bonus()
 
 
 class ClickableLabel(QLabel):
