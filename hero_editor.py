@@ -17,7 +17,7 @@ class HeroEditorDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Hero Editor")
-        self.setFixedSize(1300, 800)
+        self.setFixedSize(1300, 850)
         self.setStyleSheet("background-color: #2F3045; color: white;")
 
         # 좌측 상단 - 초상화
@@ -88,7 +88,7 @@ class HeroEditorDialog(QDialog):
             title_label.setAlignment(Qt.AlignCenter)
         for i in range(4):
             stat_box = QLabel(self)
-            stat_box.setGeometry(30 + i * 310, 435, 300, 350)
+            stat_box.setGeometry(30 + i * 310, 435, 300, 400)
             stat_box.setStyleSheet("background-color: #1D1A31; color : white ; letter-spacing: 0.5px; border: 2px #2F3045; font-size: 18px; padding: 5px;")
             stat_box.setAlignment(Qt.AlignTop | Qt.AlignLeft)
             stat_box.setWordWrap(True)

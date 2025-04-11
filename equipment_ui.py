@@ -19,7 +19,7 @@ class EquipmentUI(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("StoneShard Gear Loadout")
-        self.setFixedSize(2200, 1000)
+        self.setFixedSize(2200, 1100)
         self.two_handed_equipped = False
         self.hero_editor_dialog = None
         self.current_hero_bonus = {"combat": {}, "survival": {}, "resistance": {}, "magic": {}}
@@ -98,7 +98,7 @@ class EquipmentUI(QWidget):
             title_label.setAlignment(Qt.AlignCenter)
         for i in range(4):
             stat_box = QLabel(self.slot_area)
-            stat_box.setGeometry(10 + i * 270, 554, 260, 400)
+            stat_box.setGeometry(10 + i * 270, 554, 260, 500)
             stat_box.setStyleSheet("background-color: #1D1A31; color : white ; border: 2px #2F3045; font-size: 18px; padding: 5px;")
             stat_box.setAlignment(Qt.AlignTop | Qt.AlignLeft)
             stat_box.setWordWrap(True)
