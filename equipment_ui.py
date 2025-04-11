@@ -3,14 +3,16 @@ import os
 import json
 
 from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QTableWidget, QTableWidgetItem,
-                             QHBoxLayout, QHeaderView, QDialog, QPushButton, QVBoxLayout)
-from PyQt5.QtGui import QPixmap, QIcon, QColor
-from PyQt5.QtCore import Qt, pyqtSignal, QSize
+                             QHBoxLayout, QHeaderView, QDialog, QPushButton)
+from PyQt5.QtGui import QPixmap, QColor, QIcon
+from PyQt5.QtCore import Qt, pyqtSignal
 
-from stat_processor import calculate_combined_stats, calculate_bodypart_resistances,\
-                    COMBAT_STATS, SURVIVAL_STATS, RESISTANCE_STATS, MAGIC_STATS
+from stat_processor import calculate_combined_stats, calculate_bodypart_resistances, is_dual_wielding,\
+                    COMBAT_STATS, SURVIVAL_STATS, RESISTANCE_STATS, MAGIC_STATS,\
+                    COMBAT_SUBGROUP, SURVIVAL_SUBGROUP, RESISTANCE_SUBGROUP, MAGIC_SUBGROUP
 from weapon_group_dialog import WeaponGroupDialog
 from hero_editor import HeroEditorDialog
+
 
 
 class EquipmentUI(QWidget):
@@ -61,11 +63,24 @@ class EquipmentUI(QWidget):
             resistance_box.setEnabled(False)
             self.resistance_boxes.append(resistance_box)
             
-        # 영웅 선택및 스탯 출력 버튼 생성성
-        self.hero_button = QPushButton("Edit Hero", right_panel)
-        self.hero_button.setGeometry(30, 440, 200, 40)
+        # 영웅 선택및 스탯 출력 버튼 생성
+        self.hero_button = QPushButton("Edit\nCharacter", right_panel)
+        self.hero_button.setGeometry(96, 440, 140, 64)
         self.hero_button.setStyleSheet("font-size: 16px; font-weight: bold; letter-spacing : 1px; background-color: #1D1A31; color: white;")
         self.hero_button.clicked.connect(self.open_hero_editor)
+        
+        #선택한 영웅 초상화 출력
+        self.hero_portrait_label = QLabel(right_panel)
+        self.hero_portrait_label.setGeometry(24, 440, 64, 64)
+        self.hero_portrait_label.setStyleSheet("background-color: #1D1A31;")
+        self.hero_portrait_label.setAlignment(Qt.AlignCenter)
+
+        # 상태 오버레이
+        self.hero_status_overlay = QLabel(self.hero_portrait_label)
+        self.hero_status_overlay.setGeometry(0, 0, 20, 20)
+        self.hero_status_overlay.setStyleSheet("font-weight: bold; font-size: 14px; color: lime; background-color: #1D1A31;")
+        self.hero_status_overlay.setAlignment(Qt.AlignCenter)
+        self.hero_status_overlay.hide()
         
         # 총 장비의 가격을 출력하기위한 레이블 생성
         self.total_cost_label = QLabel("Total Cost: 0", right_panel)
@@ -115,10 +130,6 @@ class EquipmentUI(QWidget):
         self.loaded_items = []
         self.current_icon_folder = ""
         self.two_handed_equipped = False
-
-    def setup_slots(self):
-        pass  # 슬롯 설정 생략
-
            
     def update_total_cost(self):
         total = 0
@@ -243,8 +254,6 @@ class EquipmentUI(QWidget):
                     value = item.get("tier", "?")
                     cell_item = QTableWidgetItem(value)
                     cell_item.setTextAlignment(Qt.AlignCenter)
-                    if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
-                        cell_item.setForeground(QColor("#A020F0"))
                     self.table.setItem(row, col, cell_item)
                 elif name == "Item":
                     value = item.get("name", "")
@@ -263,43 +272,29 @@ class EquipmentUI(QWidget):
                     value = item.get("class", "-")
                     cell_item = QTableWidgetItem(value)
                     cell_item.setTextAlignment(Qt.AlignCenter)
-                    if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
-                        cell_item.setForeground(QColor("#A020F0"))
-                        cell_item.setTextAlignment(Qt.AlignCenter)
                     self.table.setItem(row, col, cell_item)
                 elif name == "Protection":
                     value = str(item.get("protection", "-"))
                     cell_item = QTableWidgetItem(value)
                     cell_item.setTextAlignment(Qt.AlignCenter)
-                    if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
-                        cell_item.setForeground(QColor("#A020F0"))
                     self.table.setItem(row, col, cell_item)
                 elif name == "Durability":
                     value = str(item.get("durability", "-"))
                     cell_item = QTableWidgetItem(value)
                     cell_item.setTextAlignment(Qt.AlignCenter)
-                    if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
-                        cell_item.setForeground(QColor("#A020F0"))
                     self.table.setItem(row, col, cell_item)
                 elif name == "Price":
                     value = str(item.get("price", "-"))
                     cell_item = QTableWidgetItem(value)
                     cell_item.setTextAlignment(Qt.AlignCenter)
-                    if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
-                        cell_item.setForeground(QColor("#A020F0"))
-                        cell_item.setTextAlignment(Qt.AlignCenter)
                     self.table.setItem(row, col, cell_item)
                 elif name == "Damage":
                     value = self.extract_damage(item)
                     cell_item = QTableWidgetItem(value)
-                    if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
-                        cell_item.setForeground(QColor("#A020F0"))
                     self.table.setItem(row, col, cell_item)
                 elif name == "Properties":
                     value = self.format_stats_simple(item.get("stats", {}))
                     cell_item = QTableWidgetItem(value)
-                    if name in ["Item", "Rarity"] and item.get("rarity") == "Unique":
-                        cell_item.setForeground(QColor("#A020F0"))
                     self.table.setItem(row, col, cell_item)
                 elif name == "Icon":
                     icon_path = os.path.join("assets", folder_name, item.get("icon", ""))                    
@@ -319,6 +314,7 @@ class EquipmentUI(QWidget):
     def item_clicked(self, row, column):
         item = self.loaded_items[row]
         icon_file = item.get("icon")
+            
         if not icon_file:
             return
 
@@ -370,10 +366,21 @@ class EquipmentUI(QWidget):
             if item.get("type") == "weapon":
                 damage_dict = item.get("damage", {})
                 total_damage = sum(damage_dict.values())                   
-                
-                damage_overlay = QLabel(f"Damage : {total_damage}", label)
+                dual = is_dual_wielding(self.slot_labels)
+                factor = 1.0
+                if self.last_clicked_slot == "Main-Hand" and dual:
+                    factor = 0.75
+                elif self.last_clicked_slot == "Off-Hand" and dual:
+                    factor = 0.5
+
+                damage_dict = item.get("damage", {})
+                total_damage = sum(v * factor for v in damage_dict.values())
+
+                damage_overlay = QLabel(f"Damage : {total_damage:.0f}", label)
                 damage_overlay.setGeometry(16, label.height() - 28, 96, 24)
-                damage_overlay.setStyleSheet("color: lightgray; font-weight: bold; letter-spacing: 1px; background-color: rgba(0,0,0,180); font-size: 12px; border-radius: 4px;"
+                damage_overlay.setStyleSheet(
+                    "color: lightgray; font-weight: bold; background-color: rgba(0,0,0,180); "
+                    "font-size: 12px; border-radius: 4px;"
                 )
                 damage_overlay.setAlignment(Qt.AlignCenter)
                 damage_overlay.show()
@@ -451,7 +458,17 @@ class EquipmentUI(QWidget):
                 damage_dict = item.get("damage", {})
                 total_damage = sum(damage_dict.values())
 
-                damage_overlay = QLabel(f"Damage : {total_damage}", label)
+                dual = is_dual_wielding(self.slot_labels)
+                factor = 1.0
+                if self.last_clicked_slot == "Main-Hand" and dual:
+                    factor = 0.75
+                elif self.last_clicked_slot == "Off-Hand" and dual:
+                    factor = 0.5
+
+                damage_dict = item.get("damage", {})
+                total_damage = sum(v * factor for v in damage_dict.values())
+
+                damage_overlay = QLabel(f"Damage : {total_damage:.0f}", label)
                 damage_overlay.setGeometry(16, label.height() - 28, 96, 24)
                 damage_overlay.setStyleSheet(
                     "color: lightgray; font-weight: bold; background-color: rgba(0,0,0,180); "
@@ -535,11 +552,79 @@ class EquipmentUI(QWidget):
             label.setStyleSheet("border: 3px #454766; background-color:#1D1A31; color: lightgray; font-size: 16px; font-weight: bold;")
             label.setAlignment(Qt.AlignCenter)
             self.update_total_cost()
+            self.update_damage_overlays()
+            
+    def apply_hero_bonus_to_ui(self, bonus):
+        self.current_hero_bonus = bonus or {"combat": {}, "survival": {}, "resistance": {}, "magic": {}}
+        self.recalculate_stats_with_hero_bonus()
+
+        # 스탯 적용 여부 표시
+        applied = any(bool(v) for v in bonus.values())
+        if applied:
+            self.hero_status_overlay.setText("✓")
+            self.hero_status_overlay.setStyleSheet("color: lime; background-color: rgba(0,0,0,150); border-radius: 4px; font-weight: bold; font-size: 14px;")
+        else:
+            self.hero_status_overlay.setText("✕")
+            self.hero_status_overlay.setStyleSheet("color: red; background-color: rgba(0,0,0,150); border-radius: 4px; font-weight: bold; font-size: 14px;")
+        self.hero_status_overlay.show()
+
+        # 포트레이트 업데이트
+        if self.hero_editor_dialog:
+            icon_path = self.hero_editor_dialog.get_current_hero_icon()
+            if icon_path and os.path.exists(icon_path):
+                pixmap = QPixmap(icon_path).scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+                self.hero_portrait_label.setPixmap(pixmap)
+            else:
+                self.hero_portrait_label.setText("?")
             
 
     def extract_damage(self, item):
         damage = item.get("damage", {})
         return "\n".join(f"{k.replace('_damage', '').capitalize()}: {v}" for k, v in damage.items())
+    
+    
+    def update_damage_overlays(self):
+        from stat_processor import is_dual_wielding
+
+        dual = is_dual_wielding(self.slot_labels)
+
+        for slot_name in ["Main-Hand", "Off-Hand"]:
+            label = self.slot_labels.get(slot_name)
+            if not label:
+                continue
+
+            item = getattr(label, "equipped_item", None)
+            if not item or item.get("type") != "weapon":
+                continue
+
+            # Two-Handed 무기는 Off-Hand에서 제외
+            if item.get("handed") == "Two-Handed" and slot_name == "Off-Hand":
+                continue
+
+            # 기존 Damage overlay만 제거
+            for child in label.findChildren(QLabel):
+                if child.objectName() == "damage_overlay":
+                    child.deleteLater()
+
+            # 배율 설정
+            factor = 1.0
+            if slot_name == "Main-Hand" and dual:
+                factor = 0.75
+            elif slot_name == "Off-Hand" and dual:
+                factor = 0.5
+
+            damage_dict = item.get("damage", {})
+            total_damage = sum(v * factor for v in damage_dict.values())
+
+            damage_overlay = QLabel(f"Damage : {total_damage:.0f}", label)
+            damage_overlay.setObjectName("damage_overlay")
+            damage_overlay.setGeometry(16, label.height() - 28, 96, 24)
+            damage_overlay.setStyleSheet(
+                "color: lightgray; font-weight: bold; background-color: rgba(0,0,0,180); "
+                "font-size: 12px; border-radius: 4px;"
+            )
+            damage_overlay.setAlignment(Qt.AlignCenter)
+            damage_overlay.show()
     
 
     def open_hero_editor(self):
@@ -550,37 +635,49 @@ class EquipmentUI(QWidget):
         self.hero_editor_dialog.exec_()
 
     def format_stats(self, stats, category=None):
-        ordered_keys = []
+        lines = []
 
         if category == "combat":
-            ordered_keys = COMBAT_STATS
+            for subgroup in COMBAT_SUBGROUP:
+                for key in subgroup:
+                    if key in stats:
+                        lines.append(self.format_stat_line(key, stats[key]))
+                lines.append("")
         elif category == "survival":
-            ordered_keys = SURVIVAL_STATS
+            for subgroup in SURVIVAL_SUBGROUP:
+                for key in subgroup:
+                    if key in stats:
+                        lines.append(self.format_stat_line(key, stats[key]))
+                lines.append("")
         elif category == "resistance":
-            ordered_keys = RESISTANCE_STATS
+            for subgroup in RESISTANCE_SUBGROUP:
+                for key in subgroup:
+                    if key in stats:
+                        lines.append(self.format_stat_line(key, stats[key]))
+                lines.append("")
         elif category == "magic":
-            ordered_keys = MAGIC_STATS
+            for subgroup in MAGIC_SUBGROUP:
+                for key in subgroup:
+                    if key in stats:
+                        lines.append(self.format_stat_line(key, stats[key]))
+                lines.append("")
 
-        lines = []
-        
-        for key in ordered_keys:
-            if key in stats:
-                value = stats[key]
-                display_name = key.replace('_', ' ').capitalize()
-                if any(key.endswith(suffix) for suffix in ("_head", "_torso", "_hand", "_leg")):
-                    display_name = display_name.rsplit(' ', 1)[0] + " *"
+        return "\n".join(lines).strip()
+    
+    def format_stat_line(self, key, value):
+        display_name = key.replace('_', ' ').capitalize()
+        if any(key.endswith(suffix) for suffix in ("_head", "_torso", "_hand", "_leg")):
+            display_name = display_name.rsplit(' ', 1)[0] + " *"
 
-                if isinstance(value, float):
-                    if abs(value) < 1:
-                        formatted = f"{'+' if value >= 0 else ''}{round(value * 100)}%"
-                    else:
-                        formatted = f"{'+' if value >= 0 else ''}{round(value)}"
-                else:
-                    formatted = f"{'+' if value >= 0 else ''}{value}"
+        if isinstance(value, float):
+            if abs(value) < 1:
+                formatted = f"{'+' if value >= 0 else ''}{round(value * 100)}%"
+            else:
+                formatted = f"{'+' if value >= 0 else ''}{round(value)}"
+        else:
+            formatted = f"{'+' if value >= 0 else ''}{value}"
 
-                lines.append(f"{display_name} : {formatted}")
-        
-        return "\n".join(lines)
+        return f"{display_name} : {formatted}"
     
     def format_stats_simple(self, stats):
         lines = []
@@ -606,18 +703,21 @@ class EquipmentUI(QWidget):
         return "\n".join(lines)
     
     def recalculate_stats_with_hero_bonus(self):
+        # stat_processor에서 가져온 계산 함수 사용
+        from stat_processor import calculate_combined_stats
+
         combined = calculate_combined_stats(self.slot_labels)
 
+        # 영웅 보너스 반영
         for category in combined:
             for stat, value in self.current_hero_bonus.get(category, {}).items():
                 combined[category][stat] = combined[category].get(stat, 0) + value
 
         self.combined_stats = combined
         self.update_stat_boxes()
+        self.update_damage_overlays()
     
-    def apply_hero_bonus_to_ui(self, bonus):
-        self.current_hero_bonus = bonus or {"combat": {}, "survival": {}, "resistance": {}, "magic": {}}
-        self.recalculate_stats_with_hero_bonus()
+
 
 
 class ClickableLabel(QLabel):
@@ -637,6 +737,7 @@ class ClickableLabel(QLabel):
     
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon("assets/icon/icon.ico"))
     window = EquipmentUI()
     window.show()
     sys.exit(app.exec_())

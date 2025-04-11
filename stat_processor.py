@@ -10,15 +10,26 @@ COMBAT_STATS = [
     "stagger_chance", "life_drain", "energy_drain", "experience_gain"
 ]
 
-SURVIVAL_STATS = [
-    "max_health", "health_restoration", "healing_efficiency",
-    "energy", "energy_restoration",
-    "protection", "block_power", "block_chance", "block_power_recovery",
-    "dodge_chance", "stealth", "noise_produced", "lockpicking", "disarming", "vision",
-    "fortitude", "damage_reflection", "bleed_resistance", "control_resistance",
-    "move_resistance", "hunger_resistance", "intoxication_resistance",
-    "pain_resistance", "fatigue_resistance"
+COMBAT_SUBGROUP = [
+        ["main_hand_damage", "off_hand_damage", "weapon_damage", "main_hand_efficiency", "off_hand_efficiency", "bodypart_damage", "armor_damage", "armor_penetration"],
+        ["accuracy", "crit_chance", "crit_efficiency", "counter_chance", "fumble_chance", "skills_energy_cost", "spells_energy_cost", "cooldowns_duration", "bonus_range"],
+        ["bleed_chance", "daze_chance", "stun_chance", "knockback_chance", "immobilization_chance", "stagger_chance", "life_drain", "energy_drain", "experience_gain"]
 ]
+
+SURVIVAL_STATS = [
+    "max_health", "health_restoration", "healing_efficiency", "energy", "energy_restoration",
+    "protection", "block_power", "block_chance", "block_power_recovery", "dodge_chance",
+    "stealth", "noise_produced", "lockpicking", "disarming", "vision",
+    "fortitude", "damage_reflection", "bleed_resistance", "control_resistance",
+    "move_resistance", "hunger_resistance", "intoxication_resistance", "pain_resistance", "fatigue_resistance"
+]
+
+SURVIVAL_SUBGROUP = [
+        ["max_health", "health_restoration", "healing_efficiency", "energy", "energy_restoration"],
+        ["protection", "block_power", "block_chance", "block_power_recovery", "dodge_chance"],
+        ["stealth", "noise_produced", "lockpicking", "disarming", "vision", "fortitude", "damage_reflection", "bleed_resistance", "control_resistance", "move_resistance", "hunger_resistance", "intoxication_resistance", "pain_resistance", "fatigue_resistance"]
+]
+
 
 RESISTANCE_STATS = [
     "total_damage_taken", "physical_resistance",
@@ -28,11 +39,21 @@ RESISTANCE_STATS = [
     "magic_resistance", "arcane_resistance", "unholy_resistance", "sacred_resistance", "psionic_resistance"
 ]
 
+RESISTANCE_SUBGROUP = [
+        ["total_damage_taken", "physical_resistance", "slashing_resistance", "piercing_resistance", "crushing_resistance", "rending_resistance"],
+        ["nature_resistance", "fire_resistance", "frost_resistance", "shock_resistance", "poison_resistance", "caustic_resistance", "magic_resistance", "arcane_resistance", "unholy_resistance", "sacred_resistance", "psionic_resistance"]
+]
+
 MAGIC_STATS = [
     "magic_power", "backfire_chance", "backfire_damage",
     "miracle_chance", "miracle_potency",
     "pyromantic_power", "geomantic_power", "venomantic_power", "cryomantic_power", "electromagnetic_power",
     "arcanistic_power", "astromantic_power", "psionic_power", "chronomantic_power"
+]
+
+MAGIC_SUBGROUP  = [
+        ["magic_power", "backfire_chance", "backfire_damage", "miracle_chance", "miracle_potency"],
+        ["pyromantic_power", "geomantic_power", "venomantic_power", "cryomantic_power", "electromagnetic_power", "arcanistic_power", "astromantic_power", "psionic_power", "chronomantic_power"]
 ]
 
 Head_Resistances = [
@@ -79,7 +100,19 @@ THRESHOLD_STATS = [
     "magic_power", "pain_resistance", "fortitude"
 ]
 
+def is_dual_wielding(slot_labels: dict) -> bool:
+    main = getattr(slot_labels.get("Main-Hand"), "equipped_item", None)
+    off = getattr(slot_labels.get("Off-Hand"), "equipped_item", None)
+    return (
+        main and main.get("type") == "weapon" and
+        main.get("handed") != "Two-Handed" and
+        off and off.get("type") == "weapon" and
+        off.get("handed") != "Two-Handed"
+    )
+
 def calculate_combined_stats(slot_labels: dict) -> dict:
+    dual_wielding = is_dual_wielding(slot_labels)
+
     combined = {
         "combat": {},
         "survival": {},
@@ -87,15 +120,26 @@ def calculate_combined_stats(slot_labels: dict) -> dict:
         "magic": {}
     }
 
-    for label in slot_labels.values():
+    for slot_name, label in slot_labels.items():
         item = getattr(label, "equipped_item", None)
         if not item:
             continue
+
         stats = item.get("stats", {})
         damage = item.get("damage", {})
         merged = {**stats, **damage}
+
+        # 배율 설정
+        factor = 1.0
+        if dual_wielding:
+            if slot_name == "Main-Hand":
+                factor = 0.75
+            elif slot_name == "Off-Hand":
+                factor = 0.5
+
         for k, v in merged.items():
             k = k.lower()
+            v *= factor
             if k in COMBAT_STATS:
                 combined["combat"][k] = combined["combat"].get(k, 0) + v
             elif k in SURVIVAL_STATS:
@@ -105,7 +149,13 @@ def calculate_combined_stats(slot_labels: dict) -> dict:
             elif k in MAGIC_STATS:
                 combined["magic"][k] = combined["magic"].get(k, 0) + v
 
+    # Dual Wielding 보정 스탯 추가
+    if dual_wielding:
+        combined["combat"]["cooldowns_duration"] = combined["combat"].get("cooldowns_duration", 0) - 0.15
+        combined["combat"]["fumble_chance"] = combined["combat"].get("fumble_chance", 0) + 0.05
+
     return combined
+
 
 def calculate_bodypart_resistances(slot_labels: dict) -> dict:
     parts = {
@@ -146,3 +196,4 @@ def format_stats(self, stat_dict: dict) -> str:
             text = f"{sign}{abs(int(v))}"
         lines.append(f"{label}: {text}")
     return "\n".join(lines)
+

@@ -45,14 +45,14 @@ class HeroEditorDialog(QDialog):
             spin.setStyleSheet("font-weight : bold; color : white; letter-spacing: 1px; border : 1px #1c202f; background-color: #1c202f")
             spin.setRange(10, 30)
             spin.setValue(10)
-            spin.valueChanged.connect(self.update_ability_points)
+            spin.valueChanged.connect(self.update_stat_points)
             self.stat_spinboxes[name] = spin
             
             
         # AP
-        self.ability_point = QLabel("AP", self)
-        self.ability_point.setGeometry(240, 230, 150, 30)
-        self.ability_point.setStyleSheet("font-weight: bold; letter-spacing: 1px;")
+        self.stat_point = QLabel("SP : ", self)
+        self.stat_point.setGeometry(240, 230, 180, 30)
+        self.stat_point.setStyleSheet("font-weight: bold; letter-spacing: 1px;")
 
         # 체크박스
         self.apply_checkbox = QCheckBox("Apply stats to GearLoadout", self)
@@ -102,7 +102,7 @@ class HeroEditorDialog(QDialog):
         if widget_class:
             widget = widget_class(self)
             widget.stat_bonus_changed.connect(self.update_hero_bonus_stats)
-            widget.stat_bonus_changed.connect(self.update_ability_points)
+            widget.stat_bonus_changed.connect(self.update_stat_points)
             return widget
         else:
             return QLabel(f"{hero_name}의 패시브 메뉴 없음")
@@ -158,18 +158,18 @@ class HeroEditorDialog(QDialog):
             value = hero["stats"].get(json_key, 10)
             self.stat_spinboxes[label_name].setValue(value) 
             
-    def update_ability_points(self):
+    def update_stat_points(self):
         total = sum(spin.value() for spin in self.stat_spinboxes.values())
 
         current_widget = self.passive_stack.currentWidget()
-        passive_ap = 0
+        passive_sp = 0
         if hasattr(current_widget, "get_bonus_points"):
-            passive_ap = current_widget.get_bonus_points().get("ap", 0)
+            passive_sp = current_widget.get_bonus_points().get("ap", 0)
 
-        max_ap = 82 + passive_ap
-        remaining = max_ap - total
+        max_sp = 82 + passive_sp
+        remaining = max_sp - total
 
-        self.ability_point.setText(f"AP: {remaining}")
+        self.stat_point.setText(f"SP : {remaining}")
 
         for stat, spin in self.stat_spinboxes.items():
             current = spin.value()
@@ -295,19 +295,87 @@ class HeroEditorDialog(QDialog):
         else:
             return None
     
-    def format_stats(self, stat_dict: dict) -> str:
+    def format_stats(self, stat_dict: dict, category: str = None) -> str:
+        from stat_processor import COMBAT_SUBGROUP, SURVIVAL_SUBGROUP, RESISTANCE_SUBGROUP, MAGIC_SUBGROUP
         lines = []
-        for k, v in sorted(stat_dict.items()):
-            label = k.replace('_', ' ').capitalize()
-            if isinstance(v, float):
-                sign = "+" if v > 0 else "-" if v < 0 else ""
-                text = f"{sign}{abs(round(v * 100, 1))}%"
+
+        if category == "combat":
+            for subgroup in COMBAT_SUBGROUP:
+                for key in subgroup:
+                    if key in stat_dict:
+                        lines.append(self.format_stat_line(key, stat_dict[key]))
+                lines.append("")
+        elif category == "survival":
+            for subgroup in SURVIVAL_SUBGROUP:
+                for key in subgroup:
+                    if key in stat_dict:
+                        lines.append(self.format_stat_line(key, stat_dict[key]))
+                lines.append("")
+        elif category == "resistance":
+            for subgroup in RESISTANCE_SUBGROUP:
+                for key in subgroup:
+                    if key in stat_dict:
+                        lines.append(self.format_stat_line(key, stat_dict[key]))
+                lines.append("")
+        elif category == "magic":
+            for subgroup in MAGIC_SUBGROUP:
+                for key in subgroup:
+                    if key in stat_dict:
+                        lines.append(self.format_stat_line(key, stat_dict[key]))
+                lines.append("")
+        else:
+            for k, v in sorted(stat_dict.items()):
+                lines.append(self.format_stat_line(k, v))
+
+        return "\n".join(lines).strip()
+
+    def format_stat_line(self, key, value):
+        display_name = key.replace('_', ' ').capitalize()
+
+        if any(key.endswith(suffix) for suffix in ("_head", "_torso", "_hand", "_leg")):
+            display_name = display_name.rsplit(' ', 1)[0] + " *"
+
+        if isinstance(value, float):
+            if abs(value) < 1:
+                formatted = f"{'+' if value >= 0 else ''}{round(value * 100)}%"
             else:
-                sign = "+" if v > 0 else "-" if v < 0 else ""
-                text = f"{sign}{abs(int(v))}"
-            lines.append(f"{label}: {text}")
-        return "\n".join(lines)
+                formatted = f"{'+' if value >= 0 else ''}{round(value)}"
+        else:
+            formatted = f"{'+' if value >= 0 else ''}{value}"
+
+        return f"{display_name} : {formatted}"
+
+    def update_hero_bonus_stats(self):
+        stat_values = {
+            "strength": self.stat_spinboxes["Strength"].value(),
+            "agility": self.stat_spinboxes["Agility"].value(),
+            "perception": self.stat_spinboxes["Perception"].value(),
+            "vitality": self.stat_spinboxes["Vitality"].value(),
+            "willpower": self.stat_spinboxes["Willpower"].value()
+        }
+        bonuses = self.calculate_stat_bonuses(stat_values)
+
+        current_widget = self.passive_stack.currentWidget()
+        if hasattr(current_widget, "get_stat_bonus"):
+            passive_bonus = current_widget.get_stat_bonus()
+            for category in bonuses:
+                for stat, value in passive_bonus.get(category, {}).items():
+                    bonuses[category][stat] = bonuses[category].get(stat, 0) + value
+
+        for i, category in enumerate(["combat", "survival", "resistance", "magic"]):
+            self.stat_boxes[i].setText(self.format_stats(bonuses.get(category, {}), category))
+
+        if self.apply_checkbox.isChecked():
+            self.stat_bonus_updated.emit(bonuses)
+        else:
+            self.stat_bonus_updated.emit({"combat": {}, "survival": {}, "resistance": {}, "magic": {}})
     
+    def get_current_hero_icon(self):
+        index = self.name_dropdown.currentIndex()
+        if index < 0 or index >= len(self.heroes):
+            return None
+        hero = self.heroes[index]
+        return os.path.join("assets", "portrait", hero["icon"])
     
     
 

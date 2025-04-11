@@ -58,7 +58,7 @@ class VelmirPassiveWidget(QWidget):
             f"+{exp * 100:.1f}% Experience Gain\n"
             f"+{dmg * 100:.1f}% Enemy Damage Taken\n"
             f"+{rep}% Reputation\n"
-            f"+{ap} Ability Points"
+            f"+{ap} Stat Points"
         )
 
         self._bonus = {
@@ -134,7 +134,7 @@ class JorgrimPassiveWidget(QWidget):
 
         self.bonus_label.setText(
             f"+{weapon * 100:.1f}% Weapon Damage\n"
-            f"+{ap} Ability Points"
+            f"+{ap} Stat Points"
         )
 
         self._bonus = {
@@ -235,8 +235,8 @@ class DirwinPassiveWidget(QWidget):
         self.bonus_label.setText(
             f"Chance to Harvest Pelts: {pelt_chance}%\n"
             f"+{exp*100:.1f}% Experience Gain\n"
-            f"+{ap} Ability Point(s)\n"
-            f"+{sp} Skill Point(s)"
+            f"+{ap} Stat Point(s)\n"
+            f"+{sp} Ability Point(s)"
         )
 
         self._bonus = {
@@ -411,7 +411,7 @@ class MahirPassiveWidget(QWidget):
         self.bonus_label.setText(
             f"+{exp*100:.1f}% Experience Gain\n"
             f"+{fatigue*100:.1f}% Fatigue Resistance\n"
-            f"+{ap} Skill Points"
+            f"+{ap} Ability Points"
         )
 
         self._bonus = {
@@ -426,7 +426,7 @@ class MahirPassiveWidget(QWidget):
         return self._bonus
 
     def get_bonus_points(self):
-        return {"ap": self.tree_spin.value(), "sp": 0}
+        return {"sp": self.tree_spin.value(), "sp": 0}
 
 class LeosthenesPassiveWidget(QWidget):
     stat_bonus_changed = pyqtSignal()
@@ -668,11 +668,14 @@ class HildaPassiveWidget(QWidget):
             self.bonus_slots.append(label)
 
         self.update_bonus()
+        self.animal_selector_dialog = None
 
     def open_dialog(self, event):
-        dialog = AnimalSelectorDialog(self)
-        if dialog.exec_():
-            self.selected_animals = dialog.selected_animals
+        if self.animal_selector_dialog is None:
+            self.animal_selector_dialog = AnimalSelectorDialog(self)
+
+        if self.animal_selector_dialog.exec_():
+            self.selected_animals = self.animal_selector_dialog.selected_animals
             self.update_bonus()
 
     def update_bonus(self):
@@ -705,9 +708,9 @@ class HildaPassiveWidget(QWidget):
             if stat in bonus[cat]:
                 bonus[cat][stat] += value
                 return bonus
-        if stat in ["weapon_damage", "experience_gain"]:
+        if stat in ["weapon_damage", "experience_gain", "life_drain", "energy_drain"]:
             bonus["combat"][stat] = value
-        elif stat in ["magic_power", "life_drain", "energy_drain"]:
+        elif stat in ["magic_power"]:
             bonus["magic"][stat] = value
         elif stat == "total_damage_taken":
             bonus["resistance"][stat] = value
