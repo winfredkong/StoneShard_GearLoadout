@@ -48,17 +48,22 @@ class HeroEditorDialog(QDialog):
             spin.valueChanged.connect(self.update_stat_points)
             self.stat_spinboxes[name] = spin
             
-            
+        # SP 제한 해제 체크박스
+        self.SP_checkbox = QCheckBox("Enable SP limit", self)
+        self.SP_checkbox.setGeometry(240, 270, 180, 30) 
+        self.SP_checkbox.setStyleSheet("color : white;")   
+        
         # AP
         self.stat_point = QLabel("SP : ", self)
-        self.stat_point.setGeometry(240, 230, 180, 30)
+        self.stat_point.setGeometry(240, 235, 90, 30)
         self.stat_point.setStyleSheet("font-weight: bold; letter-spacing: 1px;")
-
+        
         # 체크박스
         self.apply_checkbox = QCheckBox("Apply stats to GearLoadout", self)
-        self.apply_checkbox.setGeometry(30, 280, 260, 30)
+        self.apply_checkbox.setGeometry(30, 340, 330, 50)
+        self.apply_checkbox.setStyleSheet("font-size: 18px; font-weight: bold; letter-spacing: 1px;")
         self.apply_checkbox.stateChanged.connect(self.update_hero_bonus_stats)
-
+        
         # 패시브 이름
         self.passive_name = QLabel("passive name", self)
         self.passive_name.setGeometry(450, 30, 800, 30)
@@ -166,13 +171,20 @@ class HeroEditorDialog(QDialog):
         if hasattr(current_widget, "get_bonus_points"):
             passive_sp = current_widget.get_bonus_points().get("ap", 0)
 
-        max_sp = 82 + passive_sp
+        max_sp = 0
+        if self.SP_checkbox.isChecked():
+            max_sp = 999
+        else:
+            max_sp = 82 + passive_sp
         remaining = max_sp - total
 
-        self.stat_point.setText(f"SP : {remaining}")
+        if self.SP_checkbox.isChecked():
+            self.stat_point.setText("SP : -")
+        else:
+            self.stat_point.setText(f"SP : {remaining}")
 
         for stat, spin in self.stat_spinboxes.items():
-            current = spin.value()
+            current = spin.value()          
             if remaining <= 0:
                 spin.setMaximum(current)
             else:

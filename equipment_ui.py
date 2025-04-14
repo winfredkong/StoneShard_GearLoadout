@@ -8,7 +8,7 @@ from PyQt5.QtGui import QPixmap, QColor, QIcon
 from PyQt5.QtCore import Qt, pyqtSignal
 
 from stat_processor import calculate_combined_stats, calculate_bodypart_resistances, is_dual_wielding,\
-                    COMBAT_STATS, SURVIVAL_STATS, RESISTANCE_STATS, MAGIC_STATS,\
+                    COMBAT_STATS, SURVIVAL_STATS, RESISTANCE_STATS, MAGIC_STATS, \
                     COMBAT_SUBGROUP, SURVIVAL_SUBGROUP, RESISTANCE_SUBGROUP, MAGIC_SUBGROUP
 from weapon_group_dialog import WeaponGroupDialog
 from hero_editor import HeroEditorDialog
