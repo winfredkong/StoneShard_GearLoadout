@@ -47,7 +47,7 @@ class VelmirPassiveWidget(QWidget):
 
     def update_bonus(self):        
         count = self.spin.value()
-        exp = round(count * 0.015, 5)
+        exp = min(round(count * 0.01, 5),0.15)
         dmg = round(count * 0.015, 5)
         bosses = sum([self.checkbox1.isChecked(), self.checkbox2.isChecked()])
         rep = bosses * 10
@@ -193,7 +193,7 @@ class DirwinPassiveWidget(QWidget):
         self.hunt_label = QLabel("Hunting Grounds Visited:", self)
         self.hunt_label.move(120, 50)
         self.hunt_spin = QSpinBox(self)
-        self.hunt_spin.setRange(0, 20)
+        self.hunt_spin.setRange(0, 15)
         self.hunt_spin.move(320, 45)
         self.hunt_spin.valueChanged.connect(self.update_bonus)
 
@@ -230,13 +230,11 @@ class DirwinPassiveWidget(QWidget):
         pelt_chance = 20 + visited
         exp = visited * 0.01
         ap = (skill//3)
-        sp = (skill//3)
 
         self.bonus_label.setText(
             f"Chance to Harvest Pelts: {pelt_chance}%\n"
             f"+{exp*100:.1f}% Experience Gain\n"
-            f"+{ap} Stat Point(s)\n"
-            f"+{sp} Ability Point(s)"
+            f"+{ap} Ability Point(s)\n"
         )
 
         self._bonus = {
@@ -246,15 +244,11 @@ class DirwinPassiveWidget(QWidget):
             "magic": {}
         }
         self._ap = ap
-        self._sp = sp
         self.stat_bonus_changed.emit()
 
     def get_stat_bonus(self):
         return self._bonus
 
-    def get_bonus_points(self):
-        return {"ap": self._ap, "sp": self._sp}
-    
 class JonnaPassiveWidget(QWidget):
     stat_bonus_changed = pyqtSignal()
     def __init__(self, parent=None):
@@ -330,10 +324,10 @@ class JonnaPassiveWidget(QWidget):
             "Geomantic": "geomantic_power"
         }[school]
 
-        school_bonus = round(inv * 0.05, 5)
-        miracle = round(inv * 0.05, 5)
+        school_bonus = round(inv * 0.06, 5)
+        miracle = round(inv * 0.075, 5)
         backfire = round(read * -0.01, 5)
-        exp = round(ap * 0.01, 5)
+        exp = min(round(ap * 0.01, 5), 0.15)
 
         self.bonus_label.setText(
             f"+{school_bonus*100:.1f}% {school} Power\n"
@@ -370,7 +364,7 @@ class MahirPassiveWidget(QWidget):
         # 위치 수
         QLabel("Location Visited:", self).move(110, 50)
         self.poi_spin = QSpinBox(self)
-        self.poi_spin.setRange(0, 100)
+        self.poi_spin.setRange(0, 50)
         self.poi_spin.move(340, 50)
         self.poi_spin.valueChanged.connect(self.update_bonus)
 
@@ -404,8 +398,8 @@ class MahirPassiveWidget(QWidget):
         loc = self.poi_spin.value()
         tree = self.tree_spin.value()
 
-        exp = round(loc * 0.0033, 5)
-        fatigue = round(loc * 0.0033, 5)
+        exp = round(loc * 0.004, 5)
+        fatigue = round(loc * 0.004, 5)
         ap = tree
 
         self.bonus_label.setText(
@@ -489,13 +483,13 @@ class LeosthenesPassiveWidget(QWidget):
         self.update_bonus()
 
     def update_bonus(self):
-        w = self.weapon_spin.value()
-        s = self.sorcery_spin.value()
-        u = self.utility_spin.value()
+        w = min(self.weapon_spin.value(),15)
+        s = min(self.sorcery_spin.value(),15)
+        u = min(self.utility_spin.value(),15)
 
-        mp = round(w * 0.015, 5)
-        wd = round(s * 0.015, 5)
-        exp = round(u * 0.02, 5)
+        mp = round(w * 0.02, 5)
+        exp = round((w+s) * 0.01, 5)
+        wd = round(s * 0.02, 5)
         hp = u * 2
         en = u * 2
 
@@ -680,8 +674,8 @@ class HildaPassiveWidget(QWidget):
 
     def update_bonus(self):
         level = self.level_spin.value()
-        threshold = (level - 1) * 0.5
-        self.bonus_label.setText(f"+{threshold:.1f}% Increase Threshold \n(Hunger, Thirst, Pain, Intoxication, and Fatigue)")
+        threshold = (level - 1) * 0.33334
+        self.bonus_label.setText(f"+{threshold:.2f}% Increase Threshold \n(Hunger, Thirst, Pain, Intoxication, and Fatigue)")
         self.bonus_label.setStyleSheet("font-size: 16px;")
 
         self._bonus = {"combat": {}, "survival": {}, "resistance": {}, "magic": {}}

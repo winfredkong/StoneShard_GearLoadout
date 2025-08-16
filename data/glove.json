@@ -527,5 +527,93 @@
     "icon": "Court_Mage_Gloves.png",
     "slot": "Glove",
     "type": "armor"
+  },
+  {
+    "tier": "Tier 4",
+    "rarity": "Common",
+    "class": "Light",
+    "protection": 6.0,
+    "durability": 90,
+    "price": 1350,
+    "stats": {
+      "physical_resistance_hand": 0.12,
+      "bleed_resistance_hand": 0.14,
+      "crit_efficiency": 0.16,
+      "counter_chance": 0.03,
+      "fumble_chance": -0.04
+    },
+    "name": "Duelist Gloves",
+    "id": "duelist_gloves",
+    "icon": "Duelist_Gloves.png",
+    "slot": "Glove",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 5",
+    "rarity": "Common",
+    "class": "Light",
+    "protection": 8.0,
+    "durability": 105,
+    "price": 3525,
+    "stats": {
+      "physical_resistance_hand": 0.14,
+      "bleed_resistance_hand": 0.16,
+      "block_chance": 0.02,
+      "accuracy": 0.02,
+      "crit_chance": 0.01,
+      "crit_efficiency": 0.20,
+      "fumble_chance": -0.05
+    },
+    "name": "Blademaster Gloves",
+    "id": "blademaster_gloves",
+    "icon": "Blademaster_Gloves.png",
+    "slot": "Glove",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 3",
+    "rarity": "Common",
+    "class": "Medium",
+    "protection": 9.0,
+    "durability": 115,
+    "price": 1000,
+    "stats": {
+      "physical_resistance_hand": 0.08,
+      "bleed_resistance_hand": 0.15,
+      "accuracy": 0.02,
+      "fumble_chance": -0.02,
+      "energy": -3,
+      "skills_energy_cost": -0.06
+    },
+    "name": "Steel Bracers",
+    "id": "steel_bracers",
+    "icon": "Steel_Bracers.png",
+    "slot": "Glove",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 5",
+    "rarity": "Unique",
+    "class": "Heavy",
+    "protection": 23.0,
+    "durability": 300,
+    "price": 8825,
+    "stats": {
+      "weapon_damage": 0.03,
+      "physical_resistance_hand": 0.31,
+      "bleed_resistance_hand": 0.37,
+      "block_chance": 0.05,
+      "fumble_chance": 0.05,
+      "crit_avoidance": 0.12,
+      "energy": -18,
+      "energy_restoration": -0.03,
+      "fatigue_resistance": 0.07
+    },
+    "name": "Gilded Plate Gauntlets",
+    "id": "gilded_plate_gauntlets",
+    "icon": "Gilded_Plate_Gauntlets.png",
+    "slot": "Glove",
+    "type": "armor"
   }
+
 ]

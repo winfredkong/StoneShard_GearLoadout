@@ -671,5 +671,86 @@
     "damage": {
       "slashing_damage": 31
     }
+  },
+  {
+    "id": "vault_raider_hatchet",
+    "name": "Vault Raider Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "durability": 100,
+    "price": 1075,
+    "stats": {
+      "armor_penetration": 0.10,
+      "armor_damage": 0.14,
+      "bodypart_damage": 0.14,
+      "bleed_chance": 0.08,
+      "stagger_chance": 0.05,
+      "accuracy": 0.05,
+      "skills_energy_cost": 0.10
+    },
+    "icon": "Vault_Raider_Hatchet.png",
+    "damage": {
+      "slashing_damage": 22
+    }
+  },
+  {
+    "id": "haakons_axe",
+    "name": "Haakon's Axe",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 155,
+    "price": 5100,
+    "stats": {
+      "armor_penetration": 0.15,
+      "armor_damage": 0.20,
+      "bodypart_damage": 0.20,
+      "bleed_chance": 0.16,
+      "accuracy": 0.07,
+      "fumble_chance": -0.03,
+      "energy_restoration": 0.05,
+      "skills_energy_cost": 0.20,
+      "energy_drain": 0.05
+    },
+    "icon": "Haakon's_Axe.png",
+    "damage": {
+      "slashing_damage": 29
+    }
+  },
+  {
+    "id": "ancestral_hatchet",
+    "name": "Ancestral Hatchet",
+    "type": "weapon",
+    "weapon_group": "One-Handed Axe",
+    "handed": "One-Handed",
+    "slot": "main_hand",
+    "block_off_hand": false,
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "durability": 200,
+    "price": 4850,
+    "stats": {
+      "armor_penetration": 0.20,
+      "bodypart_damage": 0.15,
+      "bleed_chance": 0.12,
+      "block_chance": 0.07,
+      "block_power_recovery": 0.05,
+      "crit_chance": 0.03,
+      "counter_chance": 0.07,
+      "skills_energy_cost": 0.15
+    },
+    "icon": "Ancestral_Hatchet.png",
+    "damage": {
+      "slashing_damage": 29
+    }
   }
 ]

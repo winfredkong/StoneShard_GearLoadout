@@ -1,0 +1,96 @@
+[
+  {
+    "id": "Banner",
+    "name": "Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {},
+    "icon": "Banner.png",
+    "price": 50
+  },
+  {
+    "id": "Boar_Banner",
+    "name": "Boar Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {
+      "pain_resistance": 0.05
+    },
+    "icon": "Boar_Banner.png",
+    "price": 100
+  },
+  {
+    "id": "Lion_Banner",
+    "name": "Lion Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {
+      "health_restoration": 0.03,
+      "energy_restoration": 0.03
+    },
+    "icon": "Lion_Banner.png",
+    "price": 100
+
+  },
+  {
+    "id": "Horse_Banner",
+    "name": "Horse Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {
+      "fatigue_resistance": 0.10
+    },
+    "icon": "Horse_Banner.png",
+    "price": 100
+
+  },
+  {
+    "id": "Owl_Banner",
+    "name": "Owl Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {
+      "experience_gain": 0.075
+    },
+    "icon": "Owl_Banner.png",
+    "price": 100
+
+  },
+  {
+    "id": "Ox_Banner",
+    "name": "Ox Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {
+      "move_resistance": 0.05,
+      "control_resistance": 0.05
+    },
+    "icon": "Ox_Banner.png",
+    "price": 100
+
+  },
+  {
+    "id": "Bear_Banner",
+    "name": "Bear Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {
+      "max_health": 5
+    },
+    "icon": "Bear_Banner.png",
+    "price": 100
+
+  },
+  {
+    "id": "Wolf_Banner",
+    "name": "Wolf Banner",
+    "slot": "caravan_banner",
+    "type": "normal",
+    "stats": {
+      "max_energy": 5
+    },
+    "icon": "Wolf_Banner.png",
+    "price": 100
+
+  }
+]

@@ -363,5 +363,113 @@
     "durability": 55,
     "price": 575,
     "type": "normal"
+  },
+  {
+    "id": "elven_girdle",
+    "name": "Elven Girdle",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "nature_resistance": 0.03,
+      "magic_resistance": 0.03,
+      "dodge_chance": 0.01,
+      "backfire_chance": -0.03,
+      "energy_restoration": 0.03,
+      "fatigue_resistance": 0.03
+    },
+    "icon": "Elven_Girdle.png",
+    "durability": 20,
+    "price": 375,
+    "type": "normal"
+  },
+  {
+    "id": "spellweaver_girdle",
+    "name": "Spellweaver Girdle",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 5",
+    "stats": {
+      "backfire_chance": -0.06,
+      "spells_energy_cost": -0.04,
+      "cooldowns_duration": -0.05
+    },
+    "icon": "Spellweaver_Girdle.png",
+    "durability": 30,
+    "price": 1900,
+    "type": "normal"
+  },
+  {
+    "id": "voivod_belt",
+    "name": "Voivod Belt",
+    "slot": "belt",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "stats": {
+      "move_resistance": 0.05,
+      "crit_efficiency": 0.10,
+      "fumble_chance": -0.05,
+      "energy": 3,
+      "fortitude": 0.05,
+      "max_health": 3
+    },
+    "icon": "Voivod_Belt.png",
+    "durability": 75,
+    "price": 1400,
+    "type": "unique"
+  },
+  {
+    "id": "skirmisher_belt",
+    "name": "Skirmisher Belt",
+    "slot": "belt",
+    "rarity": "Common",
+    "tier": "Tier 4",
+    "stats": {
+      "accuracy": 0.02,
+      "crit_efficiency": 0.10,
+      "fumble_chance": -0.04
+    },
+    "icon": "Skirmisher_Belt.png",
+    "durability": 55,
+    "price": 575,
+    "type": "normal"
+  },
+  {
+    "id": "royal_champion_belt",
+    "name": "Royal Champion Belt",
+    "slot": "belt",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "stats": {
+      "physical_resistance": 0.05,
+      "bleed_resistance": 0.05,
+      "pain_resistance": 0.10,
+      "block_chance": 0.08,
+      "block_power_recovery": 0.05,
+      "crit_avoidance": 0.10
+    },
+    "icon": "Royal_Champion_Belt.png",
+    "durability": 85,
+    "price": 1225,
+    "type": "unique"
+  },
+  {
+    "id": "brotherhood_of_the_asps_belt",
+    "name": "Brotherhood of the Asp's Belt",
+    "slot": "belt",
+    "rarity": "Unique",
+    "tier": "Tier 5",
+    "stats": {
+      "nature_resistance": 0.05,
+      "poison_resistance": 0.15,
+      "dodge_chance": 0.03,
+      "backfire_chance": -0.05,
+      "healing_efficiency": 0.05,
+      "max_health": 5
+    },
+    "icon": "Brotherhood_of_the_Asps_Belt.png",
+    "durability": 30,
+    "price": 2050,
+    "type": "unique"
   }
 ]

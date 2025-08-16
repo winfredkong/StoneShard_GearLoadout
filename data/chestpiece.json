@@ -1543,5 +1543,137 @@
     "icon": "Court_Mage_Mantle.png",
     "slot": "Chestpiece",
     "type": "armor"
+  },
+  {
+    "tier": "Tier 5",
+    "rarity": "Common",
+    "class": "Light",
+    "protection": 7.0,
+    "durability": 90,
+    "price": 3125,
+    "stats": {
+      "physical_resistance_torso": 0.15,
+      "slashing_resistance_torso": 0.05,
+      "piercing_resistance_torso": 0.05,
+      "bleed_resistance_torso": 0.15,
+      "block_chance": 0.02,
+      "accuracy": 0.02,
+      "crit_chance": 0.02,
+      "counter_chance": 0.06,
+      "dodge_chance": 0.05
+    },
+    "name": "Blademaster Doublet",
+    "id": "blademaster_doublet",
+    "icon": "Blademaster_Doublet.png",
+    "slot": "Chestpiece",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 3",
+    "rarity": "Common",
+    "class": "Medium",
+    "protection": 11.0,
+    "durability": 125,
+    "price": 1300,
+    "stats": {
+      "physical_resistance_torso": 0.14,
+      "piercing_resistance_torso": 0.05,
+      "bleed_resistance_torso": 0.20,
+      "dodge_chance": -0.04,
+      "crit_avoidance": 0.02,
+      "energy": -5,
+      "energy_restoration": -0.01,
+      "fortitude": 0.02
+    },
+    "name": "Soldier Cuirass",
+    "id": "soldier_cuirass",
+    "icon": "Soldier_Cuirass.png",
+    "slot": "Chestpiece",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 2",
+    "rarity": "Common",
+    "class": "Medium",
+    "protection": 7.0,
+    "durability": 100,
+    "price": 500,
+    "stats": {
+      "physical_resistance_torso": 0.10,
+      "bleed_resistance_torso": 0.20,
+      "dodge_chance": -0.03,
+      "energy": -2,
+      "energy_restoration": -0.01,
+      "fatigue_resistance": 0.05
+    },
+    "name": "Road Guard Armor",
+    "id": "road_guard_armor",
+    "icon": "Road_Guard_Armor.png",
+    "slot": "Chestpiece",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 4",
+    "rarity": "Common",
+    "class": "Medium",
+    "protection": 14.0,
+    "durability": 150,
+    "price": 2950,
+    "stats": {
+      "physical_resistance_torso": 0.18,
+      "bleed_resistance_torso": 0.23,
+      "dodge_chance": -0.05,
+      "energy": -7,
+      "energy_restoration": -0.01
+    },
+    "name": "Veteran Brigandine",
+    "id": "veteran_brigandine",
+    "icon": "Veteran_Brigandine.png",
+    "slot": "Chestpiece",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 4",
+    "rarity": "Common",
+    "class": "Medium",
+    "protection": 12.0,
+    "durability": 120,
+    "price": 2950,
+    "stats": {
+      "physical_resistance_torso": 0.12,
+      "slashing_resistance_torso": 0.08,
+      "piercing_resistance_torso": 0.13,
+      "bleed_resistance_torso": 0.30,
+      "block_chance": 0.02,
+      "counter_chance": 0.02,
+      "dodge_chance": -0.07,
+      "energy": -12,
+      "energy_restoration": -0.02
+    },
+    "name": "Duelist Brigandine",
+    "id": "duelist_brigandine",
+    "icon": "Duelist_Brigandine.png",
+    "slot": "Chestpiece",
+    "type": "armor"
+  },
+  {
+    "tier": "Tier 5",
+    "rarity": "Common",
+    "class": "Medium",
+    "protection": 22.0,
+    "durability": 175,
+    "price": 6225,
+    "stats": {
+      "physical_resistance_torso": 0.22,
+      "bleed_resistance_torso": 0.26,
+      "dodge_chance": -0.12,
+      "energy": -16,
+      "energy_restoration": -0.03
+    },
+    "name": "Captain Brigandine",
+    "id": "captain_brigandine",
+    "icon": "Captain_Brigandine.png",
+    "slot": "Chestpiece",
+    "type": "armor"
   }
 ]

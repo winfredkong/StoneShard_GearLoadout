@@ -11,7 +11,7 @@
     },
     "icon": "velmir.png",
     "passive_name": "With Great Vengeance",
-    "passive_description": "Killing Mini-Bosses replenishes Morale and Sanity.  If there's a Boss or Mini-Boss within Vision, applies all enemies within Vision with +1.5% Damage Taken for each Mini-Boss killed for the first time (up to +30%). Grants +1.5% Experience Gain for each Mini-Boss killed for the first time.  Grants +10% Reputation Gain and 2 Stat Points for each killed Boss.",
+    "passive_description": "If there's a Boss, Mini-Boss, or more than 4 enemies within Vision, applies all enemies within Vision with +1.5% Damage Taken for each Mini-Boss killed for the first time (up to +30%).\n\nKilling a Mini-Boss applies all enemies on the location with half of this penalty(doesn't stack with the full version) and replenishes Morale and Sanity.\n\nGrants +1% Experience Gain (up to +15%) for each Mini-Boss killed for the first time. Grants +10% Reputation Gain and 2 Stat Points for each killed Boss.",
     "passive_code": 1
   },
   {
@@ -26,7 +26,7 @@
     },
     "icon": "jorgrim.png",
     "passive_name": "Gore and Glory",
-    "passive_description": "Allows \"Butchering\" to harvest various trophies from Mini-Bosses. Delivering a trophy while turning in a contract grants additional +10% Reward and +10% Reputation.  Also grants 1 Stat Point and +2% Weapon Damage for every 3 trophies delivered for the first time (up to 5 times).  Killing enemies grants +5% Experience Gain for 60 turns (the effect stacks up to 10 times).",
+    "passive_description": "Allows \"Butchering\" to harvest various trophies from Mini-Bosses. Delivering a trophy while turning in a contract grants additional +10% Reward and +10% Reputation.\n\nAlso grants 1 Stat Point and +2% Weapon Damage for every 3 trophies delivered for the first time (up to 5 times).\n\nKilling enemies grants +5% Experience Gain for 30 turns (the effect stacks up to 10 times).",
     "passive_code": 2
   },
   {
@@ -41,7 +41,7 @@
     },
     "icon": "arna.png",
     "passive_name": "Vow of the Feat",
-    "passive_description": "Each enemy within Vision increases the rate of \"Heroism\", \"Optimism\", and \"Prudence\" activation by 20% (up to 100%) and grants +5% chance to trigger \"Second Wind\".  Each received level improves the effects of positive Psyche states by 3%. Additionally, reduces the cooldown between their activation by 50%.  Killing dangerous enemies grants additional Experience depending on the character's level.",
+    "passive_description": "Each enemy within Vision increases the rate of \"Heroism\", \"Optimism\", and \"Second Wind\" activation by 20% (up to 100%).\n\nIncrease the duration of positive Psyche states by 100% and improves their effects by 40% (+2% for each character level).\n\nWhile affected by \"Second Wind\", with 50% chance allows the character to avoid death an unlimited number of times.\n\nKilling dangerous enemies grants additional Experience depending on the character's level.",
     "passive_code": 3
   },
   {
@@ -56,7 +56,7 @@
     },
     "icon": "dirwin.png",
     "passive_name": "Ranger's Gift",
-    "passive_description": "Starts the game with \"Make a Halt\" already learned.  Grants \"Butchering\" 20% chance to harvest pelts, regardless of the damage type used to kill the animal. Increases this chance by 1% and grants 1% Experience Gain (up to +20%) for each Hunting Ground visited for the first time.  Grants 1 Ability Point and 1 Stat Point for every 3 Ability Points invested into the \"Survival\" tree.",
+    "passive_description": "Starts the game with \"Make a Halt\" already learned.\n\nGrants \"Butchering\" 20% chance to harvest pelts, regardless of the damage type used to kill the animal. Increases this chance by 1% and grants 1% Experience Gain (up to +15%) for each Den or Hunting Ground visited for the first time.\n\nGrants 1 Ability Point for every 3 Ability Points invested into the \"Survival\" tree.",
     "passive_code": 4
   },
   {
@@ -71,7 +71,7 @@
     },
     "icon": "jonna.png",
     "passive_name": "Magical Erudition",
-    "passive_description": "Grants +5% Power of the corresponding School and +5% Miracle Potency for each unique magic treatise in the Inventory.  Grants -1% Backfire Chance for each magic treatise read for the first time.  Grants +1% Experience Gain for each Ability Point invested into Sorcery trees.",
+    "passive_description": "Grants +6% Power of the corresponding School and +7.5% Miracle Potency for each unique Sorcery treatise in the Inventory (up to 4 times).\n\nGrants -1% Backfire Chance for each Sorcery treatise read for the first time. Reading a complete set of four treatises grants +2% Miracle Chance.\n\nGrants +1% Experience Gain (up to +15%) for each learned Sorcery ability.",
     "passive_code": 5
   },
   {
@@ -86,7 +86,7 @@
     },
     "icon": "mahir.png",
     "passive_name": "Lifelong Journey",
-    "passive_description": "Grants +0.33% Experience Gain and +0.33% Fatigue Resistance (up to 33%) for each location visited for the first time.  Activates \"Vigor\" for 600 turns upon visiting a location for the first time (900 turns if it's a Dungeon).  Grants 1 Ability Point for each 6 Ability Points invested into an ability tree (no more than once per tree).",
+    "passive_description": "Grants +0.4% Experience Gain and +0.4% Fatigue Resistance (up to 20%) for each location visited for the first time.\n\nActivates \"Vigor\" for 600 turns upon visiting a location for the first time (1200 turns if it's a Dungeon).\n\nGrants 1 Ability Point for each 6 abilities learned in any ability tree (once per tree, no more than 6 times).",
     "passive_code": 6
   },
   {
@@ -101,7 +101,7 @@
     },
     "icon": "leosthenes.png",
     "passive_name": "Might and Magic",
-    "passive_description": "Grants +1.5% Magic Power for each Ability Point invested into Weaponry trees.  Grants +1.5% Weapon Damage for each Ability Point invested into Sorcery trees.  Grants +2% Experience Gain, +2 Max Health, and +2 Max Energy for each Ability Point invested into Utility trees (the abilities learned by default don't count)",
+    "passive_description": "Grants +2% Magic Power and +1% Experience Gain for each learned Weaponry trees.\n\nGrants +2% Weapon Damage and +1% Experience Gain for each learned Sorcery trees.\n\nGrants +2 Max Health, and +2 Max Energy for each learned Utility trees (the abilities learned by default don't count).\n\nAll effects stack up to 15 times.",
     "passive_code": 7
   },
   {
@@ -116,7 +116,7 @@
     },
     "icon": "hilda.png",
     "passive_name": "Wild Hunt",
-    "passive_description": "Start the game with \"Resourcefulness\" already learned and a bone charm that allows the character to sacrifice special hunting trophies.  Sacrifices grants the bone charm various bonuses that can be further empowered by killing respective animals and beastly Bosses.  Each received level increases the threshold for activating negative effects caused by Hunger, Thirst, Pain, Intoxication, and Fatigue by +0.5%.",
+    "passive_description": "Start the game with \"Resourcefulness\" already learned and a bone charm that allows the character to sacrifice special hunting trophies.\n\nSacrifices grants the bone charm various bonuses that can be further empowered by killing respective animals and beastly Bosses.\n\nEach character level increases the threshold for activating negative effects caused by Hunger, Thirst, Pain, Intoxication, and Fatigue by +0.33%.",
     "passive_code": 8
   }
 ]

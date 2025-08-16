@@ -5,11 +5,51 @@ import sys
 from PyQt5.QtWidgets import (
     QDialog, QLabel, QCheckBox, QSpinBox, QTextEdit, QComboBox, QApplication, QGroupBox, QStackedWidget, QWidget, QVBoxLayout, QPushButton
 )
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtCore import Qt, pyqtSignal
+from PyQt5.QtGui import QPixmap, QSyntaxHighlighter, QTextCharFormat, QColor
+from PyQt5.QtCore import Qt, pyqtSignal, QRegularExpression
 
 from stat_processor import COMBAT_STATS, SURVIVAL_STATS, RESISTANCE_STATS, MAGIC_STATS, THRESHOLD_STATS, format_stats
 from passive_ui import passive_widget_map
+
+KEYWORD_COLORS = {
+    "trophy": "#FFD700",
+    "trophies": "#FFD700",
+    "bone charm": "#FFD700",
+    "Boss": "#FFD700",
+    "Mini-Boss": "#FFD700",
+    "treatise": "#FFD700",
+    "treatises": "#FFD700",
+    "Den or Hunting Ground": "#FFD700",
+    "location visited": "#FFD700",
+    "Butchering": "#B5E61D",
+    "Heroism": "#B5E61D",
+    "Optimism": "#B5E61D",
+    "Second Wind": "#B5E61D",
+    "Make a Halt": "#B5E61D",
+    "Survival": "#B5E61D",
+    "Vigor": "#B5E61D",
+    "Weaponry trees": "#FFD700",
+    "Sorcery trees": "#FFD700",
+    "Utility trees": "#FFD700"
+}
+
+class PassiveHighlighter(QSyntaxHighlighter):
+    def __init__(self, doc, token_colors: dict):
+        super().__init__(doc)
+        self.rules = []
+        for word, hexcolor in token_colors.items():
+            fmt = QTextCharFormat()
+            fmt.setForeground(QColor(hexcolor))
+            rx = QRegularExpression(rf"\b{QRegularExpression.escape(word)}\b")
+            rx.setPatternOptions(QRegularExpression.CaseInsensitiveOption)
+            self.rules.append((rx, fmt))
+
+    def highlightBlock(self, text: str):
+        for rx, fmt in self.rules:
+            it = rx.globalMatch(text)
+            while it.hasNext():
+                m = it.next()
+                self.setFormat(m.capturedStart(), m.capturedLength(), fmt)
 
 
 class HeroEditorDialog(QDialog):
@@ -138,6 +178,9 @@ class HeroEditorDialog(QDialog):
         self.passive_name.setText(hero["passive_name"])
         self.passive_description.setText(hero["passive_description"])
         self.passive_stack.setCurrentIndex(index)
+        
+        #패시브 정보 컬러링
+        self.passive_highlighter = PassiveHighlighter(self.passive_description.document(), KEYWORD_COLORS)
 
         # 초상화 이미지 표시
         portrait_path = os.path.join("assets", "portrait", hero["icon"])

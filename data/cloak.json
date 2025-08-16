@@ -159,5 +159,79 @@
     "durability": 20,
     "price": 25,
     "type": "normal"
+  },
+  {
+    "id": "wanderer_cloak",
+    "name": "Wanderer Cloak",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "nature_resistance": 0.08,
+      "dodge_chance": 0.03,
+      "energy_restoration": 0.03,
+      "skills_energy_cost": -0.03,
+      "health_restoration": 0.03,
+      "fatigue_resistance": 0.12
+    },
+    "icon": "Wanderer_Cloak.png",
+    "durability": 30,
+    "price": 275,
+    "type": "normal"
+  },
+  {
+    "id": "vigilante_cape",
+    "name": "Vigilante Cape",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "physical_resistance": 0.05,
+      "bleed_resistance": 0.05,
+      "accuracy": 0.01,
+      "crit_chance": 0.01,
+      "crit_efficiency": 0.05,
+      "energy_restoration": 0.01
+    },
+    "icon": "Vigilante_Cape.png",
+    "durability": 30,
+    "price": 275,
+    "type": "normal"
+  },
+  {
+    "id": "academy_cloak",
+    "name": "Academy Cloak",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 2",
+    "stats": {
+      "nature_resistance": 0.05,
+      "magic_resistance": 0.05,
+      "backfire_chance": -0.01,
+      "energy": 3,
+      "energy_restoration": 0.01
+    },
+    "icon": "Academy_Cloak.png",
+    "durability": 25,
+    "price": 150,
+    "type": "normal"
+  },
+  {
+    "id": "battlemage_cloak",
+    "name": "Battlemage Cloak",
+    "slot": "cloak",
+    "rarity": "Common",
+    "tier": "Tier 3",
+    "stats": {
+      "physical_resistance": 0.04,
+      "nature_resistance": 0.12,
+      "magic_resistance": 0.12,
+      "fumble_chance": -0.02,
+      "backfire_chance": -0.02
+    },
+    "icon": "Battlemage_Cloak.png",
+    "durability": 30,
+    "price": 375,
+    "type": "normal"
   }
 ]
